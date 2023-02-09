@@ -1,6 +1,10 @@
 ## Home Page :
 
-<p ><atarget="_blank"><img src="public/images/home page.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/home page 1.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/hom page 2.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/home page shop collection.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/home page Blogs.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="home page footer.png" width="1000" alt="Laravel Logo"></a></p>
 
 ## Authentification :
 
