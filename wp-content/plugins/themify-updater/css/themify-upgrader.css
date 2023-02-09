@@ -1,0 +1,790 @@
+/* General
+---------------------------------------------------------------*/
+.themify-updater-wrapper input[type="checkbox"] {
+	border-radius:8px;
+}
+.themify-updater-wrapper input[type="checkbox"],
+.themify-updater-wrapper input[type="radio"]{
+    width:1.4rem;
+    height:1.5rem;
+    margin-right:.5em;
+    box-shadow:none;
+}
+.themify-updater-wrapper input[type="checkbox"]:checked::before{
+	margin:-.1rem 0 0 -.2rem;
+	width:120%;
+	height:120%;
+}
+.themify-updater-wrapper select {
+	line-height:1.2em;
+	min-height:auto;	
+	border-radius:25px;
+	padding:7px 28px 7px 12px;
+}
+.wrap h2.nav-tab-wrapper{
+	margin-bottom:25px;
+}
+.themify-updater-wrapper {
+    padding:0 10px;
+}
+.themify-updater-button {
+	font-size:15px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50em;
+	padding:8px 30px;
+	background:#0073aa;
+	color:#fff;
+	cursor:pointer;
+	text-decoration:none;
+	outline:none
+}
+.themify-updater-button:focus,
+.themify-updater-button:hover {
+	background:#25b6ec;
+	color:#fff;
+	box-shadow:none
+}
+
+/* scrollbar */
+.tf_scrollbar {
+	scroll-behavior:smooth;
+	--tf_scroll_color:rgba(137,137,137,.2);
+	--tf_scroll_color_hover:rgba(137,137,137,.4);
+	--tf_scroll_w:8px;
+	--tf_scroll_h:8px;
+	scrollbar-color:var(--tf_scroll_color) transparent;
+	scrollbar-width:thin
+}
+.tf_scrollbar::-webkit-scrollbar {
+	width:var(--tf_scroll_w);
+	height:var(--tf_scroll_h)
+}
+.tf_scrollbar::-webkit-scrollbar-thumb {
+	background:var(--tf_scroll_color);
+	background-clip:padding-box;
+	border:1px solid transparent;
+	border-radius:5px
+}
+.tf_scrollbar:hover {
+	scrollbar-color:var(--tf_scroll_color_hover) transparent
+}
+
+/* Themify Updater settings
+---------------------------------------------------------------*/
+form.themify-updater-settings-form table {
+    width:100%;
+}
+form.themify-updater-settings-form td:first-child{
+    min-width:150px;
+}
+form.themify-updater-settings-form td {
+	padding:5px 0;
+	vertical-align:top;
+}
+form.themify-updater-settings-form br + small {
+	color:#999;
+	display:inline-block;	
+	margin-top:10px;
+}
+
+/* prompt box
+---------------------------------------------------------------*/
+.themify-updater-promt-box {
+    display:none;
+    margin:-80px 0 0 -160px;
+    padding:15px 30px 15px;
+    color:#ccc;
+    width:260px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    z-index:100000;
+    background:rgba(0,0,0,.8);
+    box-shadow:0 1px 10px rgba(0,0,0,.4);
+    border-radius:15px;
+}
+.themify-updater-promt-box p {
+    clear:both;
+    padding:10px 0;
+    margin:0;
+}
+p.prompt-msg {
+    padding:0 0 10px 0;
+    margin:0;
+}
+.themify-updater-promt-box .prompt-error {
+    color:#F99;
+}
+.themify-updater-promt-box .prompt-error a {
+    color:#f6bfbe;
+}
+.themify-updater-promt-box label {
+    width:90px;
+    float:left;
+}
+.themify-updater-promt-box input {
+    float:left;
+    width:160px;
+}
+.themify-updater-promt-box .pushlabel {
+    margin-left:200px !important;
+}
+.themify-updater-promt-box .pushlabel input {
+    width:auto;
+}
+.themify_updater_promt_overlay {
+    display:none;
+    background:#000;
+    opacity:0.5;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:99999;
+    position:fixed;
+}
+/* Changelog */
+.show-changelog {
+    background:#fff;
+    padding:15px;
+    width:60%;
+    left:40%;
+    height:70%;
+    top:25%;
+}
+.show-changelog iframe {
+    width:100%;
+    max-width:100%;
+    height:100%;
+}
+
+/* alert message
+---------------------------------------------------------------*/
+div.themify_updater_alert {
+    margin:-40px 0 0 -40px;
+    height:80px;
+    width:80px;
+    background:rgba(0,0,0,.7);
+	color:#eaeaea;
+    position:fixed;
+    top:50%;
+    left:50%;
+    z-index:999;
+    border-radius:100%;
+    display:none;
+    padding:0 ;
+    border:none;
+}
+div.themify_updater_alert:before{
+	content:'';
+	display:flex;
+	text-align:center;
+	margin:auto;
+	justify-content:center;
+	align-items:center;
+}
+div.themify_updater_alert.done:before{
+	width:14px;
+	height:30px;
+	border-right:4px solid;
+	border-bottom:4px solid;
+	transform:rotate(45deg) skew(10deg);
+	margin-top:19px;
+}
+div.themify_updater_alert.error:before,
+div.themify_updater_alert.error:after{
+	content:'';
+    height:42%;
+    width:4px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) rotate(45deg);
+    background:currentColor;
+    transition:transform .25s;
+}
+div.themify_updater_alert.error:after{
+    transform:translate(-50%,-50%) rotate(-45deg);
+}
+div.themify_updater_alert.busy:before{
+    width:80%;
+    height:80%;
+    border:5px solid transparent;
+    border-top-color:#fff;
+    border-radius:50%;
+    box-sizing:border-box;
+    position:absolute;
+    top:10%;
+    left:10%;
+    content:'';
+    animation:circle-loader 1.4s infinite linear;
+}
+@keyframes circle-loader{
+    to{transform:rotate(1turn)}
+}
+
+/* Notification
+---------------------------------------------------------------*/
+.themify-updater.notification-group{
+	padding:11px 15px;
+}
+
+.notifications .notification-group span:first-child{
+	cursor:pointer;
+	font-size:14px;
+	font-weight:600;
+	line-height:1.5;
+	margin:1em 0;
+}
+
+/* for wordpress 5.5 */
+.themify-updater.update-nag{
+	background:#fff;
+    border-left:4px solid #ffba00;
+	box-shadow:0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+/* Search
+---------------------------------------------------------------*/
+#themify-updater-search {
+	float:right;
+	margin:-4px 0 0;
+	display:none; /* show only on themes & plugins tab */
+}
+.nav-tab-active + a + a + #themify-updater-search,
+.nav-tab-active + a + #themify-updater-search{
+	display:block; /* show only on themes & plugins tab */
+}
+#themify-updater-search .search-promo{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	font-size:14px;
+	border:1px solid #e5e5e5;
+	box-shadow:none;
+	background:#fff;
+	border-radius:20px;
+}
+#themify-updater-search .search-icon {
+	margin-bottom:0;
+	margin-left: 10px;
+	font-size:22px;
+	color:#666;
+}
+#themify-updater-search input[type=text]{
+    font-size:1em;
+    line-height:1;
+    background:transparent;
+    margin:0 5px 0 0;
+    padding:.4em .5em;
+    box-shadow:none;
+    border-color:#bbb;
+    vertical-align:middle;
+    box-sizing:border-box;
+    min-height:0;
+    border-radius:2px;
+}
+#themify-updater-search #promo-search{
+	width: 100%;
+	border:0;
+}
+#themify-updater-search .clear-search{
+	display:none;
+	cursor:pointer;
+	margin-right: 10px;
+	font-size:22px;
+	color:#999;
+}
+#themify-updater-search .clear-search.show{
+	display:block;
+}
+#dolly + .wrap {
+	clear:both;
+}
+
+/* Re-Install dropdown button
+---------------------------------------------------------------*/
+.themify-updater-dropdown {
+	display:inline-block;
+	position:relative;
+}
+
+.themify-updater-dd-button {
+	white-space:nowrap;
+}
+.themify-updater-dd-button:after {
+	content:'';
+	position:absolute;
+	top:50%;
+	right:15px;
+	transform:translateY(-50%);
+	width:0; 
+	height:0; 
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-top:5px solid #fff;
+}
+.themify-updater-dd-input {
+	display:none !important;
+}
+.themify-updater-dd-menu {
+	font-size:14px;
+	position:absolute;
+	top:100%;
+	border-radius:8px;
+	padding:0;
+	margin:5px 0 0 0;
+	box-shadow:0 0 0 1px rgba(0,0,0,.05), 0 3px 10px 0 rgba(0,0,0,.3);
+	background:#ffffff;
+	list-style-type:none;
+	z-index:999999;
+}
+body[style*="overflow:hidden"] .themify-updater-dropdown:focus-within .themify-updater-dd-input + .themify-updater-dd-menu,
+body[style*="overflow: hidden"] .themify-updater-dropdown:focus-within .themify-updater-dd-input + .themify-updater-dd-menu,
+.themify-updater-dd-input + .themify-updater-dd-menu{
+	display:none;
+}
+.themify-updater-dropdown:focus-within .themify-updater-dd-input + .themify-updater-dd-menu{
+    display:block
+}
+.themify-updater-dd-menu li {
+	padding:5px 20px;
+	cursor:pointer;
+	white-space:nowrap;
+	width:100% !important;
+	margin:0px !important;
+}
+.themify-updater-dd-menu li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.themify-updater-dd-menu li:last-child{
+	border-radius:0 0 8px 8px;
+}
+.themify-updater-dd-menu li:hover {
+	background:#f6f6f6;
+}
+
+/* cross promote themes in admin */
+.promote-plugins .plugin-category {
+    list-style:none;
+    margin:15px 0 35px;
+    padding:0;
+    font-size:15px;
+    float:left;
+    color:#666;
+    display:block;
+}
+.promote-plugins .plugin-category li {
+    display:inline-block;
+    margin:0;
+    padding:0;
+    white-space:nowrap;
+}
+.promote-plugins .plugin-category li a{
+    text-decoration:none;
+    line-height:1em;
+    color:#666;
+    box-shadow:none;
+    padding:8px 16px;
+    border-radius:20px;
+    text-decoration:none;
+}
+.promote-plugins .plugin-category li a:hover{
+	color:#000
+}
+.promote-plugins .plugin-category li a:active{
+    text-decoration:none;
+	outline:none;
+	border:none;
+	box-shadow:none;
+}
+.promote-plugins .plugin-category li.active a{
+    background:#666;
+    color:#fff;
+}
+.theme-list{
+    margin:20px 0;
+    list-style:none;
+    text-align:left;
+    position:relative;
+    box-sizing:border-box;
+	clear:both;
+}
+.theme-list p{
+    margin:0 0 1em;
+    padding:0;
+}
+.theme-list a{
+    text-decoration:none;
+}
+.theme-list figure{
+    margin:0;
+    padding:0;
+}
+.theme-list li{
+    margin-bottom:4.2%;
+    position:relative;
+    box-sizing:border-box;
+    margin-left:4.2%;
+    width:30.52%;
+    float:left;
+}
+.theme-list li:nth-of-type(3n+1){
+    margin-left:0;
+    clear:left;
+}
+.theme-list .theme-title{
+	margin:0 0 10px;
+}
+.theme-list .theme-image{
+    margin-bottom:20px;
+    cursor:pointer;
+    width:100%;
+    float:none;
+}
+.theme-list img{
+    width:100%;
+    border-radius:10px;
+    vertical-align:bottom;
+    box-shadow:0 3px 14px rgba(0,0,0,.1)
+}
+.theme-list h3{
+    margin:0 5px 5px 0;
+    text-transform:none;
+    font-size:24px;
+    line-height:1.2;
+    font-weight:300;
+    display:inline-block;
+    vertical-align:middle;
+    cursor:pointer;
+}
+.theme-list h3 a{
+    color:inherit;
+    border:none;
+    text-decoration:none;
+}
+.theme-list a.tag-button{
+    color:#01bd5d;
+    font:normal 11px/100% sans-serif;
+    text-transform:uppercase;
+    border-radius:10px;
+    padding:4px 8px;
+    letter-spacing:1px;
+    line-height:1em;
+    margin:-10px 0 0 5px;
+    display:inline-block;
+    vertical-align:middle;
+    border:solid 1px #01bd5d;
+    text-indent:1px;
+    cursor:pointer;
+}
+.theme-list a.tag-button:hover{
+    color:#fff;
+    background:#01bd5d;
+}
+.theme-list .theme-excerpt p{
+    font-size:13px;
+    line-height:1.6em;
+    color:#828282;
+}
+.theme-list .theme-excerpt p:empty{
+	display:none;
+}
+.themify-recommended-plugins .theme-image img{
+    width:150px;
+}
+
+/* Batch Install
+---------------------------------------------------------------*/
+.themify-updater-batch-install{
+    clear:both;
+    display:flex;
+    align-items:center;
+    padding: 12px 23px;
+    margin:10px 0 30px;
+    border-radius:8px;
+    background:#d1dbe5;
+}
+.themify-updater-batch-install label {
+	margin:15px 30px 15px 0;
+    display:inline-block;
+}
+.themify-updater-batch-install .themify-updater-batch-install-btn,
+.themify-updater-batch-install .batch-install-all{
+    display:none;
+}
+.themify-updater-batch-mode .themify-updater-batch-install-btn,
+.themify-updater-batch-mode .batch-install-all{
+    display:inline-block;
+}
+.themify-updater-batch-wrap,
+.themify-updater-batch-mode .theme-excerpt .themify-updater-dropdown,
+.themify-updater-batch-mode .theme-excerpt .themify-updater-button{
+    display:none;
+}
+.themify-updater-batch-mode .themify-updater-batch-wrap{
+    display:block;
+}
+.themify-updater-batch-wrap{
+	background:#d1dbe5;
+    padding:11px 15px 13px;
+    border-radius:8px;
+}
+.themify-updater-batch-wrap.batch-checked{
+    background:#b8d2af;
+}
+.themify-updater-batch-install-btn{
+	font-size:15px;
+}
+.themify-updater-batch-install label{
+	font-size:15px;
+	line-height:1.5
+}
+.themify-updater-batch-install input[type=checkbox]{
+	width:1.7em;
+	height:1.7em;
+	margin-right:10px;
+	box-shadow:none;
+	border-color:#96989c;
+}
+.themify-updater-batch-install input[type=checkbox]:before{
+    margin:-.05em 0 0 -.05em;
+}
+.themify-updater-modal{
+    position:fixed;
+    top:22vh;
+    left:160px;
+    right:0;
+    margin:auto;
+    width:530px;
+    max-width:90%;
+    max-height:80%;
+    padding:40px 8px 25px;
+    font:18px/1.5em Arial, sans-serif;
+    letter-spacing:-.005em;
+    background:#fff;
+    color:#bcbcbc;
+    box-shadow:0px 4px 48px 0px rgba(0, 0, 0, 0.35);
+    border-radius:12px;
+    box-sizing:border-box;
+    overflow-y:auto
+}
+.themify-updater-modal a{
+	text-decoration:none;
+}
+.themify-updater-bulk-list{
+    padding:0 0 0 36px;
+    margin:0 0 30px;
+    max-height:410px;
+    overflow:hidden;
+    overflow-y:auto;
+    box-sizing:border-box;
+}
+.themify-updater-batch-name {
+	color:#333;
+}
+.themify-updater-modal-loading{
+	width:40px;
+	height:40px;
+	margin:0 auto;
+}
+.themify-updater-modal li{
+    margin-bottom:16px;
+	position:relative;
+	padding:3px 0;
+	padding-left:50px;
+}
+.themify-updater-modal li:before{
+    content:"";
+    width:30px;
+    height:30px;
+    display:inline-block;
+    background-size:contain;
+    vertical-align:middle;
+	position:absolute;
+	top:0;
+	left:5px;
+}
+.themify-updater-modal .themify-updater-batch-installing:before,
+.themify-updater-modal-loading{
+	content:'';
+	border-radius:50%;
+	box-sizing:border-box;
+	border:4px solid rgba(149,149,149,.2);
+	border-left-color:rgba(149,149,149,.6);
+	animation:tf_loader 1.1s infinite linear;
+	left:-5px;
+}
+.themify-updater-modal .themify-updater-batch-installed:before{
+	color:#666;
+    width:8px;
+    height:21px;
+    border-right:2px solid;
+    border-bottom:2px solid;
+    transform:rotate(45deg) skew(12deg);
+}
+@keyframes tf_loader {
+	0% {
+		transform:rotate(0)
+	}
+	100% {
+		transform:rotate(360deg)
+	}
+}
+.themify-updater-modal-btns{
+    margin:0 auto;
+    text-align:center
+}
+.themify-updater-modal-btns .themify-updater-button{
+	margin:0 5px    
+}
+
+
+/* Dashboard widget
+---------------------------------------------------------------*/
+#themify_updates .themify-update-theme img {
+    max-width:100%;
+    height:auto;
+}
+#themify_updates .themify-update-theme > div {
+    display:inline-block;
+    vertical-align:top;
+    box-sizing:border-box;
+}
+#themify_updates .themify-theme-thumb {
+    width:30%;
+}
+#themify_updates .themify-theme-meta {
+    width:68%;
+    padding-left:12px;
+}
+#themify_updates .themify-theme-meta h2 {
+    padding:0;
+}
+#themify_updates .themify-theme-meta h2 span {
+    position:relative;
+    top:-10px;
+}
+#themify_updates .themify-theme-meta h2 span,
+#themify_updates .themify-update-plugins h2 span {
+    color:#adadad;
+    font-size:0.5em;
+    display:inline-block;
+    line-height:1em;
+    margin-left:8px;
+}
+#themify_updates .themify-theme-meta > a {
+    display:inline-block;
+    padding:8px 12px;
+    line-height:1em;
+    color:#664c9e;
+    font-size:12px;
+}
+#themify_updates .themify-theme-meta a:not(.themify-update-button):hover {
+    text-decoration:underline;
+}
+#themify_updates .themify-theme-meta p a {
+    color:#664c9e;
+}
+#themify_updates .themify-theme-meta a.themify-update-button,
+#themify_updates .themify-update-plugins .themify-update-button {
+    background:#f26522;
+    color:#ffffff;
+    opacity:0.8;
+    transition:all 0.2s ease
+}
+#themify_updates .themify-theme-meta a.themify-update-button:hover,
+#themify_updates .themify-update-plugins .themify-update-button:hover {
+    opacity:1;
+}
+#themify_updates .themify-update-theme + li {
+    border-top:1px solid #cccccc;
+    margin-top:12px;
+    padding-top:12px;
+}
+#themify_updates .themify-update-plugins {
+    position:relative;
+}
+#themify_updates .themify-update-plugins h2 {
+    padding:0;
+    font-size:1.4em;
+}
+#themify_updates .themify-update-plugins a:not(.themify-update-button) {
+    color:#664c9e;
+    font-size:10px;
+}
+#themify_updates .themify-update-plugins a:not(.themify-update-button):hover {
+    text-decoration:underline;
+}
+#themify_updates a:focus{
+    outline:none;
+    box-shadow:none;
+}
+#themify_updates .themify-update-plugins .themify-update-button {
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto 0;
+    height:24px;
+    line-height:24px;
+    padding:0 12px;
+}
+
+/* Themify Status Tab
+---------------------------------------------------------------*/
+table.themify_system_status {
+	margin:30px 0;
+}
+table.themify_system_status .dashicons-yes{
+	color:#97cb70;
+}
+table.themify_system_status .dashicons-no{
+	color:#b03131;
+}
+
+/* Responsive
+---------------------------------------------------------------*/
+@media (min-width:1200px){
+    .themify-recommended-plugins li{
+        width:16%;
+    }
+    .themify-recommended-plugins li:nth-of-type(3n+1){
+        clear:none;
+        margin-left:4.2%;
+    }
+    .themify-recommended-plugins li:nth-of-type(5n+1){
+        clear:both;
+        margin-left:0;
+    }
+}
+@media screen and (max-width:960px){
+	.themify-updater-modal{
+		left:36px;
+		top:12vh;
+	}
+}
+@media screen and (max-width:782px){
+	.themify-updater-wrapper select{
+		font-size:inherit;
+	}
+	#themify-updater-search {
+		float:none;
+		clear:both;
+        margin:0;
+        padding:20px 0 0;
+	}
+	.themify-updater-modal{
+		left:0;
+	}
+	.themify-updater-bulk-list {
+		max-height:none
+	}
+    .theme-list li {
+    	width:100% !important;
+        clear:none !important;
+        margin-left:0 !important;
+        margin-bottom:7%
+    }	
+}

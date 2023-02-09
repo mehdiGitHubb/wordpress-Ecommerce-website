@@ -1,0 +1,13 @@
+.ui.module-tab .tab-content[aria-hidden="true"]{
+    left:auto;
+    right:-9999em
+}
+.drop-cap > :first-child:first-letter,
+.tb_text_dropcap .tb_text_wrap > :first-child:first-letter{
+    float:right;
+    margin-left:.325em;
+    margin-right:0
+}
+.module-fancy-heading .tf_textl .sub-head:before{
+    margin-right:auto
+}

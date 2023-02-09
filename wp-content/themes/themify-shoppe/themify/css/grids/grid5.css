@@ -1,0 +1,45 @@
+.loops-wrapper.products.grid5 > .product,
+.loops-wrapper.grid5 > .post{
+    width:17.44%
+}
+.loops-wrapper.products.grid5 > .product:nth-of-type(5n+1),
+.loops-wrapper.grid5 > .post:nth-of-type(5n+1){
+    margin-left:0;
+    clear:left
+}
+.loops-wrapper.products.grid5.no-gutter > .product,
+.loops-wrapper.grid5.no-gutter > .post{
+    width:20%
+}
+@media (max-width:900px){
+	.loops-wrapper.products.grid5 > .product,
+	.loops-wrapper.grid5 > .post{
+		width:48.4%
+	}
+	.loops-wrapper.products.grid5.no-gutter > .product,
+	.loops-wrapper.grid5.no-gutter > .post{
+		width:50%
+	}
+	.loops-wrapper.products.grid5 > .product:nth-of-type(2n+1),
+	.loops-wrapper.grid5 > .post:nth-of-type(2n+1){
+		margin-left:0;
+		clear:left
+	}
+	.loops-wrapper.products.grid5 > .product:nth-of-type(6n),
+	.loops-wrapper.grid5 > .post:nth-of-type(6n){
+		margin-left:3.2%;
+		clear:none
+	}
+	.loops-wrapper.products.grid5.no-gutter > .product:nth-of-type(6n),
+	.loops-wrapper.grid5.no-gutter > .post:nth-of-type(6n){
+		margin-left:0
+	}
+}
+@media (max-width:680px){
+	.loops-wrapper.grid5 > .post,
+	.loops-wrapper.grid5.no-gutter > .post{
+		width:100%;
+		margin-left:0;
+		float:none
+	}
+}

@@ -1,0 +1,59 @@
+.mobile-menu-visible.sidemenu-active #headerwrap,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-active,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-active #headerwrap.fixed-header{
+	left:0;
+	right:0
+}
+#mobile-menu.sidemenu{
+	left:0;
+	right:0;
+	width:100%;
+	visibility:hidden; 
+	transition:all .4s ease;
+	transition-property:transform,opacity,visibility;
+	visibility:hidden;
+	pointer-events:none
+}
+#mobile-menu.sidemenu-on{
+	animation:flipFromTopOff 1s alternate
+}
+#mobile-menu.sidemenu-off{
+	 animation:flipFromTopOff 1s alternate
+}
+.mobile-menu-visible #mobile-menu.sidemenu{
+	animation:flipFromTopOn 1s alternate;
+	visibility:visible;
+	pointer-events:auto
+}
+#mobile-menu.sidemenu-off .top-icon-wrap li a .tooltip{
+	visibility:hidden
+}  
+.mobile-menu-visible .body-overlay,
+.body-overlay,
+.body-overlay.body-overlay-on{
+	display:none
+}
+body:not(.mobile-menu-visible) #headerwrap #menu-icon-close{
+	opacity:.25;
+	transition:.4s
+}
+#menu-icon,
+#headerwrap #cart-link-mobile,
+.slide-cart-visible #headerwrap #cart-link-mobile{
+	opacity:1;
+	transition:all 1s
+}
+.mobile-menu-visible #headerwrap #menu-icon,
+.mobile-menu-visible #headerwrap #cart-link-mobile,
+.slide-cart-visible #headerwrap #cart-link-mobile{
+	opacity:0;
+	display:block
+}
+@keyframes flipFromTopOn{
+	from{transform:perspective(400px) rotateX(360deg) scale(.1);opacity:.1}
+	to{transform:perspective(400px) rotateX(0) scale(1);opacity:1}
+}
+@keyframes flipFromTopOff{
+	from{transform:perspective(400px) rotateX(0)  scale(1);opacity:1}
+	to{transform:perspective(400px) rotateX(360deg)  scale(.1);opacity:.1}
+}

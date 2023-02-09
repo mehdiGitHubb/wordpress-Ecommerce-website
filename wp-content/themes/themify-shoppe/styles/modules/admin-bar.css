@@ -1,0 +1,87 @@
+.mobile-menu-visible .sidemenu,
+.slide-cart-visible #slide-cart,
+.header-bottom #footerwrap,
+.header-slide-left .sidemenu,
+.header-slide-right .sidemenu,
+.header-minbar-left .sidemenu,
+.header-minbar-right .sidemenu,
+.header-minbar-left #headerwrap,
+.header-minbar-right #headerwrap,
+.header-left-pane #headerwrap,
+.header-right-pane #headerwrap,
+.fixed-header-enabled #headerwrap{
+	top:32px
+}
+body.header-block #headerwrap:not(.fixed-header){
+	top:0
+}
+.header-right-pane #menu-icon,
+.header-left-pane #menu-icon{
+	top:46px
+}
+.header-minbar-left .top-bar-widgets,
+.header-minbar-right .top-bar-widgets{
+	width:calc(100vh - 32px)
+}
+.header-minbar-left .top-bar-widgets{
+	top:32px
+}
+.header-minbar-right .top-bar-widgets{
+	bottom:calc(100% - 32px)
+}
+.admin-bar.announcement-top.fixed-header-enabled #headerwrap{
+	top:0;
+}
+@media(max-width:782px){
+	.header-right-pane #menu-icon,
+	.header-left-pane #menu-icon{
+		top:56px
+	}
+	.mobile-menu-visible .sidemenu,
+	.slide-cart-visible #slide-cart,
+	.header-bottom #footerwrap,
+	.header-slide-left .sidemenu,
+	.header-slide-right .sidemenu,
+	.header-minbar-left .sidemenu,
+	.header-minbar-right .sidemenu,
+	.header-minbar-left #headerwrap,
+	.header-minbar-right #headerwrap,
+	.header-left-pane #headerwrap,
+	.header-right-pane #headerwrap,
+	.fixed-header-enabled #headerwrap{
+		top:46px
+	}
+}
+@media(max-width:760px){
+	.header-overlay #mobile-menu.sidemenu-on{
+		top:0;
+	}
+	.header-minbar-left .sidemenu-off .header-icons,
+	.header-minbar-right .sidemenu-off .header-icons{
+		top:90px
+	}
+	.admin-bar .themify_announcement.announcement_top{
+		top:0
+	}
+}
+@media(max-width:600px){
+	.header-minbar-left #wpadminbar,
+	.mobile-menu-visible #wpadminbar{
+		transform:translateY(-100%)
+	}
+	.mobile-menu-visible .sidemenu,
+	.slide-cart-visible #slide-cart,
+	.header-bottom #footerwrap,
+	.header-slide-left .sidemenu,
+	.header-slide-right .sidemenu,
+	.header-minbar-left .sidemenu,
+	.header-minbar-right .sidemenu,
+	.header-left-pane #headerwrap,
+	.header-right-pane #headerwrap,
+	.fixed-header-enabled #headerwrap{
+		top:0
+	}
+	.mobile-menu-visible.header-boxed-layout #wpadminbar{
+		top:-38px
+	}
+}

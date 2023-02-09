@@ -1,0 +1,49 @@
+.woocommerce form.login,
+.woocommerce form.register{
+	margin:0 0 1em;
+	padding:1.5em 2.2em 1em;
+	text-align:right;
+	box-sizing:border-box;
+	border:0;
+	border-radius:0;
+	box-shadow:0 1px 15px rgba(0,0,0,.12)
+}
+.login input[type=text]{
+	width:100%
+}
+.lost_reset_password label,
+.login label{
+	display:block;
+	font-size:.8em;
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:.04em
+}
+.login label small{
+	font-weight:300;
+	text-transform:none
+}
+.login textarea{
+	height:140px
+}
+.login input[type=submit]{
+	padding:.9em 1em .8em 1.25em
+}
+.woocommerce-account.woocommerce-page .woocommerce form.lost_reset_password,
+.woocommerce-account.woocommerce-page .woocommerce form.login{
+	margin:0 auto 5.4em
+}
+.woocommerce-account.woocommerce-page .woocommerce h2{
+	margin:1.225em auto .9em
+}
+.woocommerce form .form-row{
+	margin:0 0 1.15em;
+	float:none;
+	width:auto
+}
+
+@media(max-width:768px){
+	.woocommerce form .form-row{
+		padding:0
+	}
+}

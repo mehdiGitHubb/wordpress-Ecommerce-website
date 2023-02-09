@@ -1,0 +1,33 @@
+.with-sub-arrow .child-arrow{
+    cursor:pointer
+}
+.with-sub-arrow .child-arrow:before,
+.with-sub-arrow .child-arrow:after{
+	content:'';
+	top:50%;
+	left:10px;
+	position:absolute;
+	transition:transform .3s ease-in-out;
+	height:1px;
+	width:8px;
+	transform:rotate(45deg);
+	background:currentColor;
+	z-index:9999;
+	border-radius:10px
+}
+.with-sub-arrow .child-arrow:after{
+	left:15px;
+	transform:rotate(-45deg)
+}
+.child-arrow.open:before{
+    transform:rotateZ(-225deg);
+    margin-bottom:0
+}
+.with-sub-arrow ul .child-arrow:before{
+    transform:rotateZ(-135deg);
+    margin-bottom:0
+}
+.with-sub-arrow ul .child-arrow.open:before{
+    transform:rotateZ(45deg);
+    margin-bottom:0
+}

@@ -1,0 +1,36 @@
+.tf_s_dropdown input[type="text"]{
+    background-color:#fff;
+    color:#000;
+    margin:0;
+    width:auto;
+    height:auto;
+    max-width:100%;
+    min-width:auto;
+    min-height:auto;
+    display:inline-block;
+    box-shadow:none
+}
+.tf_search_icon{
+    padding:9px 11px 10px;
+    border-radius:50em;
+    cursor:pointer;
+    line-height:normal
+}
+.tf_search_icon:hover{
+    background:rgba(150,150,150,.15)
+}
+.tf_icon_wrap{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:2px;
+    font-size:1.2em;
+    line-height:1
+}
+.tf_icon_wrap + input[type="text"],
+.tf_icon_wrap + .tf_loader + input[type="text"]{
+    padding-left:2.2em
+}
+.tf_s_dropdown .tf_icon_wrap{
+    left:12px
+}

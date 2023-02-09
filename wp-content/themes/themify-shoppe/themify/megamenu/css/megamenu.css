@@ -1,0 +1,198 @@
+#main-nav .has-mega-column > .sub-menu{
+    display:grid;
+    grid-template-columns:var(--megaT,repeat(auto-fit, minmax(0, 1fr)));
+    grid-column-gap:var(--megaG,2.5%);
+    padding:1.15% 2%;
+    max-height:70vh;
+    overflow-x:hidden;
+    overflow-y:auto
+}
+#main-nav .layout-6-3-3{
+    --megaT:50% 25% 25%
+}
+#main-nav .layout-3-3-6{
+    --megaT:25% 25% 50%
+}
+#main-nav .layout-4-8{
+    --megaT:33% 66%
+}
+#main-nav .layout-8-4{
+    --megaT:66% 33%
+}
+#main-nav .layout-3-9{
+    --megaT:25% 75%
+}
+#main-nav .layout-9-3{
+    --megaT:75% 25%
+}
+#main-nav .has-mega{
+    position:static
+}
+#main-nav .has-mega > .sub-menu{
+    left:0;
+    width:100%;
+	padding:15px 25px;
+	top:auto
+}
+@media (pointer:coarse){
+    #main-nav .has-sub-menu >  a{
+        padding-right:50px
+    }
+    #main-nav li .child-arrow{
+        margin-left:7px;
+        border-radius:100%;
+        display:inline-block;
+        padding:0;
+        right:5px;
+        top:50%;
+        margin-top:-17px
+    }
+    #main-nav .toggle-on > a > .child-arrow{
+        background:rgba(214,214,214,.4)
+    }
+    #main-nav .has-mega-column li .child-arrow{
+        display:none
+    }
+}
+/*DropDown*/
+#main-nav .has-mega-column .sub-menu .sub-menu{
+    border:0;
+    background:0;
+    padding:0;
+    display:block;
+    position:static;
+    opacity:1;
+    transform:none;
+    transition:none;
+    width:auto;
+    box-shadow:none
+}
+#main-nav .has-sub-menu.has-mega-dropdown > .sub-menu{
+    display:grid;
+    grid-template-columns:var(--megaDT,50% 50%)
+}
+#main-nav .dropdown-columns-2 > .sub-menu{
+    width:400px
+}
+#main-nav .dropdown-columns-3 > .sub-menu{
+    width:540px;
+    --megaDT:repeat(3, 33.32%)
+}
+#main-nav .dropdown-columns-4 > .sub-menu{
+    width:680px;
+    --megaDT:repeat(4, 25%)
+}
+/* mega menu posts */
+.mega-sub-menu{
+    min-height:260px
+}
+.mega-sub-menu ul{
+    -webkit-overflow-scrolling:touch;
+    padding:0 0 2em 0;
+    margin:1em 0;
+    opacity:1;
+    float:none;
+    position:relative
+}
+#main-nav .has-mega-sub-menu .mega-sub-menu > ul li{
+    display:block;
+    position:unset;
+    pointer-events:none;
+}
+#main-nav .has-mega-sub-menu .mega-sub-menu > ul .mega-link > a{
+    width:16%;
+	margin:0;
+	border-bottom:1px solid rgba(180,180,180,.2);
+    padding:.5em 1.4em .5em 0;
+    pointer-events:auto
+}
+#main-nav .has-mega-sub-menu .mega-sub-menu > ul .mega-link:first-child > a{
+	display:block;
+}
+#main-nav .has-mega-sub-menu .mega-sub-menu > ul .tf_mega_selected.mega-link:first-child > a{
+    display:inline-block;
+}
+.mega-menu-posts{
+    width:82%;
+    margin-left:2%;
+	padding-bottom:2em;
+    display:none;
+    gap:3% 1.3%;
+    grid-template-columns:repeat(auto-fit, minmax(50px,1fr));
+    position:absolute;
+    top:0;
+    right:0;
+    pointer-events:auto
+}
+#main-nav .has-mega-sub-menu .mega-sub-menu > ul .mega-link:first-child > .mega-menu-posts{
+    position:relative;
+    float:right;
+}
+.tf_mega_selected .mega-menu-posts{
+    display:grid
+}
+#main-nav .themify_mega_menu_category_link{
+    position:absolute;
+    bottom:0;
+    right:0;
+    font-size:.85em;
+	padding:0;
+}
+#main-nav .themify_mega_menu_category_link:after{
+    content:" ";
+    border:solid;
+    border-width:0 1px 1px 0;
+    display:inline-block;
+    padding:3px;
+    transform:rotate(-45deg);
+    vertical-align:middle;
+    margin:-3px 0 0 5px
+}
+.mega-menu-posts .post{
+	padding:0;
+    margin:0 0 15px
+}
+.mega-menu-posts .post .post-image{
+	margin:0 0 10px
+}
+.mega-sub-menu li a:before{
+    content:'';
+    width:10px;
+    height:10px;
+    top:50%;
+    left:auto;
+    right:4px;
+    margin-top:-6px
+}
+.mega-sub-menu li a:not(.tf_loader):before{
+	border-top:solid 1px;
+	border-right:solid 1px;
+    position:absolute;
+    transform:rotate(45deg);
+    transition:opacity .5s ease-in-out;
+    display:inline-block;
+    opacity:0
+}
+.mega-sub-menu .tf_mega_selected > a:before,
+.mega-sub-menu li:hover > a:before{
+    opacity:1
+}
+.mega-link .tf_loader{
+    height:auto;
+    width:auto
+}
+.mega-sub-menu li a.tf_loader:before{
+    width:16px;
+    height:16px
+}
+/*Mobile Menu*/
+@media (hover:none){
+    #main-nav .has-mega-column > .sub-menu,
+    #main-nav .has-sub-menu.has-mega-dropdown > .sub-menu{
+        display:none
+    }
+    #main-nav .has-mega-column.toggle-on > .sub-menu,
+    #main-nav .has-sub-menu.has-mega-dropdown.toggle-on > .sub-menu{
+        display:grid!important
+    }
+}

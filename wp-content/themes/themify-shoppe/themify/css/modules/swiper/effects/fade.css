@@ -1,0 +1,11 @@
+.tf_swiper-container-fade.tf_swiper-container-free-mode .tf_swiper-slide{
+  transition-timing-function:ease-out
+}
+.tf_swiper-container.tf_swiper-container-fade .tf_swiper-slide{
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .3s ease-out
+}
+.tf_swiper-container.tf_swiper-container-fade .tf_swiper-slide-active{
+    pointer-events:auto
+}

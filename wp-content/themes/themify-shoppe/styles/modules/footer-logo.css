@@ -1,0 +1,18 @@
+#footer-logo{
+	font-size:1.65em;
+	font-weight:600;
+	letter-spacing:-.008em;
+	line-height:normal;
+	margin-bottom:.4em
+}
+#footer-logo a{
+	text-decoration:none
+}
+@media(max-width:680px){
+	.footer-column-wrap .footer-logo-wrap{
+		clear:both;
+		float:none;
+		margin:0;
+		width:auto
+	}
+}

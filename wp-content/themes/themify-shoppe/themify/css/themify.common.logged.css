@@ -1,0 +1,30 @@
+.edit-button{
+	font-size:11px;
+	text-transform:uppercase;
+	font-weight:normal;
+	letter-spacing:.1em;
+	text-decoration:none
+}
+.edit-button a:hover{
+	text-decoration:underline
+}
+.tb_module_front .edit-button{
+	display:none
+}
+.tf_query_edit_link{
+	font-size:14px;
+}
+@media (max-width:600px){
+    .admin-bar.fixed-header-on #headerwrap{
+        top:0!important
+    }
+    .admin-bar.fixed-header #wpadminbar{
+        position:fixed
+    }
+    .admin-bar.fixed-header-on #wpadminbar{
+        position:absolute
+    }
+    body:not(.header-none).admin-bar.no-fixed-header #wpadminbar{
+        margin-top:-46px
+    }
+}

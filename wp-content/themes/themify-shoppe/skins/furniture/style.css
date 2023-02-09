@@ -1,0 +1,350 @@
+/*
+Skin Name:Shoppe Furniture
+Version:1.0
+Demo URI:https://themify.me/demo/themes/shoppe-furniture
+Required Plugins:woocommerce,builder-woocommerce,builder-timeline,builder-contact
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#000;
+}
+body{
+	color:#777;
+	font:normal 1em/1.75em 'Montserrat', sans-serif
+}
+a{
+	color:#000
+}
+
+/* reset general border-radius */
+textarea,input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week],input[type=checkbox],input[type=reset],input[type=submit],button,.back-top a,.woocommerce .product-lightbox div.product div.images img,.woocommerce table.shop_table,.woocommerce .cart-collaterals .cart_totals,.cart-style-dropdown .cart-total-checkout-wrap,#cart-wrap .product-image img,.cart-style-dropdown #cart-wrap,ul.products li.product .post-image,.woocommerce-checkout #payment,.woocommerce-checkout #payment div.payment_box,#add_payment_method table.cart img,.woocommerce-error,.woocommerce-info,.woocommerce-message,.woocommerce-cart table.cart img,.woocommerce-checkout table.cart img,.woocommerce-product-gallery__wrapper .tf_swiper-container-initialized,.woocommerce div.product div.images img,.loops-wrapper.boxed .post-image img,.loops-wrapper.boxed li.product .post-image,.woocommerce .loops-wrapper.boxed .product,.loops-wrapper.boxed .post,.post-nav .arrow,ul.products li.product .post-image,.post-image img,.product img,.woocommerce span.onsale:before,#cart-wrap .button,.woocommerce-product-search button,.woocommerce ul.products li.product .button,.woocommerce #respond input#submit,.woocommerce #respond input#submit.alt,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.select2-container--default .select2-selection--single,.select2-container--default .select2-selection--single .select2-selection__arrow,.woo_qty_btn #post-lightbox-container div.product form.cart div.quantity,.woocommerce.woo_qty_btn div.product form.cart div.quantity,.woo_qty_btn .product .cart .quantity .qty,.woo_qty_btn .product .cart .quantity .minus,.woo_qty_btn .product .cart .quantity .plus,.wpf_items_group .wpf_slider.ui-slider .ui-slider-handle,.themify_builder_slider_wrap.themify_builder_slider_vertical .carousel-prev,.themify_builder_slider_wrap.themify_builder_slider_vertical .carousel-next,.themify_builder_slider_wrap .carousel-prev,.themify_builder_slider_wrap .carousel-next,.themify_builder_slider_wrap .carousel-pager a,#site-description{
+	border-radius:0
+}
+.search-option-tab li:hover a,
+.search-option-tab li.active a{
+	box-shadow:inset 0 -3px 0 0 var(--theme_accent)
+}
+
+/* HEADINGS
+================================================ */
+.post-title,.page-title,.woocommerce-loop-product__title,
+h1,h2,h3{
+	font-family:'Frank Ruhl Libre',serif;
+	font-weight:bold
+}
+h1,.page-title{
+	font-size:2.6em;
+	margin:0 0 .7em
+}
+h2{
+	font-size:1.5em
+}
+h4,h5,h6{
+	font-weight:600
+}
+h4{
+	letter-spacing:.04em
+}
+/* Inline Fancy Heading/ Fancy Heading */
+.fancy-heading{
+	font-weight:normal;
+	letter-spacing:0.01em
+}
+.fancy-heading,
+.fancy-heading .main-head{
+	font-family:inherit
+}
+.fancy-heading .sub-head{
+	font-family:'Frank Ruhl Libre',serif;
+	letter-spacing:0
+}
+/* FORMS
+================================================ */
+textarea,input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week]{
+	border:0;
+	border-bottom:1px solid #ddd;
+	background-color:transparent;
+	color:inherit
+}
+textarea{
+	border:1px solid #ddd
+}
+input[type=reset], input[type=submit], button{
+	border:1px solid var(--theme_accent);
+	background-color:var(--theme_accent);
+	color:#fff;
+	letter-spacing:0.02em;
+	text-transform:none
+}
+input[type=reset]:hover, input[type=submit]:hover, button:hover{
+	transform:none;
+	box-shadow:none
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+/* SITE LOGO
+================================================ */
+#site-logo{
+	font-size:1.8em;
+	font-weight:bold;
+	text-transform:none;
+	letter-spacing:-.02em;
+	margin:0
+}
+/* MAIN NAVIGATION
+================================================ */
+#main-nav a{
+	font-size:1.05em;
+	padding:1em .71em;
+	text-transform:none;
+	letter-spacing:-.02em
+}
+#main-nav .has-mega-column .widgettitle,
+#main-nav .has-mega-column > .sub-menu > .columns-sub-item > a{
+	font-family:'Frank Ruhl Libre', serif;
+	text-transform:none;
+	letter-spacing:normal
+}
+.icon-menu li > a{
+	margin:0
+}
+.header-overlay #main-nav a,
+.header-minbar-left #main-nav a,
+.header-minbar-right #main-nav a,
+.header-left-pane #main-nav a,
+.header-right-pane #main-nav a{
+	padding:.6em .1em .6em 1.55em;
+}
+.header-minbar-left #site-logo,
+.header-minbar-right #site-logo{
+	line-height:0
+}
+@media(max-width:760px){
+    .header-minbar-left #headerwrap #site-logo{
+    	line-height:.8
+    }
+    .header-minbar-right #headerwrap #site-logo{
+    	line-height:1
+    }
+}
+
+.header-icons{
+	top:0
+}
+
+/************************************************************************************
+WIDGET
+*************************************************************************************/
+.widgettitle:after{
+	display:none
+}
+.footer-widgets .widgettitle,
+.widgettitle{
+	color:inherit;
+	font-size:1.1em;
+	font-weight:bold;
+	text-transform:none;
+	letter-spacing:-.04em;
+	margin:0 0 1.1em
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap{
+	border-top:1px solid #ddd;
+}
+#footerwrap a{
+	color:#333
+}
+.footer-column-wrap{
+	padding-top:0
+}
+#footer{
+	padding-top:5em
+}
+
+/* FOOTER LOGO
+================================================ */
+#footer-logo{
+	font-family:inherit;
+	font-size:1.7em;
+	font-weight:bold;
+	margin:0 0 .4em;
+	letter-spacing:-.005em;
+	line-height:1
+}
+/* Footer Block */
+.footer-block #footer{
+	text-align:inherit
+}
+.footer-block .footer-widgets-wrap{
+	max-width:100%;
+	margin:0 0 20px
+}
+
+/************************************************************************************
+WOOCOMMERCE
+*************************************************************************************/
+.product-content{
+	text-align:center
+}
+.product-share-wrap{
+	display:block
+}
+.wc-products .product h3,
+.woocommerce ul.products li.product h3,
+.woocommerce .products .product .product_title{
+	font-family:'Montserrat',sans-serif;
+	font-weight:normal;
+	font-size:1.05em;
+	margin:1.5em 0 .5em;
+	line-height:1.45em;
+	letter-spacing:normal
+}
+/* Buttons */
+#cart-wrap .button,
+.module_column .module.module-buttons .tb_default_color,
+.woocommerce-product-search button,
+.woocommerce ul.products li.product.outofstock .button,
+.woocommerce .wc-products .product .add_to_cart_button,
+.woocommerce ul.products li.product .add_to_cart_button,
+.woocommerce #content input.button,
+.woocommerce #respond input#submit,
+.woocommerce #content input.button.alt,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce button.button.alt.disabled,
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled]{
+	border:1px solid var(--theme_accent);
+	background-color:transparent;
+	color:#000;
+	padding:1.05em 1.35em;
+	font-size:.725em
+}
+#cart-wrap .button:hover,
+.woocommerce span.onsale:before,
+.woocommerce-page span.onsale:before,
+.woocommerce ul.products li.product.outofstock .button:hover,
+.woocommerce .wc-products .product .add_to_cart_button:hover,
+.woocommerce ul.products li.product .add_to_cart_button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce button.button.alt.disabled:hover,
+.woocommerce button.button:disabled:hover,
+.woocommerce button.button:disabled[disabled]:hover{
+	background-color:var(--theme_accent);
+	color:#fff
+}
+/* SINGLE PRODUCTS
+================================================ */
+/* breadcrumb */
+.woocommerce .woocommerce-breadcrumb a{
+	font-family:'Montserrat',sans-serif;
+	font-weight:600;
+	letter-spacing:.01em;
+	color:#333
+}
+/* Title */
+.woocommerce div.product .product_title{
+	font-family:'Frank Ruhl Libre',serif;
+	font-weight:600;
+	font-size:2.2em;
+	letter-spacing:-.05em
+}
+/* price */
+.woocommerce div.product p.price,
+.woocommerce div.product span.price{
+	color:#424242;
+	font-size:2.2em;
+	font-weight:300;
+	margin:0 0 .3em;
+	letter-spacing:-.02em
+}
+.woocommerce div.product p.price del,
+.woocommerce div.product span.price del,
+.woocommerce ul.products li.product .price del{
+	color:#333
+}
+.woocommerce ul.products li.product .price ins,
+.woocommerce div.product p.price ins,
+.woocommerce div.product span.price ins{
+	font-weight:300
+}
+#slide-cart .cart-total{
+	color:#000
+}
+/* quantity */
+.woocommerce div.product form.cart div.quantity{
+	vertical-align:top
+}
+.woocommerce .quantity .qty{
+    width:3em;
+	font-size:1em;
+	padding:.535em
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow,
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.woocommerce form .form-row .select2-container,
+.select2-container--default .select2-selection--single{
+    line-height:40px;
+    height:40px
+}
+.archive.woocommerce ul.products li.product .add_to_cart_button{
+	font-size:.65em;
+	margin:0 0 10px
+}
+
+.woocommerce ul.products li.product .share:hover,
+.social-share .share:hover{
+	color:rgba(255,255,255,.6)
+}
+/* RELATED PRODUCT
+================================================ */
+.fancy-heading strong{
+	font-family:'Montserrat',sans-serif
+}
+
+/* OPTIN FORM
+================================================ */
+.tb_optin_horizontal form > div input[type=email]{
+	padding-left:20px
+}
+.tb_optin_horizontal form > div.tb_optin_submit{
+	position:absolute;
+	left:0;
+	bottom:6px;
+	width:auto
+}
+.tb_optin_horizontal .tb_optin_submit button{
+	border:0
+}
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+@media(max-width:760px){
+	/* heading */
+	h1{
+		font-size:1.8em;
+	}
+	h2{
+		font-size:1.6em;
+	}
+}

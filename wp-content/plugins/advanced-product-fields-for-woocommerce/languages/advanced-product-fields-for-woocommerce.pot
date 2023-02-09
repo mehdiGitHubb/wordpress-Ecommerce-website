@@ -1,0 +1,650 @@
+# Copyright (C) 2023 advanced-product-fields-for-woocommerce
+# This file is distributed under the same license as the advanced-product-fields-for-woocommerce package.
+msgid ""
+msgstr ""
+"Project-Id-Version: advanced-product-fields-for-woocommerce\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: dist/class-wapf.php:78, dist/includes/controllers/class-admin-controller.php:547
+msgid "Product Field Groups"
+msgstr ""
+
+#: dist/class-wapf.php:79
+msgid "Field Group"
+msgstr ""
+
+#: dist/class-wapf.php:80, dist/views/admin/cpt-list-table.php:14
+msgid "Add New"
+msgstr ""
+
+#: dist/class-wapf.php:81
+msgid "Add New Product Field Group"
+msgstr ""
+
+#: dist/class-wapf.php:82
+msgid "Edit Product Field Group"
+msgstr ""
+
+#: dist/class-wapf.php:83
+msgid "New Field Group"
+msgstr ""
+
+#: dist/class-wapf.php:84
+msgid "View Field Group"
+msgstr ""
+
+#: dist/class-wapf.php:85
+msgid "Search Field Groups"
+msgstr ""
+
+#: dist/class-wapf.php:86
+msgid "No Field Groups found"
+msgstr ""
+
+#: dist/class-wapf.php:87
+msgid "No Field Groups found in Trash"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:17, dist/includes/classes/class-conditions.php:27, dist/includes/classes/class-conditions.php:37, dist/includes/classes/class-conditions.php:47, dist/includes/classes/class-conditions.php:59, dist/includes/classes/class-conditions.php:74, dist/includes/classes/class-conditions.php:82, dist/includes/classes/class-conditions.php:90
+msgid "Value is empty"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:18, dist/includes/classes/class-conditions.php:28, dist/includes/classes/class-conditions.php:38, dist/includes/classes/class-conditions.php:48, dist/includes/classes/class-conditions.php:60, dist/includes/classes/class-conditions.php:75, dist/includes/classes/class-conditions.php:83, dist/includes/classes/class-conditions.php:91
+msgid "Value is any value"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:19, dist/includes/classes/class-conditions.php:29, dist/includes/classes/class-conditions.php:39, dist/includes/classes/class-conditions.php:49, dist/includes/classes/class-conditions.php:61, dist/includes/classes/class-conditions.php:76, dist/includes/classes/class-conditions.php:84, dist/includes/classes/class-conditions.php:92
+msgid "Value is equal to"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:20, dist/includes/classes/class-conditions.php:30, dist/includes/classes/class-conditions.php:40, dist/includes/classes/class-conditions.php:50, dist/includes/classes/class-conditions.php:62, dist/includes/classes/class-conditions.php:77, dist/includes/classes/class-conditions.php:85, dist/includes/classes/class-conditions.php:93
+msgid "Value is not equal to"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:21, dist/includes/classes/class-conditions.php:31, dist/includes/classes/class-conditions.php:41, dist/includes/classes/class-conditions.php:53, dist/includes/classes/class-conditions.php:63
+msgid "Value contains (Pro only)"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:51
+msgid "Value is greater than"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:52
+msgid "Value is lesser than"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:68
+msgid "Is checked"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:69
+msgid "Is not checked"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:106
+msgid "User"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:110
+msgid "Authentication"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:114
+msgid "Logged in"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:118
+msgid "Not logged in"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:124
+msgid "User role"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:131, dist/includes/classes/class-conditions.php:135, dist/includes/classes/class-helper.php:30
+msgid "Product"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:139
+msgid "Is equal to"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:142, dist/includes/classes/class-conditions.php:152, dist/includes/classes/class-conditions.php:162, dist/includes/classes/class-conditions.php:171
+msgid "Search a product..."
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:149
+msgid "Is not equal to"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:159
+msgid "In list"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:168
+msgid "Not in list"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:178
+msgid "Product variation"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:184
+msgid "Product attribute"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:189
+msgid "Product category"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:195
+msgid "Product tag"
+msgstr ""
+
+#: dist/includes/classes/class-conditions.php:201
+msgid "Product type"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:16
+msgid "Text"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:21
+msgid "Text Area"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:26
+msgid "Number"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:31
+msgid "E-mail"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:36
+msgid "URL"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:41
+msgid "Select"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:46
+msgid "True/False"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:51
+msgid "Checkboxes"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:56
+msgid "Radio buttons"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:61
+msgid "Content: paragraph"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:66
+msgid "File upload"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:71, dist/includes/classes/class-wapf-list-table.php:18
+msgid "Date"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:76
+msgid "Image swatches"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:81
+msgid "Color swatches"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:86
+msgid "Text swatches"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:91
+msgid "Content: image"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:96
+msgid "Layout: section"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:115
+msgid "Message"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:116
+msgid "Displays text alongside the checkbox."
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:121
+msgid "Checked"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:122
+msgid "Unchecked"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:126, dist/includes/classes/class-fields.php:141, dist/includes/classes/class-fields.php:162, dist/includes/classes/class-fields.php:183, dist/includes/classes/class-fields.php:216, dist/includes/classes/class-fields.php:238
+msgid "Default value"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:127, dist/includes/classes/class-fields.php:142, dist/includes/classes/class-fields.php:163, dist/includes/classes/class-fields.php:184, dist/includes/classes/class-fields.php:217, dist/includes/classes/class-fields.php:239
+msgid "The pre-set value of the field when the page loads."
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:132, dist/includes/classes/class-fields.php:153, dist/includes/classes/class-fields.php:174, dist/includes/classes/class-fields.php:207, dist/includes/classes/class-fields.php:229, dist/includes/classes/class-fields.php:250, dist/views/admin/settings/options.php:19
+msgid "Adjust pricing"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:133, dist/includes/classes/class-fields.php:154, dist/includes/classes/class-fields.php:175, dist/includes/classes/class-fields.php:208, dist/includes/classes/class-fields.php:230, dist/includes/classes/class-fields.php:251
+msgid "Should the price of the product or cart change when the user interacts with this field?"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:147, dist/includes/classes/class-fields.php:168, dist/includes/classes/class-fields.php:189, dist/includes/classes/class-fields.php:222, dist/includes/classes/class-fields.php:244
+msgid "Placeholder text"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:148, dist/includes/classes/class-fields.php:169, dist/includes/classes/class-fields.php:190, dist/includes/classes/class-fields.php:223, dist/includes/classes/class-fields.php:245
+msgid "Appears within the input field"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:195
+msgid "Minimum value"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:196
+msgid "No minimum"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:201
+msgid "Maximum value"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:202
+msgid "No maximum"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:259, dist/includes/classes/class-fields.php:270, dist/includes/classes/class-fields.php:282
+msgid "Options"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:260
+msgid "Add the options for this select list."
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:271
+msgid "Each option is a checkbox."
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:283
+msgid "Each option is a radio button."
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:381
+msgid "Flat fee (not quantity-based)"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:382
+msgid "Quantity based flat fee (Pro only)"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:383
+msgid "Formula (Pro only)"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:384
+msgid "Percentage based (Pro only)"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:385
+msgid "Amount &times; field value (Pro only)"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:386
+msgid "Amount &times; character count (Pro only)"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:403, dist/includes/classes/class-fields.php:414
+msgid "true"
+msgstr ""
+
+#: dist/includes/classes/class-fields.php:403, dist/includes/classes/class-fields.php:414
+msgid "false"
+msgstr ""
+
+#: dist/includes/classes/class-wapf-list-table.php:15
+msgid "Title"
+msgstr ""
+
+#: dist/includes/classes/class-wapf-list-table.php:16, dist/views/admin/field.php:64
+msgid "Type"
+msgstr ""
+
+#: dist/includes/classes/class-wapf-list-table.php:17, dist/includes/controllers/class-admin-controller.php:168, dist/includes/controllers/class-admin-controller.php:408
+msgid "Fields"
+msgstr ""
+
+#: dist/includes/classes/class-wapf-list-table.php:108
+msgid "Duplicate &#8220;%s&#8221;"
+msgstr ""
+
+#: dist/includes/classes/class-wapf-list-table.php:175
+msgid "No Product Field Groups found."
+msgstr ""
+
+#: dist/includes/classes/class-woocommerce-service.php:110
+msgid "any"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:76
+msgid "Please add a field group title first."
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:77
+msgid "Please add some fields first."
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:78
+msgid "You've reached the amount of field groups you can create in the free version. Please consider upgrading to premium to add unlimited field groups. Thank you!"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:100, dist/includes/controllers/class-admin-controller.php:101
+msgid "Product Fields"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:110
+msgid "Settings"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:111
+msgid "Global fields"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:141
+msgid "Copy"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:157
+msgid "Custom fields"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:168, dist/includes/controllers/class-admin-controller.php:408
+msgid "Add some custom fields to this group."
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:177, dist/includes/controllers/class-admin-controller.php:426
+msgid "Layout"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:177, dist/includes/controllers/class-admin-controller.php:426
+msgid "Field group layout settings"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:211
+msgid "Product field settings"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:216
+msgid "Show in cart"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:220
+msgid "Show on customer's cart page."
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:221
+msgid "When a user has filled out your fields, should they be summarized on their cart page after adding the product to their cart?"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:225
+msgid "Show on checkout"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:229
+msgid "Show on the checkout page."
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:230
+msgid "When a user has filled out your fields, should they be summarized on their checkout page?"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:234
+msgid "\"Add to cart\" button text"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:237
+msgid "When a product has custom fields, what should the \"add to cart\" button say?."
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:238
+msgid "Select options"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:249
+msgid "Product fields"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:417
+msgid "Conditions"
+msgstr ""
+
+#: dist/includes/controllers/class-admin-controller.php:417
+msgid "When should this field group be displayed?"
+msgstr ""
+
+#: dist/includes/controllers/class-product-controller.php:169
+msgid "The field \"%s\" is required."
+msgstr ""
+
+#: dist/views/admin/conditions.php:21
+msgid "Rules"
+msgstr ""
+
+#: dist/views/admin/conditions.php:23
+msgid "Add a set of rules to determine when this field group should appear."
+msgstr ""
+
+#: dist/views/admin/conditions.php:28
+msgid "Add your first rule"
+msgstr ""
+
+#: dist/views/admin/conditions.php:33, dist/views/admin/conditions.php:86, dist/views/admin/settings/conditionals.php:45
+msgid "Or"
+msgstr ""
+
+#: dist/views/admin/conditions.php:78, dist/views/admin/settings/conditionals.php:41
+msgid "And"
+msgstr ""
+
+#: dist/views/admin/cpt-list-table.php:32
+msgid "Sorry :( We can't add a new field group. You've reached the amount of field groups allowed in the free version. Consider removing an old field group or upgrading to premium for unlimited field groups."
+msgstr ""
+
+#: dist/views/admin/field.php:65
+msgid "What type of field should this be?"
+msgstr ""
+
+#: dist/views/admin/field.php:73
+msgid "Label"
+msgstr ""
+
+#: dist/views/admin/field.php:74
+msgid "This is the label that is shown next to the field."
+msgstr ""
+
+#: dist/views/admin/field.php:83
+msgid "Instructions"
+msgstr ""
+
+#: dist/views/admin/field.php:84
+msgid "Instructions can be used to display extra information near the field. Keep it short."
+msgstr ""
+
+#: dist/views/admin/field.php:91
+msgid "Required"
+msgstr ""
+
+#: dist/views/admin/field.php:92
+msgid "Select \"yes\" if the field should require input from the user."
+msgstr ""
+
+#: dist/views/admin/field.php:115
+msgid "Repeat field"
+msgstr ""
+
+#: dist/views/admin/field.php:116
+msgid "Should this field be repeated multiple times either by a button or quantity input box?"
+msgstr ""
+
+#: dist/views/admin/field.php:125
+msgid "Conditionals"
+msgstr ""
+
+#: dist/views/admin/field.php:126
+msgid "Only show this field when conditional rules are true."
+msgstr ""
+
+#: dist/views/admin/field.php:135
+msgid "Wrapper attributes"
+msgstr ""
+
+#: dist/views/admin/help-modal.php:8
+msgid "View help"
+msgstr ""
+
+#: dist/views/admin/layout.php:22
+msgid "Label position"
+msgstr ""
+
+#: dist/views/admin/layout.php:23
+msgid "Where should the label be positioned in relation to the field?"
+msgstr ""
+
+#: dist/views/admin/layout.php:25
+msgid "Above the field"
+msgstr ""
+
+#: dist/views/admin/layout.php:26, dist/views/admin/layout.php:38
+msgid "Below the field"
+msgstr ""
+
+#: dist/views/admin/layout.php:34
+msgid "Instruction position"
+msgstr ""
+
+#: dist/views/admin/layout.php:35
+msgid "Where should the instructions be positioned?"
+msgstr ""
+
+#: dist/views/admin/layout.php:37
+msgid "Below the label"
+msgstr ""
+
+#: dist/views/admin/layout.php:46
+msgid "Mark required fields"
+msgstr ""
+
+#: dist/views/admin/layout.php:47
+msgid "Add a *-symbol next to required fields."
+msgstr ""
+
+#: dist/views/admin/layout.php:54
+msgid "Change product image"
+msgstr ""
+
+#: dist/views/admin/layout.php:55
+msgid "Should the product image change when options are selected?"
+msgstr ""
+
+#: dist/views/frontend/product-totals.php:9
+msgid "Product total"
+msgstr ""
+
+#: dist/views/frontend/product-totals.php:13
+msgid "Options total"
+msgstr ""
+
+#: dist/views/frontend/product-totals.php:17
+msgid "Grand total"
+msgstr ""
+
+#: dist/views/admin/settings/attributes.php:14
+msgid "Width"
+msgstr ""
+
+#: dist/views/admin/settings/attributes.php:25
+msgid "Class"
+msgstr ""
+
+#: dist/views/admin/settings/conditionals.php:16
+msgid "You need atleast 2 fields to create conditional rules. Add another field first."
+msgstr ""
+
+#: dist/views/admin/settings/conditionals.php:40
+msgid "Delete"
+msgstr ""
+
+#: dist/views/admin/settings/conditionals.php:48
+msgid "Add new rule group"
+msgstr ""
+
+#: dist/views/admin/settings/options.php:16
+msgid "Option label"
+msgstr ""
+
+#: dist/views/admin/settings/options.php:17
+msgid "Unique key"
+msgstr ""
+
+#: dist/views/admin/settings/options.php:20
+msgid "Pricing amount"
+msgstr ""
+
+#: dist/views/admin/settings/options.php:22
+msgid "Selected"
+msgstr ""
+
+#: dist/views/admin/settings/options.php:32
+msgid "No price change"
+msgstr ""
+
+#: dist/views/admin/settings/options.php:51
+msgid "Add option"
+msgstr ""
+
+#: dist/views/admin/settings/options.php:54, dist/views/admin/settings/pricing.php:42
+msgid "<p>please note the pricing option in the free version has some limitations:</p><ul style='list-style: disc;margin-left:30px;'><li>Add-on pricing is not quantity-based. This means if the user changes the product quantity, the price does not multiply, but stays the same.</li><li>You can only use the \"flat fee\" option.</li></ul><p><a target=\"_blank\" href=\"https://www.studiowombat.com/knowledge-base/all-pricing-options-explained/?utm_source=apffree&utm_medium=plugin&utm_campaign=info\">See which other pricing options</a> are available in the premium verion.</p>"
+msgstr ""
+
+#: dist/views/admin/settings/options.php:54, dist/views/admin/settings/options.php:54, dist/views/admin/settings/pricing.php:42, dist/views/admin/settings/pricing.php:42
+msgid "Important note about pricing"
+msgstr ""
+
+#: dist/views/admin/settings/pricing.php:21, dist/views/admin/settings/true-false.php:19
+msgid "Yes"
+msgstr ""
+
+#: dist/views/admin/settings/pricing.php:21, dist/views/admin/settings/true-false.php:19
+msgid "No"
+msgstr ""
+
+#: dist/views/admin/settings/true-false.php:8
+msgid "(Pro only)"
+msgstr ""
+
+#: dist/views/frontend/fields/select.php:15
+msgid "Choose an option"
+msgstr ""

@@ -1,0 +1,24 @@
+.grids{
+    display:grid;
+    gap:10px;
+    grid-template-columns:repeat(auto-fill,minmax(30%,1fr))
+}
+.tb_grid{
+    height:34px;
+    padding:4px 6px;
+	background-color:var(--tb_grid_bg);
+    border:1px solid var(--tb_grid_border);
+    cursor:move;
+    border-radius:5px
+}
+.tb_grid:hover{
+    border-color:var(--tb_grid_border_hover);
+}
+.tb_grid_title{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(1px,1fr));
+    column-gap:3px
+}
+.tb_grid span{
+    background-color:#363636
+}

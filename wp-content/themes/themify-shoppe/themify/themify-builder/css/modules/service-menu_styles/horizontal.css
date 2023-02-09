@@ -1,0 +1,38 @@
+.module.image-horizontal .tb-image-wrap{
+    float:left;
+    margin:0 1.5em 1em 0
+}
+.module.image-horizontal .tb-image-content{
+    overflow:hidden;
+    min-width:100px;
+    display:flex
+}
+.module.image-horizontal .tb-menu-title-wrap{
+    float:left;
+    margin-right:.5em;
+    max-width:55%
+}
+.module.image-horizontal .tb-menu-price{
+    margin-left:auto
+}
+.module.image-horizontal .tb-menu-description{
+    clear:both
+}
+.module.image-horizontal.has-price-options .tb-menu-title-wrap{
+    width:38%
+}
+@media (max-width:680px){
+    .module.image-horizontal.has-price-options .tb-menu-title-wrap{
+        float:none;
+        width:auto
+    }
+    .module.image-horizontal.has-price-options .tb-menu-price{
+        float:none;
+        width:auto;
+        text-align:inherit
+    }
+    .module.image-horizontal.has-price-options .tb-price-item{
+        margin-left:0;
+        margin-right:20px
+    }    
+}

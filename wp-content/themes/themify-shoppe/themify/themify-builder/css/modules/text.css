@@ -1,0 +1,19 @@
+.drop-cap > :first-child:first-letter,
+.tb_text_dropcap > .tb_text_wrap:first-child:first-letter,
+.tb_text_dropcap > .tb_text_wrap > :first-child:first-letter{
+    font-size:2.85em;
+    float:left;
+    line-height:.4em;
+    padding:.425em .375em;
+    background-color:var(--theme_accent,#0f70e8);
+    color:#fff;
+    margin-right:.325em;
+    margin-top:.15em;
+    margin-bottom:.25em
+}
+.tb-text-more-link-indicator{
+    display:block;
+    height:3px; 
+    margin:5px 0; 
+    background:rgba(55,55,55,.6)
+}

@@ -1,0 +1,23 @@
+.woocommerce table.shop_attributes{
+	border:0;
+	margin-bottom:1.5em;
+	width:100%;
+	text-align:left;
+	border-spacing:0
+}
+.woocommerce table.shop_attributes th{
+	font-weight:500;
+	padding:.4em .4em .4em 0
+}
+.woocommerce table.shop_attributes td p{
+	padding:.4em .4em .4em 0
+}
+.woocommerce table.shop_attributes td,
+.woocommerce table.shop_attributes th{
+	font-style:normal;
+	border-bottom:1px solid rgba(180,180,180,.2)
+}
+.woocommerce table.shop_attributes .alt td,
+.woocommerce table.shop_attributes .alt th{
+	background:0
+}

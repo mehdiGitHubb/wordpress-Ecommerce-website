@@ -1,0 +1,20 @@
+#content{
+	float:left;
+}
+#sidebar{
+	width:24%;
+	padding:6.5% 0;
+	font-size:.95em;
+	line-height:1.7em
+}
+.full_width #sidebar{
+	width:auto;
+	float:none
+}
+/* search widget */
+#sidebar #searchform{
+	font-size:1em
+}
+#sidebar #searchform #s{
+	width:93%
+}

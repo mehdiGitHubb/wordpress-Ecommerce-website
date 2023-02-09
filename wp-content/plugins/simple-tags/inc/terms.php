@@ -1,0 +1,306 @@
+<?php
+
+class SimpleTags_Terms
+{
+
+    const MENU_SLUG = 'st_options';
+
+    // class instance
+    static $instance;
+
+    // WP_List_Table object
+    public $terms_table;
+
+    /**
+     * Constructor
+     *
+     * @return void
+     * @author Olatechpro
+     */
+    public function __construct()
+    {
+
+        global $hook_suffix;    //avoid warning outputs
+        if (!isset($hook_suffix)) {
+            $hook_suffix = '';
+        }
+
+        add_filter('set-screen-option', [__CLASS__, 'set_screen'], 10, 3);
+        // Admin menu
+        add_action('admin_menu', [$this, 'admin_menu']);
+        // Javascript
+        add_action('admin_enqueue_scripts', [__CLASS__, 'admin_enqueue_scripts'], 11);
+        //support post type for terms query
+        add_filter('terms_clauses', [__CLASS__, 'taxopress_terms_clauses'], 10, 3);
+        //inline term edit
+        add_action( 'wp_ajax_taxopress_terms_inline_save_term', [$this, 'taxopress_terms_inline_save_term_callback']);
+
+    }
+
+    // Handle the post_type parameter given in get_terms function
+    public static function taxopress_terms_clauses($clauses, $taxonomy, $args) {
+        if (isset($_REQUEST['page']) && $_REQUEST['page'] === 'st_terms' && !empty($args['post_types']) && is_array($args['post_types']))	{
+            global $wpdb;
+
+            $post_types = array();
+
+            foreach($args['post_types'] as $cpt)	{
+                $post_types[] = "'".$cpt."'";
+            }
+
+            if(!empty($post_types))	{
+                $clauses['fields'] = 'DISTINCT '.str_replace('tt.*', 'tt.term_taxonomy_id, tt.term_id, tt.taxonomy, tt.description, tt.parent', $clauses['fields']).', COUNT(t.term_id) AS count';
+                $clauses['join'] .= ' INNER JOIN '.$wpdb->term_relationships.' AS r ON r.term_taxonomy_id = tt.term_taxonomy_id INNER JOIN '.$wpdb->posts.' AS p ON p.ID = r.object_id';
+                $clauses['where'] .= ' AND p.post_type IN ('.implode(',', $post_types).')';
+                $clauses['orderby'] = 'GROUP BY t.term_id '.$clauses['orderby'];
+            }
+        }
+        return $clauses;
+    }
+
+    /**
+     * Init somes JS and CSS need for this feature
+     *
+     * @return void
+     * @author Olatechpro
+     */
+    public static function admin_enqueue_scripts()
+    {
+
+        // add JS for manage click tags
+        if (isset($_GET['page']) && $_GET['page'] == 'st_terms') {
+            wp_enqueue_style('st-taxonomies-css');
+            wp_enqueue_script( 'admin-tags' );
+            wp_enqueue_script('inline-edit-tax');
+        }
+    }
+
+
+    public function taxopress_terms_inline_save_term_callback()
+    {
+        global $wpdb;
+
+        check_ajax_referer( 'taxinlineeditnonce', '_inline_edit' );
+    
+        $edit_taxonomy = sanitize_key( $_POST['edit_taxonomy'] );
+        $taxonomy = sanitize_key( $_POST['original_tax'] );
+        $tax      = get_taxonomy( $taxonomy );
+        $edit_tax = get_taxonomy( $edit_taxonomy );
+    
+        if ( ! $tax || !$edit_tax ) {
+            wp_die( 0 );
+        }
+    
+        if ( ! isset( $_POST['tax_ID'] ) || ! (int) $_POST['tax_ID'] ) {
+            wp_die( -1 );
+        }
+    
+        $id = (int) $_POST['tax_ID'];
+    
+        if ( ! current_user_can( 'edit_term', $id ) ) {
+            wp_die( -1 );
+        }
+        
+        $tag                  = get_term( $id, $taxonomy );
+        $_POST['description'] = $tag->description;
+    
+        $updated = wp_update_term( $id, $taxonomy, $_POST );
+    
+        if ( $updated && ! is_wp_error( $updated ) ) {
+            $tag = get_term( $updated['term_id'], $taxonomy );
+            if ( ! $tag || is_wp_error( $tag ) ) {
+                if ( is_wp_error( $tag ) && $tag->get_error_message() ) {
+                    wp_die( esc_html($tag->get_error_message()) );
+                }
+                wp_die( esc_html__( 'Item not updated.' ) );
+            } else {
+                if($tax !== $edit_tax){
+                    $update_term = $wpdb->update(
+                        $wpdb->prefix . 'term_taxonomy',
+                        [ 'taxonomy' => $edit_taxonomy ],
+                        [ 'term_taxonomy_id' => $tag->term_id ],
+                        [ '%s' ],
+                        [ '%d' ]
+                    );
+                    if($update_term){
+                        clean_term_cache($tag->term_id);
+                        $tag = get_term( $tag->term_id );
+                    }
+                }
+            }
+        } else {
+            if ( is_wp_error( $updated ) && $updated->get_error_message() ) {
+                wp_die( esc_html($updated->get_error_message()) );
+            }
+            wp_die( esc_html__( 'Item not updated.' ) );
+        }
+
+        $wp_list_table = new Taxopress_Terms_List();
+
+        $wp_list_table->single_row($tag);
+        wp_die();
+    }
+
+    
+
+    public static function set_screen($status, $option, $value)
+    {
+        return $value;
+    }
+
+    /** Singleton instance */
+    public static function get_instance()
+    {
+        if (!isset(self::$instance)) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
+    }
+
+    /**
+     * Add WP admin menu for Tags
+     *
+     * @return void
+     * @author Olatechpro
+     */
+    public function admin_menu()
+    {
+        $hook = add_submenu_page(
+            self::MENU_SLUG,
+            esc_html__('Terms', 'simple-tags'),
+            esc_html__('Terms', 'simple-tags'),
+            'simple_tags',
+            'st_terms',
+            [
+                $this,
+                'page_manage_terms',
+            ]
+        );
+
+        if (taxopress_is_screen_main_page()) {
+            add_action("load-$hook", [$this, 'screen_option']);
+        }
+    }
+
+    /**
+     * Screen options
+     */
+    public function screen_option()
+    {
+
+        $option = 'per_page';
+        $args   = [
+            'label'   => esc_html__('Number of items per page', 'simple-tags'),
+            'default' => 20,
+            'option'  => 'st_terms_per_page'
+        ];
+
+        add_screen_option($option, $args);
+
+        $this->terms_table = new Taxopress_Terms_List();
+    }
+
+    /**
+     * Method for build the page HTML manage tags
+     *
+     * @return void
+     * @author Olatechpro
+     */
+    public function page_manage_terms()
+    {
+        // Default order
+        if (!isset($_GET['order'])) {
+            $_GET['order'] = 'name-asc';
+        }
+
+        settings_errors(__CLASS__);
+
+            ?>
+            <div class="wrap st_wrap st-manage-taxonomies-page">
+
+            <div id="">
+                <h1 class="wp-heading-inline"><?php esc_html_e('Terms', 'simple-tags'); ?></h1>
+                <div class="taxopress-description">
+                    <?php esc_html_e('This screen allows you search and edit all the terms on your site.', 'simple-tags'); ?>
+                </div>
+
+
+                <?php
+                if (isset($_REQUEST['s']) && $search = esc_attr(sanitize_text_field(wp_unslash($_REQUEST['s'])))) {
+                    /* translators: %s: search keywords */
+                    printf(' <span class="subtitle">' . esc_html__('Search results for &#8220;%s&#8221;',
+                            'simple-tags') . '</span>', esc_html($search));
+                }
+                ?>
+                <?php
+
+                //the terms table instance
+                $this->terms_table->prepare_items();
+                ?>
+
+
+                <hr class="wp-header-end">
+                <div id="ajax-response"></div>
+                <form class="search-form wp-clearfix st-taxonomies-search-form" method="get">
+                    <?php $this->terms_table->search_box(esc_html__('Search Terms', 'simple-tags'), 'term'); ?>
+                </form>
+                <div class="clear"></div>
+
+                <div id="col-container" class="wp-clearfix">
+
+                    <div class="col-wrap">
+                        <form action="<?php echo esc_url(add_query_arg('', '')); ?>" method="post">
+                            <?php $this->terms_table->display(); //Display the table ?>
+                        </form>
+                        <div class="form-wrap edit-term-notes">
+                            <p><?php esc_html__('Description here.', 'simple-tags') ?></p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+<?php $this->terms_table->inline_edit(); ?>
+
+<script>
+
+(function ($) {
+  'use strict';
+
+  /**
+   * All of the code for admin-facing JavaScript source
+   * should reside in this file.
+   */
+
+  $( window ).load(function() {
+      // -------------------------------------------------------------
+      //   TaxoPress terms quick edit
+      // -------------------------------------------------------------
+    	$('.taxopress_page_st_terms #the-list').on( 'click', 'a.editinline, button.editinline', function() {
+            var id, taxonomy, editRow, rowData;
+            var r_id = get_taxopress_term_id(this);
+            rowData = $('#inline_' + r_id);
+            $('#inline-edit')
+            editRow = $('.inline-edit-row#edit-'+r_id);
+            taxonomy = $('.taxonomy', rowData).text();
+            $('select[name="edit_taxonomy"]', editRow).val( taxonomy );
+      });
+        function get_taxopress_term_id(o){
+        var id = o.tagName === 'TR' ? o.id : $(o).parents('tr').attr('id'), parts = id.split('-');
+    
+        return parts[parts.length - 1];
+        }
+});
+
+})(jQuery);
+
+</script>
+        <?php SimpleTags_Admin::printAdminFooter(); ?>
+        </div>
+        <?php
+    }
+
+}

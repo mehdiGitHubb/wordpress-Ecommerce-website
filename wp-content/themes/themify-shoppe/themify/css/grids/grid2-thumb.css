@@ -1,0 +1,16 @@
+.loops-wrapper.products.grid2-thumb > .product,
+.loops-wrapper.grid2-thumb > .post{
+    width:48.4%
+}
+.loops-wrapper.products.grid2-thumb > .product:nth-of-type(2n+1),
+.loops-wrapper.grid2-thumb > .post:nth-of-type(2n+1){
+    margin-left:0;
+    clear:left
+}
+@media (max-width:680px){
+	.loops-wrapper.grid2-thumb > .post{
+		width:100%;
+		margin-left:0;
+		float:none
+	}
+}

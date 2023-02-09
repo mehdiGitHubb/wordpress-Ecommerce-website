@@ -1,0 +1,122 @@
+.tf_search_result{
+	min-height:50px;
+	text-align:initial;
+	position:absolute;
+    top:100%;
+	left:0;
+    margin-top:30px;
+    font-size:.5em;
+}
+.tf_search_form .tf_loader{
+	position:absolute;
+	top:50%;
+	right:5px;
+	transform:translateY(-50%);
+	font-size:1em
+}
+.tf_search_loading .tf_loader{
+	display:block
+}
+/* search option tab */
+.tf_search_tab{
+	margin:1em 0 1.2em;
+	padding:0;
+}
+.tf_search_tab li{
+	display:inline-block;
+	list-style:none;
+	margin:0;
+	padding:0
+}
+.tf_search_tab li a{
+	display:inline-block;
+	padding:.6em 1.2em;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:.9em;
+	line-height:1.2;
+	font-weight:600;
+	opacity:.6;
+	border-radius:15em;
+	color:inherit;
+}
+.tf_search_tab .active a{
+	opacity:1;
+	background:rgba(180,180,180,.2);
+}
+.tf_search_item{
+	border-bottom:1px solid rgba(180,180,180,.2);
+	transition:opacity .4s
+}
+.tf_search_item a{
+	color:inherit;
+	font-weight:normal;
+	margin:0;
+	padding:1em .7em;
+	letter-spacing:-.01em;
+	text-decoration:none;
+	display:block;
+	line-height:1.4em;
+	outline-offset:-2px;
+}
+.tf_search_item a:hover{
+	background-color:rgba(200,200,200,.15);
+}
+.tf_search_item .title{
+	font-size:1.2em;
+}
+.tf_search_item .price{
+	display:block;
+	font-size:.85em
+}
+.tf_search_item .price del{
+	margin-right:.2em;
+	font-size:.7em;
+	opacity:.5
+}
+.tf_search_item img{
+	float:right;
+	margin:0 0 0 15px;
+	border-radius:8px
+}
+/* search view all wrap */
+.tf_view_all{
+	padding-top:1.9em;
+	display:flex;
+	justify-content:center
+}
+.tf_view_button{
+	text-decoration:none;
+	color:inherit;
+	font-size:.9em;
+	font-weight:600;
+	text-transform:uppercase;
+	letter-spacing:.08em;
+	line-height:2em;
+	margin:0 0 3em;
+	padding:0
+}
+.tf_view_button:hover{
+	text-decoration:none;
+	color:var(--theme_accent)
+}
+.tf_view_button:after{
+	content:'';
+	display:block;
+	border-bottom:3px solid var(--theme_accent)
+}
+.tf_fd_in{
+	opacity:1
+}
+.tf_fd_out{
+	opacity:0
+}
+@media (max-width:680px){
+	.tf_search_tab li a{
+		font-size:.7em;
+		padding:.6em
+	}
+	.tf_search_result a{
+		font-size:.8em
+	}
+}

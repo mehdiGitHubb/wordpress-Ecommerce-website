@@ -1,0 +1,36 @@
+#site-logo{
+	margin:5px 0
+}
+#main-nav a:hover,
+#main-nav .current_page_item > a,
+#main-nav .current-menu-item > a{
+	color:#198be3
+}
+.header-minbar-left #headerwrap .sidemenu-off .search-button,
+.header-minbar-right #headerwrap .sidemenu-off .search-button{
+	margin:0 auto;
+}
+.mobile-menu-visible #headerwrap .search-button,
+.header-minbar-left.mobile-menu-visible #headerwrap .search-button,
+.header-minbar-right.mobile-menu-visible #headerwrap .search-button{
+	margin:.8em;
+	width:auto;
+	height:auto
+}
+.search-button .tf_fa{
+	padding:9px;
+}
+.header-icons .search-button{
+	border-radius:100%
+}
+#menu-icon{
+	padding:10px
+}
+.header-overlay #menu-icon{
+	padding:13px 12px
+}
+@media (max-width:760px){
+	#headerwrap .sidemenu-off .search-button{
+		font-size:.9em
+	}
+}

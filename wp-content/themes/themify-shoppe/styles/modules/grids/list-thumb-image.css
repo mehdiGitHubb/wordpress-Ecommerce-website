@@ -1,0 +1,27 @@
+.loops-wrapper.list-thumb-image .post-image{
+	width:20%;
+	float:left;
+	margin:0 1.4em 1em 0
+}
+.loops-wrapper.list-thumb-image .post-video{
+	width:20%;
+	float:left;
+	margin:0 1.4em 1em 0;	
+	padding-bottom:12.25%
+}
+.loops-wrapper.list-thumb-image .post-video .post-video{ /* reset inner video wrapper */
+	width:100%;
+	float:none;
+	padding:0;
+	margin:0;
+	display:block;
+	position:static
+}
+@media(max-width:680px){
+	.loops-wrapper.list-thumb-image .post-title{
+		font-size:1.4em
+	}
+	.loops-wrapper.list-thumb-image .post-content{
+		overflow:visible
+	}
+}

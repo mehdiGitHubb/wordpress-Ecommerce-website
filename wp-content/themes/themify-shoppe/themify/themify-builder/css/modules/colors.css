@@ -1,0 +1,65 @@
+.black{
+	--tb_pr_color:#eee;
+	--tb_pr_bg:#000;
+	--tb_pr_hover_bg:#595959
+}
+.blue{
+	--tb_pr_color:#edf3ff;
+	--tb_pr_bg:#4d7de1;
+	--tb_pr_hover_bg:#6b9df9
+}
+.brown{
+	--tb_pr_color:#ffeee0;
+	--tb_pr_bg:#a35004;
+	--tb_pr_hover_bg:#d68035
+}
+.gray{
+	--tb_pr_color:#eee;
+	--tb_pr_bg:#989797;
+	--tb_pr_hover_bg:#c9c9c9
+}
+.green{
+	--tb_pr_color:#e9ffdb;
+	--tb_pr_bg:#4aab10;
+	--tb_pr_hover_bg:#6bbf2f
+}
+.light-blue{
+	--tb_pr_color:#2a3e59;
+	--tb_pr_bg:#bdd9fd;
+	--tb_pr_hover_bg:#d3e7ff
+}
+.light-green{
+	--tb_pr_color:#293807;
+	--tb_pr_bg:#9bd611;
+	--tb_pr_hover_bg:#c1ed53
+}
+.light-purple{
+	--tb_pr_color:#39355b;
+	--tb_pr_bg:#c1bafd;
+	--tb_pr_hover_bg:#d3ceff
+}
+.orange{
+	--tb_pr_color:#fff2ea;
+	--tb_pr_bg:#ff9600;
+	--tb_pr_hover_bg:#ffb651
+}
+.pink{
+	--tb_pr_color:#441e32;
+	--tb_pr_bg:#feb4e4;
+	--tb_pr_hover_bg:#ffd1ee
+}
+.purple{
+	--tb_pr_color:#eeedff;
+	--tb_pr_bg:#7a6bf8;
+	--tb_pr_hover_bg:#9589ff
+}
+.red{
+	--tb_pr_color:#fff;
+	--tb_pr_bg:#e8311f;
+	--tb_pr_hover_bg:#ff7568
+}
+.yellow{
+	--tb_pr_color:#594718;
+	--tb_pr_bg:#fff06c;
+	--tb_pr_hover_bg:#fff4b2
+}

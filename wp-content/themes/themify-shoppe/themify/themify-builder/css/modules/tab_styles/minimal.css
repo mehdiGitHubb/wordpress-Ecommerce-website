@@ -1,0 +1,25 @@
+.ui.minimal .tab-content{
+	border:0;
+	padding:1.3em 0 0;
+	color:inherit;
+	background:0
+}
+.ui.minimal .tab-nav{
+	padding:0;
+	background:0
+}
+.ui.minimal .tab-nav li{
+	background-color:var(--tb_pr_bg,0);
+	border:0
+}
+.ui.minimal .tab-nav li.current{
+	background:0;
+	border-bottom:1px solid #00a2fb
+}
+.ui.minimal ul.tab-nav li a{
+	color:inherit;
+	padding:3px 5px
+}
+.ui.minimal .tab-nav li a:focus{
+	outline:none
+}

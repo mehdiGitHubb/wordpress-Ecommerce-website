@@ -1,0 +1,1069 @@
+/* General Styling */
+.themify-meta-box-tabs input[type=checkbox], 
+.themify-meta-box-tabs input[type=radio], 
+.themify-meta-box-tabs .themify-meta-box-tabs input[type=color], 
+.themify-meta-box-tabs input[type=date], 
+.themify-meta-box-tabs input[type=datetime-local], 
+.themify-meta-box-tabs .themify-meta-box-tabs .themify-meta-box-tabs input[type=datetime], 
+.themify-meta-box-tabs .themify-meta-box-tabs input[type=email], 
+.themify-meta-box-tabs input[type=month], 
+.themify-meta-box-tabs input[type=number], 
+.themify-meta-box-tabs input[type=password], 
+.themify-meta-box-tabs input[type=search], 
+.themify-meta-box-tabs input[type=tel], 
+.themify-meta-box-tabs input[type=text], 
+.themify-meta-box-tabs input[type=time], 
+.themify-meta-box-tabs input[type=url], 
+.themify-meta-box-tabs input[type=week], 
+.themify-meta-box-tabs select, 
+.themify-meta-box-tabs textarea{
+	background-color:#fff;
+	box-shadow:none;
+	border-radius:8px;
+	padding:5px 10px;
+	border:1px solid #b1b1b1;
+	outline:none;
+	vertical-align:middle;
+	min-height:auto;
+	line-height:normal
+}
+.themify-meta-box-tabs input[type=checkbox]{
+	border-radius:6px;
+	width:18px;
+	height:18px
+}
+.themify-meta-box-tabs input[type="text"]:focus, 
+.themify-meta-box-tabs input[type="password"]:focus, 
+.themify-meta-box-tabs input[type="color"]:focus, 
+.themify-meta-box-tabs input[type="date"]:focus, 
+.themify-meta-box-tabs input[type="datetime"]:focus, 
+.themify-meta-box-tabs input[type="datetime-local"]:focus, 
+.themify-meta-box-tabs input[type="email"]:focus, 
+.themify-meta-box-tabs input[type="month"]:focus, 
+.themify-meta-box-tabs input[type="number"]:focus, 
+.themify-meta-box-tabs input[type="search"]:focus, 
+.themify-meta-box-tabs input[type="tel"]:focus, 
+.themify-meta-box-tabs input[type="text"]:focus, 
+.themify-meta-box-tabs input[type="time"]:focus, 
+.themify-meta-box-tabs input[type="url"]:focus, 
+.themify-meta-box-tabs input[type="week"]:focus, 
+.themify-meta-box-tabs input[type="checkbox"]:focus, 
+.themify-meta-box-tabs input[type="radio"]:focus, 
+.themify-meta-box-tabs select:focus, 
+.themify-meta-box-tabs textarea:focus{
+    border-color:#666;
+    outline:none;
+    box-shadow:0 1px 3px rgba(0,0,0,.1)
+}
+.themify-meta-box-tabs input[type=radio]{
+	border-radius:100%	
+}
+.themify-meta-box-tabs hr{
+	height:0;
+    border:0;
+    border-bottom:1px solid #eee
+}
+.themify_field_row .button{
+	box-shadow:none;
+	background:#f9f9f9;
+	border:1px solid #ccc;
+	border-radius:30px;
+	text-shadow:none;
+	color:#555
+}
+.themify_field_row .button:focus,
+.themify_field_row .button:hover{
+	border-color:#aaa;
+	background:#fff;
+	outline:none;
+	box-shadow:none;
+	color:#23282d
+}
+.postbox .inside{
+	line-height:1.6
+}
+.block-editor-block-list__block input[type=checkbox]{
+	border:1px solid #ccc
+}
+
+/* For WP core */
+.themify-meta-box-tabs select{
+	border-radius:8px;
+	border:1px solid #b1b1b1;
+	padding-right:24px
+}
+.themify-meta-box-tabs .inside{
+	font-size:14px
+}
+.themify-meta-box-tabs tr{
+	vertical-align:top
+}
+
+/**
+ * 	Tabs for custom write panels
+ */
+.themify-tabs-heading{
+	display:block;
+	overflow:hidden;
+	margin-bottom:-1px
+}
+.themify-tabs-heading li{
+	float:left;
+	margin:0 2px 0 0;
+	background:#ebebeb;
+	border:1px solid #dedede;
+	border-radius:8px 8px 0 0
+}
+.themify-tabs-heading li:hover{
+	background:#f5f5f5
+}
+#poststuff .themify-tabs-heading li span{
+	box-shadow:none;
+	border-bottom:none;
+	font-weight:700;
+	font-family:sans-serif;
+	background-image:none
+}
+.themify-tabs-heading li a{
+	text-decoration:none;
+	font-size:11px;
+	color:#555;
+	padding:5px 10px;
+	display:block;
+	outline:none;
+	box-shadow:none
+}
+.themify-meta-box-tabs .themify-tabs-heading .select,
+.themify-meta-box-tabs .themify-tabs-heading .select:hover{
+	background:#fff;
+	border-bottom:1px solid #fff
+}
+.themify-meta-box-tabs .themify-tabs-heading .select span{
+	background:0
+}
+.themify-meta-box-tabs .themify-tabs-heading .select a{
+	cursor:default
+}
+#poststuff .inside .themify_write_panel{
+	display:none;
+	border-radius:0;
+	padding:10px 0
+}
+
+/* custom write panel layout options
+---------------------------------------------------------------*/
+#poststuff .inside .themify_write_panel{
+	border:1px solid #dedede;
+	border-radius:8px;	
+	margin:0 0 5px 0;
+	border-top-left-radius:0
+}
+
+#poststuff .inside .themify_write_panel h3:hover{
+	cursor:default
+}
+
+#poststuff .inside .themify_write_panel h3{
+	background:#F1F1F1 no-repeat 0 100%;
+	font-size:11px
+}
+#poststuff .inside .themify_write_panel input.small{
+	width:50px	
+}
+.themify_input_field.medium{
+	width:180px
+}
+.preview-icon img{
+	background:#fff;
+	padding:3px;
+	border:solid 1px #e2e2e2;
+	border-radius:8px
+}
+.preview-icon img:hover{
+    border-color:#bbb;
+    box-shadow:0 1px 3px rgba(0,0,0,.1)
+}
+.preview-icon.selected img{
+    border-color:#FF8D00;
+    padding:2px;
+    border-width:2px;
+    box-shadow:0 1px 3px rgba(0,0,0,.1)
+}
+a.preview-icon{
+	outline:none;
+	text-decoration:none;
+	display:inline-block;
+	margin:-5px 6px 5px 0;
+	box-shadow:none;
+	position:relative
+}
+.preview-icon .tm-option-title-fw{
+	position:absolute;
+	bottom:100%;
+	left:50%;
+	text-align:center;
+	width:auto;
+	white-space:nowrap;
+	z-index:11;
+	background:rgba(0,0,0, .8);
+	color:#fff;
+	font-size:12px;
+	line-height:1.1em;
+	padding:4px 8px;
+	border-radius:10px;
+	transform:translate(-50%, -6px);
+	display:none
+}
+.preview-icon .tm-option-title-fw:before{
+	content:"";
+	width:0;
+	height:0;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-top:5px solid rgba(0,0,0, .8);
+	position:absolute;
+	top:100%;
+	left:0;
+	right:0;
+	margin:0 auto
+}
+.themify_field-layout .tm-option-title{
+	display:none; /* toggle with JS */
+	font-size:11px;
+	line-height:1.1em;
+	position:absolute;
+	top:-10px;
+	left:50%;
+	text-align:center;
+	width:auto;
+	white-space:nowrap;
+	z-index:11;
+	background:rgba(0,0,0, .8);
+	color:#fff;
+	padding:4px 8px;
+	border-radius:10px;
+	transform:translateX(-50%) translateY(-60%)
+}
+.themify_field-layout .tm-option-title:before{
+	content:"";
+	width:0; 
+	height:0; 
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-top:5px solid rgba(0,0,0,.8);
+	position:absolute;
+	bottom:-5px;
+	left:0;
+	right:0;
+	margin:0 auto
+}
+.preview-icon:hover .tm-option-title,
+.preview-icon:hover .tm-option-title-fw{
+	display:block
+}
+.selectit{
+	margin-right:10px
+}
+.hide-if{
+	opacity:1;
+	visibility:visible
+}
+.hide-if.conceal{
+	opacity:0;
+	visibility:hidden
+}
+.hide-if.collapse{
+	max-height:0;
+	margin:0!important;
+	padding:0!important;
+	overflow:hidden
+}
+
+.themify_field_row:after{
+	content:"";
+	display:table;
+	clear:both
+}
+.themify_field_row{
+	padding:5px 5px 10px 0
+}
+.themify_field_row:has(> .themify_field-hidden:only-child){
+    padding:0
+}
+.themify_field_row.disabled{
+	opacity:.5!important;
+	pointer-events:none!important
+}
+.themify_field{
+	float:left;
+	width:75%;
+	position:relative
+}
+.themify_field-repeater{
+	width:100%
+}
+.themify-repeater-row{
+	position:relative
+}
+.themify-repeater-remove-row{
+	position:absolute;
+	top:20px;
+	right:10px;
+	z-index:9
+}
+.themify-repeater-remove-row a{
+	display:block;
+	width:16px;
+	height:16px;
+	color:#dedede
+}
+.themify-repeater-remove-row a:hover{
+	color:#9a9a9a
+}
+.themify-repeater-remove-row a:before,
+.themify-repeater-remove-row a:after{
+	content:'';
+	position:absolute;
+	width:100%;
+	height:2px;
+	top:0;
+	left:0;
+	bottom:0;
+	margin:auto 0;
+	background:currentColor;
+	transform:rotate(45deg);
+	transition:background .2s ease
+}
+.themify-repeater-remove-row a:after{
+	transform:rotate(-45deg)
+}
+.themify_field.themify_field-separator{
+	width:100%;
+	float:none
+}
+.themify_field-multi{
+	margin-bottom:15px
+}
+.themify_upload_buttons,
+.themify_upload_field,
+.themify_upload_meta{
+	margin-bottom:10px;
+	display:block
+}
+.themify_input_field{
+	width:90%
+}
+.themify_upload_field{
+	margin:0 10px 0 0;
+	width:75%
+}
+.themify_upload_buttons object,
+.themify_upload_buttons a{
+	position:absolute
+}
+.themify_upload_buttons .plupload-upload-uic{
+	display:inline-block
+}
+.themify_upload_meta{
+	clear:left
+}
+.themify_upload_preview{
+	float:right;
+	width:40px;
+	margin-bottom:5px;
+	display:none;
+	padding:3px;
+	background:#fff;
+	box-shadow:0 0 0 1px rgba(0,0,0,.1), 0 1px 4px 1px rgba(0,0,0,.1);
+	border-radius:3px
+}
+.themify_upload_preview img{
+	vertical-align:bottom
+}
+.themify_field_title{
+	width:25%;
+	padding:0 15px 10px 0;
+	float:left;
+	box-sizing:border-box;
+	max-width:220px
+}
+@media(max-width:600px){
+	.themify_field,
+	.themify_field_title{
+		width:auto;
+		max-width:100%;
+		float:none
+	}
+	.postbox .inside{
+		padding-right:0
+	}
+}
+	
+.themify_field_description{
+	clear:left;
+	display:block;
+	color:#999;
+	padding:5px 0 5px 1px;
+	font-size:.9em;
+	line-height:1.5
+}
+.themify_checkbox_description{
+	color:#666
+}
+.themify_field .themify_featimg_remove{
+	float:right;
+	margin-left:-15px;
+	margin-top:-5px;
+	position:relative;
+	z-index:999
+}
+.themify_field .themify_featimg_remove.hide{
+	display:none
+}
+.themify_field .themify_featimg_remove a{
+	width:20px;
+	height:20px;
+	text-indent:-999px;
+	overflow:hidden;
+	display:block;
+	background:#E15855;
+	color:#fff;	
+	border-radius:50%;
+	box-sizing:border-box;
+	box-shadow:0 2px 4px 1px rgba(0,0,0,.2)	
+}
+.themify_field .themify_featimg_remove a:before,
+.themify_field .themify_featimg_remove a:after{
+	content:'';
+	display:block;
+	width:10px;
+	border-top:2px solid;
+	position:absolute;
+    transform:rotate(45deg);
+	left:5px;
+	top:9px
+}
+.themify_field .themify_featimg_remove a:after{
+    transform:rotate(-45deg)
+}
+.themify_field .themify_medialib_wrapper{
+	margin-top:5px;
+	display:inline-block
+}
+.themify_field .themify_medialib_wrapper em,
+.themify_field .themify_medialib_wrapper a{
+	display:inline-block;
+	position:relative
+}
+.themify_field .themify_video_remove{
+	float:right;
+	margin-top:-20px;
+	top:24px;
+	right:4px
+}
+.videocontrol .themify_upload_field{
+	width:100%;
+	padding-right:27px
+}
+
+/* Assignments field type
+---------------------------------------------------------------*/
+.themify-meta-box-tabs .ui-widget-content{
+	font-family:inherit;
+	color:inherit;
+	font-size:inherit
+}
+.themify-assignments .ui-tabs-nav{
+	border:0;
+	background:0;
+	color:inherit
+}
+.themify-assignments .ui-tabs-nav li{
+	list-style:none;
+	float:left;
+	position:relative;
+	top:0;
+	margin:1px .2em .5em 0;
+	padding:0;
+	white-space:nowrap;
+	border:0;
+	background:0;
+	font-weight:400;
+	color:inherit;
+	border-radius:30px;
+	font-size:.9em
+}
+.themify-assignments .ui-tabs-nav a{
+	float:left;
+	padding:.4em .8em;
+	text-decoration:none;
+	color:inherit;
+	text-transform:uppercase;
+	font-size:.9em;
+	letter-spacing:.03em;
+	opacity:.6
+}
+.themify-assignments .ui-tabs-nav li.ui-tabs-active{
+	border:0;
+	background:#8c8c8c;
+	font-weight:400;
+	color:#fff
+}
+.themify-assignments .ui-tabs-nav li.ui-tabs-active a{
+	cursor:text;
+	color:inherit;
+	border:0;
+	text-decoration:none;
+	opacity:1
+}
+.themify-assignments .ui-tabs-panel{
+	display:block;
+	border-width:0;
+	padding:10px 0 0!important;
+	background:0;
+	overflow:visible
+}
+.themify-assignments.ui-tabs,
+.themify-assignments .ui-tabs{
+	border:0
+}
+.themify-assignments.ui-tabs .ui-tabs-panel{
+	padding:0
+}
+.themify-assignments.ui-tabs .themify-assignment-options label{
+	display:block!important;
+	width:33.3%;
+	min-width:230px;
+	padding-left:28px;
+	padding-right:15px;
+	margin-bottom:15px;
+	float:left;
+	box-sizing:border-box
+}
+.themify-assignments.ui-tabs .themify-assignment-options label input[type=checkbox]{
+	margin-left:-28px;
+	margin-right:10px;
+	width:18px;
+	height:18px
+}
+.themify-assignments.ui-tabs .themify-assignment-options label > input{
+	margin-right:.5em
+}
+
+/* inline-tabs */
+.themify-assignments .ui-tabs-nav.inline-tabs{
+	border-bottom:solid 1px #e4e4e4;
+	border-radius:0;
+	margin-bottom:10px;
+	padding:0
+}
+.themify-assignments .ui-tabs-nav.inline-tabs li{
+	background:0;
+	color:inherit;
+	padding:0;
+	border-radius:0;
+	margin:0
+}
+.themify-assignments .ui-tabs-nav.inline-tabs li.ui-tabs-active{
+	border-bottom:solid 3px #999;
+	margin:0 0 -1px;
+	padding:0
+}
+.themify-assignments .ui-tabs-nav li a{
+	padding:.5em .8em
+}
+
+/* Query Pages
+---------------------------------------------------------------*/
+.query-field-hide{
+	display:none
+}
+
+/* Multi
+---------------------------------------------------------------*/
+.themify_field-multi label{
+	display:inline-block;
+	margin-right:7px;
+	margin-bottom:10px;
+	vertical-align:top
+}
+
+/* Color Picker
+---------------------------------------------------------------*/
+.themify-meta-box-tabs .tfminicolors-input, /* for other plugins */
+.themify-meta-box-tabs .themify_field_row .tfminicolors-input{
+	width:190px;
+	height:28px;
+	padding-left:32px;
+	color:#999;
+	font-size:.95em;
+	margin:0
+}
+.themify_field_row .clearColor{
+	color:#000!important;
+	width:20px;
+	background:0!important;
+	position:absolute;
+	bottom:1px;
+	right:0;
+	margin:0!important;
+	padding:0;
+	border:0!important;
+	box-shadow:none!important;
+	display:none;
+	line-height:1.9;
+	font-size:16px
+}
+.themify_field_row .clearColor:hover,
+.themify_field_row .clearColor:active,
+.themify_field_row .clearColor:focus{
+	color:#ea533b!important
+}
+.themify_field_row .clearColor:active{
+	opacity:.8
+}
+
+/* Themify Date Picker
+---------------------------------------------------------------*/
+input.themifyDatePicker{
+	margin-right:5px;
+	color:#333
+}
+.themify_field-date{
+	position:relative
+}
+.disableDateField{
+	position:absolute;
+	top:0;
+	left:0;
+	width:180px;
+	height:28px
+}
+.themifyOpacityTransition{
+	visibility:hidden;
+	opacity:0;
+	transition:opacity .2s ease-out
+}
+.themifyFadeIn{
+	visibility:visible;
+	opacity:1
+}
+/* date picker */
+.themifyDateTimePickerPanel.ui-datepicker{
+	width:240px;
+	margin-top:4px;
+	padding:5px 10px;
+	border-color:#ccc;
+	box-shadow:0 2px 6px rgba(0,0,0,.15);
+	background:#fff;
+	z-index:99999!important;
+	border-radius:8px
+}
+.themifyDateTimePickerPanel.ui-datepicker .ui-datepicker-header{
+	background:0;
+	border:0;
+	border-bottom:1px solid #eee;
+	border-radius:0;
+	padding-bottom:5px
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-prev, .ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-next{
+	border:1px solid #eee;
+	transition:border-color .2s ease-out;
+	border-radius:8px
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-prev .ui-icon, .ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-next .ui-icon{
+	background:0;
+	text-indent:-99999em
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-prev, .ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-next{
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:#808080scale;
+	font-family:"dashicons";
+	box-sizing:border-box
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-prev:after{
+	content:"\f141";
+	position:absolute;
+	top:2px;
+	font-size:20px;
+	left:0
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-next:after{
+	content:"\f139";
+	position:absolute;
+	top:2px;
+	font-size:20px;
+	left:0
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-next-hover{
+	border:1px solid #999;
+	background:0;
+	right:2px;
+	top:2px;
+	cursor:pointer
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-prev-hover{
+	border:1px solid #999;
+	background:0;
+	left:2px;
+	top:2px;
+	cursor:pointer
+}
+.ui-datepicker td{
+	padding:2px
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-state-default{
+	background:#f6f6f6;
+	border-radius:8px;
+	border:2px solid transparent;
+	text-align:center;
+	transition:border-color .2s ease-out
+}
+.ui-timepicker-div dl dd{
+	margin-bottom:20px
+}
+.ui-timepicker-div .ui_tpicker_hour_label{
+	margin-top:-10px
+}
+.ui-timepicker-div .ui_tpicker_hour,
+.ui-timepicker-div .ui_tpicker_minute,
+.ui-timepicker-div .ui_tpicker_second{
+	height:12px;
+	margin-bottom:7px;
+	margin-top:14px
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-slider{
+	height:2px;
+    background:#e1e1e1;
+    color:#333;
+    border:0
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-slider .ui-slider-handle{
+	background:#fff;
+	border:1px solid #c5c5c5;
+	border-radius:100%;
+    box-shadow:0 1px 3px rgba(0,0,0,.2);
+    width:18px;
+    height:18px;
+    padding:0;
+    box-sizing:border-box;
+    top:-8px
+}
+.ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input{
+	font-size:15px;
+	box-shadow:none;
+	font-family:inherit;
+	border:0
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-state-active, .ui-datepicker.themifyDateTimePickerPanel .ui-state-default:active{
+	border:2px solid #F90
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-state-highlight{
+	border:2px solid #98cee3
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-buttonpane{
+	border-top:1px solid #eee;
+	padding:10px 0
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-buttonpane button{
+	font-weight:400;
+	font-family:inherit;
+	background:#fafafa;
+	border:1px solid #eee;
+	color:#222;
+	outline:none;
+	opacity:1;
+	margin:0 0 5px
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui_tpicker_hour_label, .ui-datepicker.themifyDateTimePickerPanel .ui_tpicker_minute_label{
+	padding-top:0
+}
+
+/* Dropdown button */
+.themify_field_row.dropdownbutton-group{
+	display:inline-block;
+	width:100%;
+	margin:0 0 .8em
+}
+.dropdownbutton-list{
+	float:left;
+	position:relative;
+	margin-right:10px;
+	margin-bottom:5px
+}
+.dropdownbutton-list a{
+	color:inherit;
+	vertical-align:middle;
+	text-decoration:none;
+	display:block;
+	margin:0;
+	padding:0
+}
+.dropdownbutton{
+	position:absolute;
+	display:none;
+	background:#fff;
+	padding:5px 0;
+	width:140px;
+	z-index:99;
+	border-radius:8px;
+	top:24px;
+	box-shadow:0 0 0 1px rgba(0,0,0,.1),0 1px 6px 2px rgba(0,0,0,.1)
+}
+.dropdownbutton a{
+	color:inherit;
+	vertical-align:middle;
+	text-decoration:none;
+	display:block;
+	padding:5px;
+	margin:0
+}
+.dropdownbutton a img{
+	margin:0 5px;
+	min-width:10px
+}
+.dropdownbutton a:hover{
+	background:#f1f1f1
+}
+.dropdownbutton .ddbtn-label{
+	padding-left:3px;
+	display:inline-block
+}
+.dropdownbutton-group .first-ddbtn img{
+	background:#fff;
+	border:1px solid #ccc;
+	min-width:12px;
+	padding:2px;
+	margin-top:2px;
+	margin-bottom:5px;
+	vertical-align:middle;
+	border-radius:5px
+}
+.themify_field-image_radio input,
+.dropdownbutton .ddbtn-hide{
+	display:none
+}
+.dropdownbutton-list .first-ddbtn .ddbtn-name{
+	margin-left:5px
+}
+/* Image Radio
+ */
+.themify_field-image_radio label{
+	border:solid 1px #D2D2D2;
+	border-radius:2px;
+	padding:2px;
+	display:block
+}
+.themify_field-image_radio label img{
+	display:block
+}
+.themify_field-image_radio label:hover{
+	border-color:#6CD6FF;
+	background:#F3FCFF
+}
+.themify_field-image_radio input:checked + label{
+	border-color:#FF8D00;
+	background:#FFE0AF
+}
+.themify_field-image_radio .tm-radio-option{
+	position:relative;
+	display:inline-block;
+	margin-right:5px
+}
+.themify_field-image_radio .tm-option-title{
+	display:none;
+	font-size:11px;
+	line-height:1.1em;
+	position:absolute;
+	top:-10px;
+	left:50%;
+	text-align:center;
+	width:auto;
+	white-space:nowrap;
+	z-index:11;
+	background:rgba(0,0,0, .8);
+	color:#fff;
+	padding:4px 6px;
+	border-radius:3px;
+	transform:translateX(-50%) translateY(-60%)
+}
+.themify_field-image_radio .tm-option-title:before{
+	content:"";
+	width:0; 
+	height:0; 
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-top:5px solid rgba(0,0,0,.8);
+	position:absolute;
+	bottom:-4px;
+	left:0;
+	right:0;
+	margin:0 auto
+}
+.themify_field-image_radio .tm-radio-option:hover .tm-option-title{
+	display:block
+}
+/* Display Assignment Pagination
+---------------------------------------------------------------*/
+#themify_assignments_popup_show .themify-assignment-pagination{
+	position:relative;
+	width:400px;
+	margin:0 auto;
+	padding:10px 0;
+	clear:both;
+	text-align:center
+}
+#themify_assignments_popup_show .themify-assignment-pagination span, #themify_assignments_popup_show .themify-assignment-pagination a{
+	display:inline-block;
+	width:28px;
+	height:26px;
+	margin:0 2px;
+	padding:3px;
+	text-decoration:none;
+	box-sizing:border-box
+}
+#themify_assignments_popup_show .themify-assignment-pagination a.next,
+#themify_assignments_popup_show .themify-assignment-pagination a.prev{
+	line-height:26px
+}
+#themify_assignments_popup_show .themify-assignment-pagination a.next:before,
+#themify_assignments_popup_show .themify-assignment-pagination a.prev:before{
+	top:2px
+}
+#themify_assignments_popup_show .themify-assignment-pagination span.page-numbers-icon{
+	display:inline-block;
+	width:8px;
+	height:8px;
+	position:relative;
+	left:-2px;
+	transform:rotate(135deg);
+	background:0;
+	border-top:1px solid;
+	border-left:1px solid
+}
+#themify_assignments_popup_show .themify-assignment-pagination .prev span.page-numbers-icon{
+	left:2px;
+	transform:rotate(-45deg)
+}
+#themify_assignments_popup_show .themify-assignment-pagination .current{
+	pointer-events:none;
+	border:solid 1px rgba(0,0,0,.2)
+}
+.themify-assignment-items-page.is-hidden,
+.themify-assignment-inner-tab.is-hidden{
+	display:none
+}
+.themify-assignment-items-inner{
+	padding-top:10px
+}
+/* slider loading animation */
+.tb_slider_loader_wrapper{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#fff;
+	z-index:99999
+}
+.tb_slider_loader,
+.tb_slider_loader:before,
+.tb_slider_loader:after{
+	background:#000;
+	border-radius:0;
+	width:8px;
+	height:15px;
+	animation:horizontal-loader 1s infinite ease-in-out
+}
+.tb_slider_loader:before,
+.tb_slider_loader:after{
+	position:absolute;
+	top:0;
+	content:''
+}
+.tb_slider_loader:before{
+	left:-1.5em;
+	animation-delay:-.32s
+}
+.tb_slider_loader{
+	margin:88px auto;
+	position:relative;
+	font-size:11px;
+	animation-delay:-.16s
+}
+.tb_slider_loader:after{
+	left:1.5em
+}
+.button .tb_slider_loader_wrapper{
+	background:0
+}
+.tb_slider_loader_wrapper .tb_slider_loader{
+	display:block;
+	position:relative;
+	left:20px;
+	margin:0 auto
+}
+/* toggle_group fields */
+.themify_field_row_toggle{
+	padding-top:0;
+	padding-bottom:0
+}
+.themify_toggle_group_label{
+	width:100%;
+	cursor:pointer;
+	margin:0;
+	padding:.6em .4em .6em 0;
+	border-top:1px solid #eee;
+	font-size:1.2em;
+	line-height:1.3em
+}
+.themify_toggle_group_label:hover{
+	background:linear-gradient(to bottom, rgba(0,0,0,.03) 0%, rgba(255,255,255,.1) 100%)
+}
+.themify_toggle_group_label span{
+	font-size:1.1em
+}
+.themify_toggle_group_label i{
+	float:left;
+	margin:2px 10px 3px 0;
+	width:16px;
+	height:16px
+}
+.themify_toggle_group_label i:before,
+.themify_toggle_group_label i:after{
+	height:100%
+}
+.themify_toggle_group_inner{
+	border-bottom:1px solid #eee;
+	padding:.5em .5em .5em 2em
+}
+.themify_toggle_group_inner.is-activated{
+	border-bottom:none
+}
+
+/*
+ * Reset zIndex, originally declared in /wp-admin/css/forms.css
+ * Required in order to fix compatibility with plugins that use jQuery Autocomplete
+ */
+.ui-widget.ui-autocomplete{
+	z-index:100110;
+    background-color:#fff
+}
+.ui-autocomplete .ui-menu-item,
+.ui-autocomplete .ui-menu-item .ui-state-active,
+.ui-autocomplete .ui-menu-item:hover{
+    box-shadow:none;
+    border-color:transparent
+}
+.ui-menu .ui-menu-item,
+.ui-autocomplete{
+	border-radius:8px
+}
+.ui-menu .ui-menu-item{
+    box-shadow:0 1px 3px rgba(0,0,0,.1)
+}
+
+/* Ultra preset color icon */
+.color-presets-toggle .preview-icon img{
+	width:20px
+}

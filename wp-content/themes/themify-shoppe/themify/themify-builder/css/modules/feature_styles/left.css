@@ -1,0 +1,13 @@
+.module.layout-icon-left{
+    text-align:left
+}
+.layout-icon-left .module-feature-image{
+    float:left;
+    max-width:200px;
+    margin:0 1.1em .4em 0
+}
+.layout-icon-left .module-feature-content{
+    text-align:inherit;
+    overflow:hidden;
+    min-width:140px
+}

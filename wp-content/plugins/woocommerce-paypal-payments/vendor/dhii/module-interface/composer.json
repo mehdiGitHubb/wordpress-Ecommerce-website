@@ -1,0 +1,43 @@
+{
+    "name": "dhii/module-interface",
+    "description": "Interfaces for modules",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1 | ^8.0",
+        "psr/container": "^1.0",
+        "container-interop/service-provider": "^0.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0 | ^8.0 | ^9.0",
+        "vimeo/psalm": "^3.11.7 | ^4.0",
+        "slevomat/coding-standard": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Modular\\Module\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Modular\\Module\\UnitTest\\": "tests/unit",
+            "Dhii\\Modular\\Module\\Test\\": "tests/stubs"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.3.x-dev"
+        }
+    }
+}

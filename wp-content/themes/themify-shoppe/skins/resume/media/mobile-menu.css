@@ -1,0 +1,19 @@
+#main-nav a:hover,
+#main-nav .current_page_item > a,
+#main-nav .current-menu-item > a{
+	color:#198be3
+}
+.search-button .tf_fa{
+	padding:9px;
+}
+.header-icons .search-button{
+	border-radius:100%
+}
+.header-overlay #menu-icon{
+	padding:10px 11px
+}
+@media (max-width:760px){
+	#headerwrap .sidemenu-off .search-button{
+		font-size:.9em
+	}
+}

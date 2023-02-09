@@ -1,0 +1,41 @@
+#small_panel .panel_library{
+    padding:0
+}
+.library_tab{
+    padding-inline-start:5px;
+	margin-block-end:5px
+}
+.library_container{
+    display:grid;
+    row-gap:7px;
+    padding:5px 10px
+}
+.library_item{
+    background-color:#fff;
+    border:1px solid #ddd;
+    color:#666;
+    padding:10px;
+    line-height:1.4em;
+    font-size:13px;
+    cursor:move;
+    border-radius:8px
+}
+.library_container .library_item:hover span{
+    opacity:1;
+    border-color:#aaa
+}
+.tb_float_xsmall .panel_library .nav_tab,
+.tb_float_xsmall .panel_library .dropdown_label{
+    margin-inline-end:8px
+}
+.tb_float_xsmall .panel_library .nav_tab{
+    top:28px;
+	inset-inline-start:0;
+    margin-inline-start:9px;
+    padding:6px 0;
+    min-width:auto;
+    width:auto
+}
+.tb_float_xsmall .library_tab li{
+    width:100px
+}

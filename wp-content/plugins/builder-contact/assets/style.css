@@ -1,0 +1,231 @@
+/* contact module */
+.module-contact .contact-error,
+.module-contact .contact-success{
+	padding:.5em;
+	border-radius:8px;
+	margin-bottom:1em
+}
+.module-contact .contact-error{
+	background-color:#e8311f;
+	color:#ffeeed
+}
+.module-contact .contact-success{
+	background-color:#9bd611;
+	color:#293807
+}
+.module span.required{
+	color: #FF0000
+}
+.module .builder-contact-field{
+	margin:0 0 .5em
+}
+.builder-contact-field-send .tf_loader{
+	margin-right:10px;
+	display:none
+}
+.builder-contact-field-send .tf_loader:before{
+	border-color:inherit;
+	border-left-color:rgba(149,149,149,.6)
+}
+.module .control-label,
+.builder-contact.sending .tf_loader{
+	display:inline-block
+}
+.module .builder-contact-field-send{
+	margin-top:1em
+}
+.builder-contact-field-send .tf_submit_icon{
+	margin-inline-end:5px
+}
+.module-contact input[type=checkbox]{
+	color:fieldtext
+}
+/* Style 1 */
+.module.contact-style1 .control-label{
+	margin-bottom:.3em
+}
+.module-contact.contact-style1 input[type=number],
+.module-contact.contact-style1 input[type=tel],
+.module-contact.contact-style1 input[type=text],
+.module-contact.contact-style1 input[type=email]{
+	width:100%;
+	max-width:100%;
+	box-sizing:border-box
+}
+/* Style 2 */
+.module.contact-style3 .builder-contact-field input[type="number"],
+.module.contact-style3 .builder-contact-field input[type="email"],
+.module.contact-style3 .builder-contact-field input[type="tel"],
+.module.contact-style3 .builder-contact-field input[type="text"],
+.module.contact-style3 .builder-contact-field select,
+.module.contact-animated-label .builder-contact-field input[type="number"],
+.module.contact-animated-label .builder-contact-field input[type="email"],
+.module.contact-animated-label .builder-contact-field input[type="tel"],
+.module.contact-animated-label .builder-contact-field input[type="text"],
+.module.contact-animated-label .builder-contact-field select,
+.module.contact-style2 .builder-contact-field input[type="number"],
+.module.contact-style2 .builder-contact-field input[type="email"],
+.module.contact-style2 .builder-contact-field input[type="tel"],
+.module.contact-style2 .builder-contact-field input[type="text"],
+.module.contact-style2 .builder-contact-field select{
+	max-width:none;
+	width:100%;
+	box-sizing:border-box
+}
+.module.contact-style2 .builder-contact-field.builder-contact-field-send,
+.module.contact-style2 .builder-contact-field.builder-contact-field-captcha{
+	order:1
+}
+@media(min-width:681px){
+
+	.module .builder-contact-radio-field,
+	.module .builder-contact-checkbox-field{
+		width:100%;
+		clear:both
+	}
+	.module-contact label{
+		display:inline-block;
+		margin-right:10px
+	}
+	/* Style 2 */
+	.module.contact-animated-label .builder-contact-fields,
+	.module.contact-style2 .builder-contact-fields{
+		display:flex;
+		flex-wrap:wrap;
+		margin-left:-3.5%
+	}
+	.module.contact-animated-label .builder-contact-field,
+	.module.contact-style2 .builder-contact-field{
+		flex-grow:1;
+		justify-content:space-between;
+		padding-left:3.5%;
+		width:33.33%;
+		box-sizing:border-box
+	}
+        
+	.module.contact-style3 input[type=text], 
+	.module.contact-style3 input[type=password], 
+	.module.contact-style3 input[type=search], 
+	.module.contact-style3 input[type=email], 
+	.module.contact-style3 input[type=url], 
+	.module.contact-style3 input[type=tel],
+	.module.contact-style3 .builder-contact-field-gdpr,
+	.module.contact-style3 .builder-contact-static-field,
+	.module.contact-style3 .builder-contact-upload-field,
+	.module.contact-style3 .builder-contact-field.builder-contact-field-captcha,
+	.module.contact-style3 .builder-contact-field.builder-contact-field-optin,
+	.module.contact-style3 .builder-contact-field.builder-contact-field-sendcopy,
+	.module.contact-style3 .builder-contact-field.builder-contact-field-send,
+	.module.contact-animated-label .builder-contact-field-gdpr,
+	.module.contact-animated-label .builder-contact-static-field,
+	.module.contact-animated-label .builder-contact-upload-field,
+	.module.contact-animated-label .builder-contact-field.builder-contact-field-captcha,
+	.module.contact-animated-label .builder-contact-field.builder-contact-field-optin,
+	.module.contact-animated-label .builder-contact-field.builder-contact-field-sendcopy,
+	.module.contact-animated-label .builder-contact-field.builder-contact-field-send,
+	.module.contact-animated-label .builder-contact-field.builder-contact-textarea-field,
+	.module.contact-animated-label .builder-contact-textarea-field,
+	.module.contact-style2 .builder-contact-field-gdpr,
+	.module.contact-style2 .builder-contact-static-field,
+	.module.contact-style2 .builder-contact-upload-field,
+	.module.contact-style2 .builder-contact-field.builder-contact-field-captcha,
+	.module.contact-style2 .builder-contact-field.builder-contact-field-optin,
+	.module.contact-style2 .builder-contact-field.builder-contact-field-sendcopy,
+	.module.contact-style2 .builder-contact-field.builder-contact-field-send,
+	.module.contact-style2 .builder-contact-field.builder-contact-textarea-field,
+	.module.contact-style2 .builder-contact-textarea-field{
+		width:100%
+	}
+	.module.contact-style2 .control-label{
+		white-space:nowrap;
+		width:100%;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		margin-right:0
+	}
+	.module.contact-style2 .builder-contact-field-gdpr .control-label{
+		overflow:inherit;
+		white-space:normal
+	}
+	/* Style 3 */
+	.module.contact-style3 .builder-contact-field,
+	.module.contact-style3 .builder-contact-field-message + .builder-contact-field-gdpr{
+		width:35%
+	}
+	.module.contact-style3 .builder-contact-field-message{
+		width:60%;
+		position:absolute;
+		top:0;
+		right:0
+	}
+	.rtl .module.contact-style3 .builder-contact-field-message{
+		left:0;
+		right:auto
+	}
+	/* Animated label style */
+	.module.contact-animated-label .control-label{
+		white-space:nowrap;
+		width:90%;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		vertical-align:middle
+	}
+	.module.contact-animated-label .control-label .field-gdpr{
+		width:auto;
+		white-space:normal
+	}
+}
+@media(max-width:680px){
+	.module.contact-style2 .builder-contact-fields{
+		display:grid
+	}
+}
+/* recaptcha */
+.module-contact #recaptcha_area{
+	display:inline-block; /* fix alignment set by the module */
+}
+@media(max-width:575px){
+	.module-contact .themify_captcha_field{
+		width:100%;
+		transform:scale(.77);
+		transform-origin:0 0
+	}
+}
+.module.contact-animated-label label{
+	position:relative;
+	padding:0;
+	vertical-align:middle
+}
+.module.contact-animated-label textarea{
+	resize:none
+}
+.contact-animated-label .builder-contact-upload-field label{
+	top:0!important;
+	left:0!important
+}
+.form-control:not(:placeholder-shown)+.tb_contact_label,
+.form-control:focus+.tb_contact_label{
+    top:0;
+    left:0;
+    transform:translateY(-100%)
+}
+.contact-animated-label .builder-contact-textarea-field .control-label,
+.contact-animated-label .builder-contact-text-field .control-label{
+    visibility:hidden
+}
+.tb_contact_label{
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    transform:translateY(-50%);
+    pointer-events:none;
+    transition-property:transform,top,left;
+    transition-duration:.3s;
+    padding-left:10px;
+    padding-right:10px
+}
+.builder-contact-textarea-field .tb_contact_label{
+	top:10px;
+	transform:translateY(0)
+}

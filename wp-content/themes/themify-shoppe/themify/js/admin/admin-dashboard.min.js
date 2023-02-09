@@ -1,0 +1,1 @@
+(function(a){'use strict';a.ajax({url:ajaxurl,data:{action:"themify_news_widget"},success:function(b){a("#themify_news .rss-widget").append(b)}})})(jQuery);

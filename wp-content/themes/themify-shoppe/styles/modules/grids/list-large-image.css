@@ -1,0 +1,26 @@
+.loops-wrapper.list-large-image .post-image{
+	max-width:70%;
+	float:left;
+	margin:.35em 0 1.3em;
+	margin-right:4.4%
+}
+.loops-wrapper.list-large-image .post-image + .post-content{
+	overflow:hidden
+}
+.loops-wrapper.list-large-image .post{
+	border-bottom:1px solid rgba(180,180,180,.2);
+	padding-bottom:2.4em
+}
+@media(max-width:680px){
+	.loops-wrapper.list-large-image .post-title{
+		font-size:1.4em
+	}
+	.loops-wrapper.list-large-image .post-image{
+		float:none;
+		position:static;
+		width:auto;
+		max-width:none;
+		margin-right:auto;
+		overflow:visible
+	}
+}

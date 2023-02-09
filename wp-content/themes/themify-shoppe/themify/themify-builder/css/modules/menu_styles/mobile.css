@@ -1,0 +1,186 @@
+.mobile-menu-module ul a > i.toggle-menu.menu-close{
+    transform:rotate(180deg)
+}
+.menu-close{
+    width:1.3em;
+    height:1.3em
+}
+.menu-close-inner{
+    width:100%;
+    height:100%;
+    position:relative;
+    display:inline-block;
+    transition:transform .2s ease
+}
+.mobile-menu-module > .menu-close{
+    position:absolute;
+    top:10px;
+    right:20px;
+    color:inherit;
+    cursor:pointer;
+    text-decoration:none;
+    z-index:99;
+    padding:7px;
+    border-radius:100%;
+    box-sizing:content-box
+}
+.mobile-menu-module > .menu-close:hover{
+    background-color:rgba(200,200,200,.25)
+}
+body.menu-module-left,
+body.menu-module-right,
+body.menu-module-burger{
+    overflow:hidden;
+    transition:left .2s ease-in-out;
+    position:relative
+}
+.mobile-menu-module.mobile-menu-overlay{
+	right:-100%;
+	left:-100%;
+	background-color:var(--tb_pr_bg,#f7f7f7)
+}
+.mobile-menu-module.visible{
+    visibility:visible;
+    transform:scale(1)
+}
+.mobile-menu-module{
+    box-shadow:0 0 16px rgba(0,0,0,.1)
+}
+.module-menu.mobile-menu-module.right{
+    right:0;
+	left:auto;
+}
+.module-menu.mobile-menu-module.left{
+    left:0;
+	right:auto;
+}
+.mobile-menu-module ul a > i.toggle-menu{
+    position:absolute;
+    right:20px;
+    top:0;
+    bottom:0;
+    line-height:1em;
+    margin:auto 0;
+    height:36px;
+    width:36px;
+    border-radius:50%;
+    background:0;
+    transform:rotate(0);
+    transition:transform .2s ease, background .2s ease;
+    text-align:center
+}
+.mobile-menu-module ul a > i.toggle-menu:hover{
+    background:rgba(200,200,200,.25);
+}
+.mobile-menu-module ul a > i.toggle-menu:before{
+    content:'';
+    height:8px;
+    width:8px;
+    border-left:1px solid;
+    border-bottom:1px solid;
+    transform:rotate(-45deg);
+    display:inline-block;
+    position:relative;
+    top:7px
+}
+.themify_builder .body-overlay{
+    display:block;
+    opacity:0;
+    visibility:hidden;
+    background-color:rgba(206,206,206,.8);
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    transition:opacity .2s ease-in-out,visibility .2s ease-in-out,left .2s ease-in-out,right .2s ease-in-out,background-color .2s ease-in-out;
+	-webkit-backdrop-filter:blur(10px);
+	backdrop-filter:blur(10px)
+}
+.themify_builder .body-overlay.body-overlay-on{
+    z-index:1000;
+    opacity:1;
+    visibility:visible
+}
+.mobile-menu-module.with-sub-arrow a{
+    cursor:none
+}
+.mobile-menu-module.ui.transparent{
+    background-color:#fff
+}
+.mobile-menu-module .child-arrow,
+.mobile-menu-module.mobile-menu-overlay + .body-overlay{
+    display:none!important
+}
+div.mobile-menu-module{
+    border-radius:0;
+    margin:0!important;
+    box-sizing:content-box;
+    position:fixed;
+    top:0;
+    bottom:0;
+    width:300px;
+    background:#f4f4f4;
+    z-index:9999;
+    visibility:hidden;
+    transform:scale(0);
+    transform-origin:0 100%;
+    overflow:auto;
+    padding-top:55px;
+    transition:right .2s ease-in-out,left .2s ease-in-out;
+    display:block
+}
+.admin-bar .mobile-menu-module{
+    top:32px
+}
+.mobile-menu-module ul{
+    position:relative;
+    list-style:none;
+    padding:0;
+    margin:0
+}
+.mobile-menu-module ul a{
+    position:relative;
+    color:inherit;
+    text-decoration:none;
+    display:block;
+    padding:10px 20px
+}
+.mobile-menu-module ul li{
+    position:relative;
+    margin:0
+}
+.mobile-menu-module > ul:after{
+    top:auto;
+    bottom:0
+}
+.mobile-menu-module ul ul{
+    display:none;
+    padding:0 0 0 10px
+}
+[data-menu-direction="right"]{
+    margin-left:auto
+}
+/* menu overlay style */
+.mobile-menu-module.mobile-menu-overlay{
+    width:100%;
+    box-sizing:border-box
+}
+.mobile-menu-module.mobile-menu-overlay .nav{
+    padding:0 5%
+}
+.mobile-menu-dropdown.module-menu-mobile-active .menu-module-burger.is-open .menu-module-burger-inner{
+    border:0
+}
+.mobile-menu-dropdown.module-menu-mobile-active .menu-module-burger.is-open .menu-module-burger-inner:before,
+.mobile-menu-dropdown.module-menu-mobile-active .menu-module-burger.is-open .menu-module-burger-inner:after{
+    top:50%
+}
+.mobile-menu-dropdown.module-menu-mobile-active .menu-module-burger.is-open .menu-module-burger-inner:before{
+    transform:rotateZ(45deg)
+}
+.mobile-menu-dropdown.module-menu-mobile-active .menu-module-burger.is-open .menu-module-burger-inner:after{
+    transform:rotateZ(-45deg)
+}

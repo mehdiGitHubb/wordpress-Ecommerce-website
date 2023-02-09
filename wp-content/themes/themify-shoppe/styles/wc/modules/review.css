@@ -1,0 +1,46 @@
+.woocommerce-Tabs-panel .woocommerce-Reviews-title{
+	display:none; /* hide description & review h2 */
+}
+.woocommerce #commentform .comment-form-rating label{
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:1em
+}
+.woocommerce #review_form #respond #commentform .comment-form-rating .stars{
+	display:inline-block;
+	vertical-align:middle;
+	margin:0;
+	line-height:normal
+}
+
+.woocommerce #reviews #comments ol.commentlist li img.avatar{
+	width:85px;
+	border:0;
+	padding:0
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text{
+	margin-left:120px;
+	border:0;
+	padding:0;
+	text-align:left
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta{
+	margin:4px 0 10px
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta strong{
+	font-weight:400;
+	font-style:normal;
+	font-size:125%;
+	display:block
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta time{
+	color:#959595;
+	letter-spacing:-.015em
+}
+.woocommerce-review-link{
+	font-size:.75em;
+	font-weight:400;
+	text-transform:uppercase;
+	text-decoration:none;
+	letter-spacing:.05em
+}

@@ -1,0 +1,46 @@
+{
+    "name": "dhii/human-readable-interface",
+    "description": "Interfaces for human readable string interoperation.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1 | ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0 | ^7.0 | ^8.0 | ^9.0",
+        "vimeo/psalm": "^3.11.7 | ^4.0",
+        "slevomat/coding-standard": "^6.0",
+        "symfony/polyfill-php80": "^1.19"
+    },
+    "suggest": {
+        "dhii/i18n-interface": "For internationalizing and translating human readable strings.",
+        "symfony/polyfill-php80": "To add Stringable interface"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Util\\String\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Util\\String\\FuncTest\\": "tests/functional"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "csfix": "php-cs-fixer fix -vvv"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.1.x-dev"
+        }
+    }
+}

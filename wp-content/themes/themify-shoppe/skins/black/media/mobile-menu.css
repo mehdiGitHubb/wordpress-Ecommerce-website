@@ -1,0 +1,9 @@
+#main-nav,
+#main-nav a,
+#main-nav ul a{
+	border-color:rgba(255,255,255,.1)
+}
+#main-nav a,
+#main-nav ul a{
+	color:inherit
+}

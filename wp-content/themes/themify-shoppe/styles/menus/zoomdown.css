@@ -1,0 +1,34 @@
+.mobile-menu-visible.sidemenu-right #headerwrap,
+.mobile-menu-visible.sidemenu-active.sidemenu-right #headerwrap,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-right #headerwrap.fixed-header,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-right{
+    left:0;
+    right:0
+}
+#mobile-menu.sidemenu{
+    left:0;
+    right:0;
+    width:100%;
+    overflow-x:hidden;
+    box-sizing:border-box;
+    transform:translateY(0) scale(2);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:all .8s ease
+}
+.mobile-menu-visible #mobile-menu.sidemenu{
+    transform:translateY(0) scale(1);
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto
+}
+.mobile-menu-visible .body-overlay{
+    display:block;
+    z-index:998;
+    left:0;
+    right:0;
+    top:0;
+    box-shadow:none;
+    background-color:rgba(0,0,0,0)
+}

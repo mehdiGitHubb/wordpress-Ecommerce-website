@@ -1,0 +1,43 @@
+{
+    "packages": [
+        {
+            "name": "smashballoon/stubs",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:awesomemotive/sb-stubs.git",
+                "reference": "36cb174511ed63c008d2d3f2a77194612de489be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/awesomemotive/sb-stubs/zipball/36cb174511ed63c008d2d3f2a77194612de489be",
+                "reference": "36cb174511ed63c008d2d3f2a77194612de489be",
+                "shasum": ""
+            },
+            "time": "2022-05-25T08:11:42+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Smashballoon\\Stubs\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Ahmed Hussein",
+                    "email": "ahussein@awesomemotive.com"
+                }
+            ],
+            "description": "Shared common stubs.",
+            "support": {
+                "source": "https://github.com/awesomemotive/sb-stubs/tree/master",
+                "issues": "https://github.com/awesomemotive/sb-stubs/issues"
+            },
+            "install-path": "../smashballoon/stubs"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

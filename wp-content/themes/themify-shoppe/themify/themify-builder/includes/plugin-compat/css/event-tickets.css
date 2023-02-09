@@ -1,0 +1,6 @@
+.module-accordion .accordion-content{
+	display:block;
+}
+.module-accordion .accordion-content.tf_hide{
+	display:none;
+}

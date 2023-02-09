@@ -1,0 +1,14 @@
+.module .highlight-post{
+    text-align:left
+}
+.module .highlight-post .post-image{
+    float:left;
+    margin:0 1.5em .5em 0
+}
+.module .highlight-post .post-image img{
+    border-radius:8px
+}
+.module .highlight-post .post-content{
+    overflow:hidden;
+    min-width:120px
+}

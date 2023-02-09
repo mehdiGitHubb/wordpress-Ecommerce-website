@@ -1,0 +1,12 @@
+.module.image-top .tb-image-wrap{
+    vertical-align:top;
+    display:inline-block;
+    width:auto;
+    max-width:100%;
+    float:none;
+    margin-right:0
+}
+.module.image-top .tb-image-content{
+    margin-top:1em;
+    margin-bottom:1.5em
+}

@@ -1,0 +1,17 @@
+#searchform{
+	font-size:2em;
+	border-bottom:1px solid;
+	margin:0 0 1em
+}
+#searchform #s{
+	background-color:transparent;
+	border:0;
+	margin:0;
+	width:100%;
+	padding:.45em;
+	padding-left:2.4em;
+	box-shadow:none
+}
+#searchform .icon-search{
+	color:#000
+}

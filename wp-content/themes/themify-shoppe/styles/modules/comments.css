@@ -1,0 +1,265 @@
+.commentwrap{
+	margin:.625em 0 1.25em;
+	position:relative;
+	clear:both
+}
+.comment-title,
+.comment-reply-title{
+	font-size:1em;
+	font-weight:500;
+	text-transform:uppercase;
+	letter-spacing:.08em;
+	line-height:1.9em;
+	margin:0 0 .8em;
+	padding:0
+}
+.comment-title:after,
+.comment-reply-title:after{
+	content:'';
+	display:block;
+	border-bottom:1px solid var(--theme_accent);
+	width:30px;
+	margin-top:1.2em
+}
+.commentwrap .pagenav{
+	margin:10px 0;
+	border:0;
+	box-shadow:none
+}
+.commentwrap .pagenav.top{
+	margin:0;
+	position:absolute;
+	top:0;
+	right:0
+}
+.commentlist{
+	margin:0 0 39px;
+	padding:5px 0 0
+}
+.commentlist li{
+	margin:0;
+	padding:15px 0 0;
+	list-style:none;
+	position:relative
+}
+.commentlist .comment-author{
+	margin:4px 0 10px;
+	padding:0
+}
+.commentlist .avatar{
+	float:left;
+	margin:0 33px 0 0;
+	width:85px;
+	border-radius:50%
+}
+.commentlist cite{
+	font-style:normal;
+	font-size:125%
+}
+.commentlist cite a{
+	text-decoration:none
+}
+.commentlist cite .tf_fa{
+	margin-right:10px
+}
+.commentlist .bypostauthor > .comment-author cite:before{
+	font-style:normal;
+	font-weight:400;
+	text-decoration:none;
+	margin-right:12px
+}
+.commentlist .comment-time{
+	color:#959595;
+	font-size:.85em;
+	display:block;
+	margin-top:6px;
+	letter-spacing:-.015em
+}
+.commentlist .commententry{
+	position:relative;
+	min-height:40px;
+	overflow:hidden;
+	overflow-wrap:break-word
+}
+.commentlist ul,.commentlist ol{
+	margin:0 0 0 7%;
+	padding:0
+}
+.commentlist .reply{
+	margin:0 0 4px 118px
+}
+.commentlist .comment-reply-link{
+	font-size:13px;
+	font-weight:600;
+	text-transform:uppercase;
+	text-decoration:none;
+	letter-spacing:.03em
+}
+.commentlist .comment-reply-link:before{
+	content:'';
+	display:inline-block;
+	vertical-align:middle;
+	border-bottom:solid 1px rgba(0,0,0,.2);
+	width:21px;
+	margin-right:10px;
+	opacity:.5
+}
+.commentlist .comment-reply-link:hover:before{
+	animation:RightToLeft .8s infinite linear;
+	opacity:1
+}
+/* COMMENT FORM*/
+#respond{
+	margin:0;
+	padding:10px 0 0;
+	position:relative;
+	clear:both
+}
+#respond #cancel-comment-reply-link{
+	position:absolute;
+	top:20px;
+	right:0;
+	font-size:.8em;
+	line-height:130%;
+	text-decoration:none;
+	display:block
+}
+#respond #cancel-comment-reply-link:hover{
+	color:#000
+}
+#respond #cancel-comment-reply-link:before,
+#respond #cancel-comment-reply-link:after{
+	content:'';
+	display:inline-block;
+	border-top:1px solid;
+	width:1.2em;
+	position:absolute;
+	left:-25px;
+	top:7px;
+	transition:all .3s ease
+}
+#respond #cancel-comment-reply-link:after{
+    transform:rotate(-45deg)
+}
+#respond #cancel-comment-reply-link:hover:before{
+    transform:rotate(135deg)
+}
+#respond #cancel-comment-reply-link:before,
+#respond #cancel-comment-reply-link:hover:after{
+    transform:rotate(45deg)
+}
+#commentform{
+	margin:15px 0 0
+}
+#commentform p{
+	margin:0
+}
+#commentform input[type=text]{
+	width:100%
+}
+#commentform label{
+	display:block;
+	font-size:.8em;
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:.04em;
+	opacity:.7;
+	transition:transform .3s
+}
+#commentform p label{
+	transform:translate(12px,35px)
+}
+.woocommerce #review_form #respond .comment-form-cookies-consent,
+#commentform .comment-form-cookies-consent{
+	margin:0 0 1.2em
+}
+#commentform .comment-form-cookies-consent label{
+	transform:none;
+	display:inline;
+	text-transform:none;
+	letter-spacing:0;
+	font-size:.95em
+}
+#commentform .comment-form-cookies-consent input[type="checkbox"]{
+	margin:0 .5em 0 0
+}
+#commentform .focused label{
+	transform:none
+}
+#commentform label small{
+	font-weight:300;
+	text-transform:none
+}
+#commentform textarea{
+	height:140px
+}
+#commentform p.comment-form-author,
+#commentform p.comment-form-email{
+	width:50%;
+	float:left;
+	box-sizing:border-box
+}
+#commentform p.comment-form-author{
+	padding-right:2%
+}
+#commentform p.comment-form-email{
+	padding-left:2%
+}
+#commentform .comment-form-rating,
+#commentform p.comment-form-comment,
+#commentform p.comment-form-url,
+#commentform p.comment-form-rating{
+	clear:both
+}
+#commentform input[type=text],
+#commentform input[type=email],
+#commentform input[type=url]{
+	width:100%;
+	max-width:none
+}
+#commentform p.logged-in-as,
+#commentform p.logged-in-as + p{
+	padding:0;
+	float:none;
+	width:100%
+}
+@keyframes RightToLeft{
+	0%,100%{
+		transform:translateX(0)
+	}
+	50%{
+		transform:translateX(-10px)
+	}
+}
+
+@media(max-width:680px){
+	.commentlist{
+		padding-left:0
+	}
+	.commentlist .commententry{
+		clear:left
+	}
+	.commentlist .reply{
+		margin-left:auto
+	}
+	.commentlist .avatar{
+		float:left;
+		width:40px;
+		height:40px;
+		margin:0 1em 1em 0
+	}
+	#commentform p.comment-form-author,
+	#commentform p.comment-form-email{
+		width:auto;
+		float:none;
+		padding:inherit
+	}
+	.sidebar-none.single-post .commentlist{
+		margin-left:auto
+	}
+	.sidebar-none.single-post .commentwrap{
+		padding-left:0;
+		padding-right:0
+	}
+	
+}

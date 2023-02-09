@@ -1,0 +1,1 @@
+.themify-bg-zoom,.module_row.themify-bg-zoom{transition:background-size .5s ease-in;background-size:cover;overflow:hidden}.themify-bg-zoom:before{content:"";display:block;position:absolute;top:0;right:0;bottom:0;left:0;background-position:inherit;background-size:inherit;background-image:inherit;transition:transform 1s}.themify-bg-zoom:hover:before{transform:scale(1.2)}

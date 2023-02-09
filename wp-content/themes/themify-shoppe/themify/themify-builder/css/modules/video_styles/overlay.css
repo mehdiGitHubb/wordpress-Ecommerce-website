@@ -1,0 +1,46 @@
+.module-video.video-overlay{
+    position:relative;
+    font-size:.85em
+}
+.module.video-overlay .video-wrap-outer{
+    margin:0;
+    width:100%
+}
+.module.video-overlay .video-content{
+    padding:2% 4%;
+    background:rgba(0,0,0,.7);
+    color:#ccc;
+    line-height:1.4em
+}
+.module.video-overlay .video-wrap-outer + .video-content{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    box-sizing:border-box;
+    transition:background-color .3s ease-in-out,color .3s ease-in-out
+}
+.module.video-overlay .video-title{
+    font-size:1.1em;
+    margin:0 0 .4em
+}
+.module-video.video-overlay p{
+    margin:0 0 .4em
+}
+.module-video.video-overlay a,
+.module-video.video-overlay a:hover{
+    color:#fff;
+    text-decoration:none
+}
+.module-video.video-overlay h1,
+.module-video.video-overlay h2,
+.module-video.video-overlay h3,
+.module-video.video-overlay h4,
+.module-video.video-overlay h5,
+.module-video.video-overlay h6{
+    color:#fff;
+    margin:0 0 .4em
+}
+.module-video.video-overlay .module-title{
+    color:inherit
+}

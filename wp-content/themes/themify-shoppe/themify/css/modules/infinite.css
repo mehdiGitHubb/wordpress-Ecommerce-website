@@ -1,0 +1,26 @@
+.tf_load_more{
+	padding:30px 0
+}
+.load-more-button{
+    clear:both;
+    text-align:center;
+    display:none; 
+    outline:none;
+    width:auto;
+    padding:10px 28px;
+    text-decoration:none;
+    box-sizing:border-box;
+    background:rgba(183,183,183,.16);
+    border-radius:30px
+}
+.tf_load_status.tf_loader{
+    font-size:40px;
+    margin:10px auto
+}
+.tf_scroll_request.tf_load_status{
+    display:block
+}
+.tf_scroll_request + .load-more-button,
+.tf_scroll_request + .tf_load_more{
+    display:none
+}

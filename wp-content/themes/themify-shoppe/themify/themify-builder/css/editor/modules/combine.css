@@ -1,0 +1,312 @@
+:root{
+    --tb_ui_bg:#f1f1f1;
+    --tb_ui_color:#444;
+    --tb_ui_color_light:#888;
+    --tb_ui_border:rgba(0,0,0,.1);
+
+    --tb_input_bg:#fff;
+	--tb_input_color:#000;
+	--tb_input_border:#ccc;
+	--tb_input_border_focus:#888;
+
+    --tb_ui_bg_light:#fff;
+	--tb_ui_bg_dark:#868686;
+    --tb_ui_bg_gray:#e5e5e5;
+    --tb_ui_bg_panel_dropdown:#fff;
+
+    --tb_grid_bg:#fff;
+    --tb_grid_bg_light:#f5f5f5;
+    --tb_grid_border:#cfcfcf;
+    --tb_grid_border_hover:#666;
+	--tb_toolbar_h:37px;
+	--tb_docked_w:300px
+}
+.tf_close{
+	touch-action:none
+}
+.tb_move_drag{
+	cursor:move
+}
+.tb_resizable{
+	position:absolute;
+	contain:strict;
+	touch-action:none;
+	z-index:90
+}
+.tb_resizable_e{
+	cursor:e-resize;
+	width:6px;
+	right:0;
+	top:0;
+	height:100%
+}
+.tb_resizable_st,
+.tb_resizable_s{
+	cursor:s-resize;
+	height:6px;
+	width:100%;
+	bottom:-3px;
+	left:0
+}
+.tb_resizable_st{
+	top:-4px
+}
+.tb_resizable_w{
+	cursor:w-resize;
+	width:6px;
+	left:-3px;
+	top:0;
+	height:100%
+}
+.tb_resizable_se,
+.tb_resizable_ne,
+.tb_resizable_nw,
+.tb_resizable_we{
+	overflow:hidden;
+	width:14px;
+	height:14px;
+	bottom:-3px
+}
+.tb_resizable_ne,
+.tb_resizable_nw{
+	bottom:auto;
+	cursor:nesw-resize;
+	right:-3px;
+	top:-3px
+}
+.tb_resizable_nw{
+	left:-3px;
+	right:auto;
+	cursor:nwse-resize
+}
+.tb_resizable_we{
+	cursor:nesw-resize;
+	left:-3px
+}
+.tb_resizable_se{
+	right:0;
+	cursor:nwse-resize
+}
+.tb_resizable_ne{
+	width:6px;
+	height:6px
+}
+.tf_plus_icon:before,
+.tf_plus_icon:after{
+    content:'';
+    width:1px;
+    height:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:0;
+    transform:translate(-50%,-50%) rotate(90deg);
+    background-color:currentColor
+}
+.tf_plus_icon:after{
+    transform:translate(-50%,-50%)
+}
+div.tb_start_animate,
+.tb_start_animate *{
+    scroll-snap-type:unset!important;
+    touch-action:none!important;
+    transition:none!important;
+    user-select:none!important;
+    -webkit-touch-callout:none;
+    pointer-events:none!important;
+    animation:0!important
+}
+.tb_ui_dropdown{
+    margin:0 0 0 15px
+}
+.breakpoint-tablet_landscape .tf-ti-tablet,
+.tab_tablet_landscape .tf-ti-tablet{
+    transform:rotate(-90deg)
+}
+span.tb_tooltip_up{
+    position:absolute;
+    bottom:100%;
+    left:50%;
+    text-transform:capitalize;
+    text-align:center;
+    width:auto;
+    white-space:nowrap;
+    z-index:11;
+    background:#000;
+    color:#fff;
+    font-size:11px;
+    line-height:1.1em;
+    padding:4px 10px;
+    border-radius:15px;
+    transform:translate(-60%,-2px);
+    opacity:0;
+    visibility:hidden
+}
+span.tb_tooltip_up:before{
+    content:"";
+    width:0;
+    height:0;
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+    border-top:4px solid #000;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    margin:0 auto;
+    display:block
+}
+.selectwrapper + span.tb_tooltip_up,
+.selectwrapper + span.tb_tooltip_up,
+.tfminicolors_wrapper + span.tb_tooltip_up,
+.tb_uploader_input ~ span.tb_tooltip_up{
+    transform:translate(-60%,3px)
+}
+input:hover + span.tb_tooltip_up,
+.selectwrapper:hover + span.tb_tooltip_up,
+.tfminicolors_wrapper:hover + span.tb_tooltip_up,
+.tb_uploader_input:hover ~ span.tb_tooltip_up{
+    opacity:1;
+    visibility:visible
+}
+.tb_tooltip span{
+    background-color:#000;
+    color:#fff;
+    padding:4px 10px;
+    position:absolute;
+    top:100%;
+	inset-inline-start:0;
+    opacity:0;
+    transition:margin-top .25s cubic-bezier(.1,.1,.8,1);
+    visibility:hidden;
+    margin:6px 0 0;
+    white-space:nowrap;
+    z-index:99999;
+    border-radius:15px;
+    font-size:.9em;
+    line-height:1.2
+}
+.tb_tooltip span:before{
+    content:'';
+    display:block;
+    position:absolute;
+    bottom:100%;
+	inset-inline-start:12px;
+    border:5px solid transparent;
+    border-bottom-color:#000
+}
+.tb_tooltip:hover span{
+    opacity:1;
+    visibility:visible
+}
+.builder-breakpoint-tablet_landscape .tab_tablet_landscape,
+.builder-breakpoint-tablet .tab_tablet,
+.builder-breakpoint-desktop .tab_desktop,
+.builder-breakpoint-mobile .tab_mobile,
+.tb_lightbox_switcher a:hover{
+    background:var(--tb_gs_icon_bg,rgba(0,0,0,.1))
+}
+.tb_overlay{
+    position:fixed;
+    z-index:870;
+    background-color:rgba(0,0,0,.3)
+}
+.tb_layout_part_edit .tb_overlay{
+    background:0
+}
+.tb_input_after .icon{
+    border:0;
+    margin-inline-start:5px
+}
+.contains-help .tb_input_after{
+    position:relative;
+    top:2px;
+    display:inline-block
+}
+.tb_panel_docked .tb_input .tb_help_content{
+    max-width:150px;
+    white-space:normal;
+	inset-inline:auto -10px
+}
+.tb_panel_docked .tb_input .tb_help_content:before{
+	inset-inline:auto 11px
+}
+/* START Global Styles */
+.gs_post #tb_last_row_add_btn,
+.gs_post .tb_import_layout_button{
+    visibility:hidden;
+    opacity:0;
+    z-index:-1
+}
+/* END Global Styles */
+
+
+/* START toggle switch controller */
+.switch-wrapper .toggle_switch{
+    border:0;
+    display:block;
+    position:absolute;
+    opacity:0;
+    outline:0;
+    width:0;
+	min-width:0;
+    margin:0;
+    padding:0;
+    height:0
+}
+.switch-wrapper .switch_label{
+    position:relative;
+    padding:7px;
+    font-size:12px;
+    width:34px;
+    height:18px;
+    border-radius:18px;
+    background:var(--tb_ui_bg_gray);
+    cursor:pointer;
+    box-sizing:border-box;
+    margin-top:4px
+}
+.switch-wrapper .switch_label:before{
+    content:'';
+    display:block;
+    position:absolute;
+    top:1px;
+	inset-inline:1px auto;
+    z-index:1;
+    line-height:34px;
+    text-indent:40px;
+    height:16px;
+    width:16px;
+    border-radius:100%;
+    background:#fff;
+    box-shadow:0 1px 2px rgba(0,0,0,.2);
+    transition:left ease-in-out .2s
+}
+.switch-wrapper .switch_label:after{
+    content:attr(data-off);
+    display:block;
+    position:absolute;
+    z-index:0;
+    top:-3px;
+	inset-inline-start:38px;
+    padding:2px;
+    line-height:1.8em;
+    text-align:left;
+    color:#bfbfbf;
+    white-space:nowrap
+}
+.switch-wrapper .toggle_switch:checked + .switch_label{
+    box-shadow:inset 0 0 0 20px #73ce72
+}
+.switch-wrapper .toggle_switch + .switch_label{
+    box-shadow:inset 0 0 0 0 #73ce72
+}
+.switch-wrapper .toggle_switch:checked + .switch_label:before{
+	inset-inline-start:calc(100% - 17px);
+    box-shadow:0 0 0 2px transparent,0 1px 2px rgba(0,0,0,.3)
+}
+.switch-wrapper .toggle_switch:checked + .switch_label:after{
+    content:attr(data-on);
+    color:#a2a2a2
+}
+/* END toggle switch controller */

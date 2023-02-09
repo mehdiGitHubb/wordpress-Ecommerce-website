@@ -1,0 +1,19 @@
+.module-product-categories .product a img,
+.module-product-categories .product a:hover img{
+	box-shadow:none
+}
+.module.module-product-categories .product-thumbs .post img{
+	margin-bottom:0
+}
+.module-product-categories li{
+	box-sizing:border-box
+}
+.product-thumbs .post{
+	display:inline-block;
+	width:40px;
+	margin:0 0 5px
+}
+.module-product-categories .count{
+	background:0;
+	color:inherit
+}

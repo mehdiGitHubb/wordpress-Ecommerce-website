@@ -1,0 +1,126 @@
+:host{
+    z-index:1000;
+    pointer-events:none;
+    contain:style layout
+}
+.panel{
+    width:560px;
+    min-height:200px;
+    padding:6px 0;
+    z-index:9999;
+    box-shadow:0 0 0 1px rgba(0,0,0,.1),0 4px 10px 2px rgba(0,0,0,.3);
+    margin-block-start:30px;
+    pointer-events:auto;
+    contain:inherit
+}
+.builder-breakpoint-mobile{
+    width:360px
+}
+.panel:after{
+    content:'';
+    position:absolute;
+    top:-7px;
+    inset-inline-start:50%;
+	margin-inline-start:-6px;
+    width:12px;
+    height:12px;
+    background-color:inherit;
+    transform:rotate(45deg);
+    border-left:1px solid rgba(0,0,0,.2);
+    border-top:1px solid rgba(0,0,0,.2)
+}
+.tb_touch_bottom{
+    margin-block:-40px 30px
+}
+.tb_touch_bottom:after{
+    top:100%;
+    margin-block-start:-6px;
+    transform:rotateZ(-135deg);
+    z-index:-1
+}
+input{
+    font-family:inherit;
+    font-weight:inherit
+}
+.panel_tab{
+    height:280px;
+    text-align:left;
+    padding-top:10px
+}
+.panel_search_form{
+    float:right;
+    margin-block:-5px 5px;
+    margin-inline:15px
+}
+.panel_search{
+    max-width:120px
+}
+.grids{
+    grid-template-columns:repeat(auto-fit,minmax(50px,1fr));
+    gap:3.2%
+}
+.tb_grid{
+    height:34px
+}
+.library_container{
+    grid-template-columns:1fr 1fr;
+    gap:5px
+}
+.library_tab{
+    font-size:14px
+}
+.panel_search_form:after{
+    top:7px
+}
+.nav_tab{
+    float:left;
+    margin-block:2px 5px;
+    margin-inline:15px;
+    padding:0;
+    font-size:15px;
+    max-height:none; 
+    text-transform:capitalize;
+    column-gap:5px;
+}
+.nav_tab > li{
+	color:var(--tb_ui_color)
+}
+.nav_tab > li:hover{
+    background:0;
+    color:var(--tb_ui_color)
+}
+.nav_tab .current{
+    border-bottom:solid 1px #00a2fb;
+    color:var(--tb_ui_color)
+}
+.predesigned_container{
+    padding:0 10px;
+    gap:16px;
+    grid-template-columns:1fr 1fr
+}
+.predesigned_row{
+    text-align:center
+}
+.predesigned_container img{
+    width:100%
+}
+.tb_subrow_open .tb_cat_grid{
+    display:none
+}
+/* media queries */
+@media (max-width:680px){
+    .panel_category,
+    .grids{
+        grid-template-columns:repeat(3,1fr)
+    }
+    .nav_tab{
+        font-size:13px;
+        margin-top:10px
+    }
+    .panel_search_form{
+		margin-inline:5px;
+    }
+    input[type="text"]{
+        max-width:90px
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "smashballoon/instagram-feed",
+    "autoload": {
+        "psr-4": {
+            "InstagramFeed\\": "inc/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:awesomemotive/sb-stubs.git"
+        }
+    ],
+    "require": {
+        "smashballoon/stubs": "dev-master"
+    }
+}

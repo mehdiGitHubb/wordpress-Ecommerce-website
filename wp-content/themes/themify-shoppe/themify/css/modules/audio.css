@@ -1,0 +1,277 @@
+.tf_audio_container{
+	margin-bottom:1em
+}
+.tf_audio_wrap{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    font-family:Helvetica,Arial;
+	background-color:#000;
+	color:#fff;
+	padding:8px 21px;
+	border-radius:8px
+}
+.tf_rel.tf_audio_wrap button{
+    background:0;
+    border:0;
+    padding:0;
+    outline:0;
+    margin:0;
+	margin-inline-end:6px;
+    letter-spacing:normal;
+	line-height:normal;
+    transform:none;
+    box-shadow:none;
+	text-decoration:none;
+	max-width:none;
+    min-width:auto;
+    width:auto;
+    color:inherit
+}
+.tf_audio_progress_wrap{
+	height:10px;
+    width:32px;
+    flex-grow:1;
+	margin:0 8px
+}
+.tf_audio_progress_wrap:before{
+	content:'';
+	background:rgba(255,255,255,.3);
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%
+}
+.tf_audio_waiting:before{
+    background:linear-gradient(-45deg,rgba(255,255,255,.4) 25%,transparent 0,transparent 50%,rgba(255,255,255,.4) 0,rgba(255,255,255,.4) 75%,transparent 0,transparent);
+    background-size:15px 15px;
+    animation:tf-buffering-stripes 2s linear infinite
+}
+@keyframes tf-buffering-stripes{
+    0%{background-position:0 0}
+    to{background-position:30px 0}
+}
+.tf_audio_progress_wrap div{
+    transform-origin:0 0;
+    transform:scaleX(0);
+    contain:strict;
+    transition:transform .2s linear
+}
+.tf_audio_progress_loaded{
+    z-index:1;
+    background:rgba(255,255,255,.4)
+}
+.tf_audio_progress_current{
+    background:var(--theme_accent,#5cb4f7);
+    z-index:2
+}
+.tf_audio_wrap input.tf_audio_volumn_range,
+.tf_rel.tf_audio_wrap input.tf_audio_progress_range{
+    cursor:pointer;
+    width:100%;
+	min-width:auto;
+	max-width:none;
+    opacity:0;
+    z-index:3;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    display:block;
+	border-radius:0;
+	transition:none;
+	-webkit-appearance:none;
+	appearance:none;
+    direction:ltr;
+	transform:none
+}
+.tf_audio_progress_range::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	appearance:none;
+    width:10px;
+    background:0
+}
+.tf_audio_progress_range::-moz-range-thumb{
+	appearance:none;
+    width:10px;
+    background:0
+}
+.tf_audio_volumn_range::-webkit-slider-thumb{
+    -webkit-appearance:none;
+	appearance:none;
+    width:0;
+    box-shadow:-100vw 0 0 100vw #fff;
+    height:8px
+}
+.tf_audio_volumn_range::-moz-range-thumb{
+	appearance:none;
+    width:0;
+    box-shadow:-100vw 0 0 100vw #fff;
+    height:8px
+}
+.tf_audio_progress_wrap .tf_audio_hover{
+    transition:none;
+    color:#fff;
+    font-size:10px;
+    z-index:4;
+	border-radius:50em;
+    background:#000;
+    bottom:100%;
+    top:auto;
+    left:auto;
+    right:auto;
+    line-height:normal;
+    padding:3px 6px 7px;
+    display:inline-flex;
+    flex-direction:column;
+    place-items:center;
+    contain:style layout;
+	margin-block-end:7px;
+	margin-inline-start:2px
+}
+.tf_audio_hover.tf_abs:after{
+    content:'';
+    width:0;
+    height:0;
+    border:7px solid transparent;
+    border-block-end-width:0;
+    border-block-start-color:#333;
+    margin-block-end:-11px
+}
+.tf_audio_volumn_wrap{
+    max-width:88px;
+    display:none;
+    align-items:center;
+	margin-block-start:-1px;
+	margin-inline-start:8px
+}
+.tf_playlist_next:before,
+.tf_playlist_prev:before,
+.tf_auido_play:before{
+    display:inline-block;
+    content:"";
+    width:0;
+    height:0;
+    border:0 solid transparent;
+    border-width:8px 0 8px 14px;
+    border-left-color:currentColor;
+    vertical-align:middle;
+    margin-top:-4px;
+    transition:.1s height linear,.1s border-width linear
+}
+.tf_playlist_next:before,
+.tf_playlist_prev:before{
+    border-width:6px 0 6px 10px;
+    margin-right:5px;
+    transform:rotate(180deg)
+}
+.tf_playlist_next:before{
+    transform:none;
+	margin-inline:5px 0
+}
+.tf_audio_total_time,
+.tf_audio_current_time{
+    font-size:13px;
+    font-weight:400;
+    margin:0 6px
+}
+.tf_audio_playing:before{
+    border-style:double;
+    border-width:0 0 0 14px;
+    height:14px
+}
+.tf_audio_wrap button.tf_audio_mute{
+    background:transparent url('../../img/mejs-controls.svg') -60px 0 no-repeat;
+    min-width:20px;
+    height:20px;
+    transition:.1s background-position linear
+}
+.tf_play_disabled,
+.tf_audio_mute.tf_mute_disabled{
+    opacity:.5;
+    cursor:not-allowed
+}
+.tf_audio_wrap .tf_audio_mute.tf_muted{
+    background-position:-40px 0
+}
+.tf_audio_volumn_inner{
+    width:100%;
+    flex-grow:1;
+    background:rgba(255,255,255,.33);
+	margin-inline-start:10px;
+    height:8px
+}
+.tf_audio_wrap input.tf_audio_volumn_range{
+    background:0;
+    opacity:1
+}
+.tf_audio_playlist .tf_playlist_item{
+    padding:5px 3px;
+    border-bottom:1px solid #ccc
+}
+.tf_playlist_item.tf_lazy{
+    cursor:not-allowed;
+    pointer-events:none;
+    opacity:.2
+}
+.tf_playlist_item:last-of-type{
+    border:0;
+    padding-bottom:0
+}
+.tf_playlist_title{
+    margin-inline-start:5px
+}
+.tf_playlist_caption{
+    max-width:94%;
+    text-overflow:ellipsis;
+    display:block;
+    outline:0
+}
+.tf_audio_playlist .tf_playlist_length{
+    position:absolute;
+    right:11px;
+    top:50%;
+    transform:translateY(-50%);
+    contain:unset;
+    padding:0
+}
+.tf_audio_playlist{
+    margin-top:10px;
+    font-size:14px;
+    line-height:1.5
+}
+.tf_audio_current{
+    font-weight:700
+}
+.wp-playlist.wp-playlist-themify .wp-playlist-next,
+.wp-playlist.wp-playlist-themify .wp-playlist-current-item,
+.wp-playlist.wp-playlist-themify .wp-playlist-prev,
+.tf_hide.tf_audio_hover,
+div.tf_audio_container + audio{
+    display:none
+}
+.wp-playlist .tf_audio_lazy{
+    padding:10px;
+    margin:12px 0 18px;
+    font-size:14px
+}
+.wp-playlist .tf_playlist_current .tf_playlist_caption{
+    margin-inline-start:auto
+}
+/* audio new appearance */
+.tf_audio_wrap .tf_audio_controls,
+.tf_audio_volumn_wrap{
+	display:flex
+}
+.tf_audio_progress_wrap:before,
+.tf_audio_progress_loaded,
+.tf_audio_progress_current,
+.tf_audio_volumn_inner,
+.tf_audio_wrap input.tf_audio_volumn_range{
+	border-radius:5px
+}
+.tf_audio_volumn_inner{
+	margin-inline-start:7px
+}

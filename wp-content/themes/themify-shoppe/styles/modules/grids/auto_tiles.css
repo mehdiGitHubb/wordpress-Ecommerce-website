@@ -1,0 +1,81 @@
+.loops-wrapper.auto_tiles > .product,
+.loops-wrapper.auto_tiles > .post{
+	border-radius:8px
+}
+.auto_tiles .embed-youtube{
+    padding:0;
+    margin:0;
+    height:100%
+}
+.auto_tiles .tiled_overlay_link{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10
+}
+.auto_tiles .product-image + .product-content,
+.auto_tiles .post-image + .post-content{
+    background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,.65) 40%,rgba(255,255,255,1) 100%);
+    bottom:-100%;
+    left:0;
+    right:0;
+    position:absolute;
+    overflow:hidden;
+    width:100%;
+    padding:2em 1em 1em;
+    padding-bottom:0;
+    padding-top:3em;
+    z-index:1;
+    box-sizing:border-box;
+    transition:all .3s ease-in-out;
+	transition-property:transform,bottom
+}
+.auto_tiles .post:hover .post-content,
+.auto_tiles .product:hover .post-content,
+.auto_tiles .product:hover .product-content{
+	bottom:0
+}
+.auto_tiles .post-title{
+    font-size:1.25em
+}
+.auto_tiles .post-meta{
+    font-size:.65em
+}
+.auto_tiles .post-cat-tag-wrap{
+    font-size:.7em
+}
+.auto_tiles .post-content-inner-wrapper{
+    display:table;
+    width:100%;
+    height:100%;
+    position:relative
+}
+.auto_tiles .post-content-inner{
+    display:table-cell;
+    vertical-align:bottom
+}
+.auto_tiles .post:hover .post-image + .post-content:before{
+    opacity:1
+}
+.auto_tiles .post:hover .post-meta,
+.auto_tiles .post:hover .entry-content{
+    display:block
+}
+.auto_tiles .post .entry-content{
+	font-size:.9em;
+	line-height:1.6;
+	max-height:40%;
+	overflow:hidden
+}
+.auto_tiles .product-share-wrap{
+	margin:10px 0 7px
+}
+.auto_tiles .product-content-inner{
+	vertical-align:bottom;
+	padding-bottom:.8em
+}
+.woocommerce ul.products.auto_tiles  li.product .button{
+	margin-bottom:0
+}

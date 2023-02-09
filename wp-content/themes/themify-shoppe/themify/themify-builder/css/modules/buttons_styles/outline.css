@@ -1,0 +1,19 @@
+.module.module-buttons.outline a.ui{
+	border:1px solid var(--tb_pr_bg,#fff);
+    background:0;
+	box-shadow:none
+}
+.module-buttons.outline a.ui:not(.transparent){
+    color:var(--tb_pr_bg,#fff)
+}
+.module-buttons.outline a:hover{
+	--tb_pr_color:#fff
+}
+.module-buttons.outline .tb_default_color:hover,
+.module-buttons.outline .light-green:hover{
+	--tb_pr_color:#000
+}
+.module.module-buttons.outline .ui:hover{
+    color:var(--tb_pr_color);
+    background-color:var(--tb_pr_bg,#fff)
+}

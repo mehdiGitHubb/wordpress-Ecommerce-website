@@ -1,0 +1,56 @@
+.tf_tooltip_wrap{
+    pointer-events:none;
+    position:fixed;
+    padding-top:20px;
+    padding-left:10px;
+    display:flex;
+    flex-direction:column;
+    contain:layout style paint;
+    z-index:9999
+}
+.tf_tooltip_wrap.left{
+    transform:translateX(-100%);
+    padding-left:0;
+    padding-right:10px;
+    align-items:self-end
+}
+.tf_tooltip_wrap.top{
+	transform:translateY(-100%);
+	padding-top:0;
+	padding-bottom:10px
+}
+.tf_tooltip_wrap.top.left{
+    transform:translate(-100%,-100%)
+}
+.tf_tooltip{
+    background:rgba(33,33,33,.9);
+    color:#fff;
+    cursor:initial;
+    padding:.5em 1em;
+    margin:5px 0;
+    font-size:.75em;
+    font-weight:normal;
+    font-style:normal;
+    line-height:1.3;
+    border-radius:8px;
+    width:180px;
+    max-width:max-content
+}
+.tf_tooltip.order-1{
+    order:1
+}
+.tf_tooltip.order-2{
+    order:2
+}
+.tf_tooltip.order-3{
+    order:3
+}
+.tf_tooltip.order-4{
+    order:4
+}
+.tf_tooltip.order-5{
+    order:5
+}
+.tf_tooltip.tooltip_preview{
+    transform:translate(-50%,-100%)
+}

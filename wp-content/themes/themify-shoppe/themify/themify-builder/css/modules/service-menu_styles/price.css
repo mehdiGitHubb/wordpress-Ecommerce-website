@@ -1,0 +1,18 @@
+.tb-menu-price{
+    font-size:1.1em;
+    line-height:1.2em;
+    margin:0 0 .3em;
+    display:inline-flex;
+    font-weight:bold
+}
+.tb-price-item{
+    margin-left:20px;
+}
+.tb-price-title{
+    text-transform:uppercase;
+    font-size:.75em;
+    font-weight:normal
+}
+.tb-price-item:first-child{
+    margin-left:0
+}

@@ -1,0 +1,1 @@
+const e={methods:{maybeUpdateId(n){const t=this.metaHtml(this.options.webmasterTools[n]);t instanceof HTMLElement&&t.nodeName==="META"&&t.getAttribute("content").length&&this.$set(this.options.webmasterTools,n,t.getAttribute("content"))},metaHtml(n){const t=document.createElement("div");return t.innerHTML=n,t.firstChild}}};export{e as M};

@@ -1,0 +1,20 @@
+.loops-wrapper.grid3 > .post{
+	margin-bottom:3.1em
+}
+.loops-wrapper.grid3 .post-title{
+	font-size:1.3em
+}
+.loops-wrapper.grid3 .post-meta{
+	font-size:.725em
+}
+@media(max-width:680px){
+	.loops-wrapper.grid3 .post-title{
+		font-size:1.4em
+	}
+	.loops-wrapper.grid3 .post-image{
+		float:none;
+		position:static;
+		width:auto;
+		overflow:visible
+	}
+}

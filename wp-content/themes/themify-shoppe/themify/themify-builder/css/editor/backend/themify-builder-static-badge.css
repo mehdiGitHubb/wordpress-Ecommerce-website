@@ -1,0 +1,21 @@
+/* Builder Static Badge */
+.tb_static_badge_box{
+    background:#fff;
+    font:14px/1.4em normal Arial,sans-serif;
+    padding:15px 20px 5px;
+    color:#929292;
+    border-radius:8px;
+    box-shadow:0 1px 4px rgba(0,0,0,.2)
+}
+.tb_static_badge_box a{
+    color:#654CB5;
+    text-decoration:none
+}
+.tb_static_badge_box h4{
+    font:16px/1.4em Arial,sans-serif;
+    margin:0 0 5px;
+    color:#000
+}
+.tb_static_badge_box p{
+    margin:0 0 10px
+}

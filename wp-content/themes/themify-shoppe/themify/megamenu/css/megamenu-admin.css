@@ -1,0 +1,75 @@
+.themify-widget-options .widget-inside{
+	display:block;
+	border:0;
+	background:0;
+	box-shadow:none;
+}
+.tf-mega-columns-layout{
+	margin-top:10px;
+}
+.tf-mega-columns-layout a{
+	width:23px;
+	height:9px;
+	background:#f3f3f3 url("../../themify-builder/css/editor/img/grids.svg") no-repeat center;
+	display:inline-block;
+	padding:5px;
+	margin-right:5px;
+}
+.tf-mega-columns-layout a.selected{
+	background-color:#E6F2FE;
+	outline:1px solid #00B5F9;
+}
+.tf-mega-columns-layout a[data-value=""]{
+	background-position:-27px -73px;
+}
+.tf-mega-columns-layout a[data-value="4-8"]{
+	background-position:5px 5px;
+}
+.tf-mega-columns-layout a[data-value="8-4"]{
+	background-position:-28px -33px;
+}
+.tf-mega-columns-layout a[data-value="6-3-3"]{
+	background-position:5px -52px;
+}
+.tf-mega-columns-layout a[data-value="3-3-6"]{
+	background-position:-28px 5px;
+}
+.tf-mega-columns-layout a[data-value="3-6-3"]{
+	background-position:5px -14px;
+}
+.tf-mega-columns-layout a[data-value="3-9"]{
+	background-position:-28px -14px;
+}
+.tf-mega-columns-layout a[data-value="9-3"]{
+	background-position:-61px 5px;
+}
+
+.themify_field_tf-mega option[value="mega"],
+.themify_field_tf-mega option[value="columns"]{
+	display:none;
+}
+.menu-item-depth-0 .themify_field_tf-mega option[value="mega"],
+.menu-item-depth-0 .themify_field_tf-mega option[value="columns"]{
+	display:block;
+}
+.field-tf-mega label a{
+    text-decoration:none;
+    color:#fff;
+    background:#d8d8d8;
+    border-radius:50%;
+    text-align:center;
+    vertical-align:middle;
+    width:14px;
+    height:14px;
+    display:inline-block;
+    line-height:15px;
+    font-size:9px;
+    margin-top:-5px;
+}
+.field-tf-mega label a:hover{
+    background:#2eaefc;	
+}
+.themify-widget-options{
+	background:#f7f7f7;
+	padding:1em;
+}

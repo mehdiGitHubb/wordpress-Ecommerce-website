@@ -1,0 +1,12 @@
+.tf_search_lightbox #searchform{
+	margin:25% 0 1em 0;
+	font-size:2.5em;
+}
+.tf_search_lightbox.search-active #searchform{
+	margin-top:0;
+	font-size:2em
+}
+/* search view all wrap */
+.tf_view_button:after{
+	border-color:var(--theme_accent)
+}

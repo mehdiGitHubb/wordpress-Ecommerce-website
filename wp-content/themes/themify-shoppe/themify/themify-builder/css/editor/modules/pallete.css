@@ -1,0 +1,117 @@
+:host{
+    contain:size style;
+    z-index:999999999;
+    font:normal 13px/150% Arial,sans-serif
+}
+ul,li,input,button,form{
+	padding:0;
+    margin:0;
+	border:0;
+	background:0;
+}
+#pallete{
+	position:fixed;
+    top:var(--tb_toolbar_h);
+	left:0;
+    background:#fff;
+    box-shadow:0 2px 5px 1px #0003;
+    border-radius:5px;
+	width:300px;
+    contain:strict
+}
+.header,
+.menu,
+.footer{
+    padding:10px 15px
+}
+.header{
+	border-bottom:1px solid #e1e1e1
+}
+.menu{
+    display:grid;
+    grid-row-gap:16px;
+    overflow-y:auto;
+	max-height:98%;
+	padding-bottom:130px
+}
+.footer{   
+	position:sticky;
+    bottom:0;
+    left:0; 
+    background:inherit;
+	border-top:1px solid #e1e1e1
+}
+.back{
+    width: 1em;
+    height: 1em;
+}
+li{
+    display:grid;
+    grid-template-areas:"label number" "slider slider";
+    grid-template-columns:1fr auto;
+    align-items:center;
+    grid-row-gap:16px;
+	list-style:none
+}
+.label{
+	grid-area:label
+}
+button,
+label{
+	cursor:pointer
+}
+input{
+    -webkit-appearance:none;
+    appearance:none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance:none;
+  margin:0
+}
+.tb_field input[type="number"]{
+	grid-area:number;
+    width:40px;
+    margin:0;
+    text-align:center;
+}
+.slider{
+	grid-area:slider;
+    border-radius:5px;
+}
+.slider::-webkit-slider-runnable-track{
+    border:.2px solid #e1e1e1;
+    width:100%;
+    height:2px;
+    cursor:pointer
+}
+.slider::-webkit-slider-thumb{
+    transform:translateY(-50%);
+    width:17px;
+    height:17px;
+    background:#fff;
+    border:1px solid #c5c5c5;
+    border-radius:50px;
+	box-shadow:0 1px 3px rgba(0,0,0,.2);
+    cursor:col-resize;
+    -webkit-appearance:none
+}
+.slider:focus::-webkit-slider-runnable-track{
+    background:#a9a9a9
+}
+.slider::-moz-range-track{
+    border:.2px solid #e1e1e1;
+    width:100%;
+    height:2px;
+    cursor:pointer
+}
+.slider::-moz-range-thumb{
+    width:17px;
+    height:17px;
+    background:#fff;
+    border:1px solid #c5c5c5;
+    border-radius:50px;
+	box-shadow:0 1px 3px rgba(0,0,0,.2);
+    cursor:col-resize;
+	appearance:none
+}

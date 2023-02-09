@@ -1,0 +1,222 @@
+/**
+ * Wrapper
+ */
+.themify-combo-select{
+    position:relative;
+    max-width:100%;
+    font:100% Helvetica,Arial,Sans-serif;
+    border:0;
+    z-index:220
+}
+/**
+ * Input field
+ */
+.tb_input .themify-combo-select .themify-combo-input{
+    -webkit-appearance:none;
+    appearance:none;
+    margin:0;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width:100%;
+    box-sizing:border-box;
+    border:0;
+    outline:0
+}
+.themify-combo-input:focus{
+    outline:0 
+}
+/**
+ * Arrow
+ */
+.themify-combo-arrow{
+    position:absolute;
+    inset-inline-end:0;
+    top:0;
+    height:100%;
+    cursor:pointer;
+    text-align:center;
+    width:40px;
+    font-size:12px;
+    color:#999 
+}
+.themify-combo-arrow:before{
+    content:" ";
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #ccc;
+    display:block;
+    width:0;
+    height:0;
+    top:0;
+    inset-inline-end:15px;
+    bottom:0;
+    position:absolute;
+    margin:auto 0
+}
+.themify-combo-open .themify-combo-arrow:before{
+    border-top:none;
+    border-bottom:5px solid #ccc
+}
+
+/**
+ * Hide native select
+ */
+.themify-combo-select select{
+    display:none
+}
+.themify-combo-selected,
+.themify-combo-item:hover{
+    background-color:#999;
+    color:#fff 
+}
+.themify-combo-item:last-child{
+    border-bottom:none 
+}
+/**
+ * Disabled and optgroups
+ */
+.themify-combo-group{
+    cursor:text;
+    font-weight:600;
+    color:var(--tb_ui_color_light);
+    background:#e1e1e1;
+    border-width:1px 0 
+}
+/**
+ * Disabled
+ */
+.themify-combo-disabled{
+    opacity:.5
+}
+/**
+ * Dropdown
+ */
+.themify-combo-dropdown{
+    list-style:none;
+    position:absolute;
+    z-index:1;
+    top:100%;
+    left:0;
+    min-width:100%;
+    max-height:300px;
+    margin:6px 0 0;
+    padding:0;
+    display:none;
+    overflow-y:auto;
+    background:var(--tb_ui_bg_light);
+    border:0;
+    border-radius:0;
+    box-shadow:0 0 1px 0 rgba(0,0,0,.6),0 3px 10px rgba(0,0,0,.2);
+    box-sizing:border-box;
+    border-radius:8px
+}
+.themify-combo-dropdown li{
+    list-style:none;
+    padding:8px 1em;
+    margin:0;
+    display:block;
+    min-height:36px;
+    cursor:pointer;
+    box-sizing:border-box
+}
+/**
+ * Disabled and optgroups
+ */
+.themify-combo-dropdown .themify-combo-group{
+    cursor:text;
+    font-weight:600;
+    background:rgba(180,180,180,.3);
+    border-width:1px 0 
+}
+/**
+ * On Active
+ */
+.themify-combo-open .themify-combo-dropdown{
+    display:block;
+}
+/**
+ * Font Preview
+ */
+.tb_font_preview{
+    position:absolute;
+    z-index:230;
+    display:none;
+    background-color:var(--tb_ui_bg_light);
+    color:var(--tb_ui_color);
+    padding:3px 10px;
+    font-size:15px;
+    line-height:1;
+    width:120px;
+    inset-inline-end:10px;
+    top:0;
+    line-height:30px;
+    margin-top:3px;
+    text-align:center;
+    border-radius:12px;
+    box-sizing:border-box;
+    box-shadow:0 0 0 1px rgba(0,0,0,.1), 0 2px 10px rgba(0,0,0,.1);
+}
+.tb_panel_docked .tb_font_preview{
+    width:82px;
+    padding:2px 10px;
+    font-size:12px;
+    margin-top:-2px;
+    margin-right:-2px;
+    inset-inline-end:100%
+}
+.tb_panel_docked .tb_font_preview:before{
+	left:100%;
+	right:auto;
+	border-right-color:transparent;
+	border-left-color:#000
+}
+.tb_font_preview > span{
+    min-height:32px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis
+}
+.tb_font_preview .themify_show_wait{
+    display:inline-block;
+    vertical-align:middle;
+    text-indent:-1110000px
+}
+.tb_font_preview .themify_show_wait{
+    width:20px;
+    height:20px;
+    min-height:inherit;
+    background-color:rgba(0,0,0,.6);
+    border-radius:50%;
+    box-sizing:border-box;
+    position:relative;
+    margin-right:10px
+}
+.tb_font_preview .themify_show_wait:before{
+    width:80%;
+    height:80%;
+    border:3px solid transparent;
+    border-top-color:#fff;
+    border-radius:50%;
+    box-sizing:border-box;
+    position:absolute;
+    top:10%;
+    left:10%;
+    content:'';
+    animation:circle-loader 1.4s infinite linear
+}
+@keyframes circle-loader{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+.tb_font_preview_wrapper{
+    font:100% Arial,Sans-serif;
+    border:1px #ccc solid;
+    width:100%;
+    border-radius:8px;
+    box-sizing:border-box;
+}

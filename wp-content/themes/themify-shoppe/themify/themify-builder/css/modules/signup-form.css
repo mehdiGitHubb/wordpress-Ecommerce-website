@@ -1,0 +1,41 @@
+.tb_signup_label{
+    display:block;
+    font-weight:700
+}
+.tb_signup_label[data-required="yes"]:after{
+    content:"*";
+    color:#ed1e24
+}
+.tb_signup_form > div{
+    margin-bottom:14px
+}
+.tb_sp_name_wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:-3.5%;
+}
+.tb_sp_name_wrapper > div{
+    flex-grow:1;
+    justify-content:space-between;
+    padding-left:3.5%;
+    width:33.33%;
+    box-sizing:border-box;
+}
+.tb_signup_form label,
+.tb_signup_form input[type=text],
+.tb_signup_form input[type=password],
+.tb_signup_form input[type=email]{
+    width:100%
+}
+.tb_signup_messages{
+    margin:0 0 1.4em;
+    padding:.5em 1em;
+    border-radius:8px;
+    color:#fff
+}
+.tb_signup_errors{
+    background:#ed1e24
+}
+.tb_signup_success{
+    background:#1cab6e
+}

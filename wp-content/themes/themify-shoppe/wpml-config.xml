@@ -1,0 +1,784 @@
+<wpml-config>
+	<custom-fields>
+		<custom-field action="translate" encoding="json">_themify_builder_settings_json</custom-field>
+		<custom-field action="copy">layout</custom-field>
+		<custom-field action="copy">content_width</custom-field>
+		<custom-field action="copy">post_image</custom-field>
+		<custom-field action="copy">feature_size</custom-field>
+		<custom-field action="copy">image_dimensions</custom-field>
+		<custom-field action="copy">imagefilter_options</custom-field>
+		<custom-field action="copy">imagefilter_options_hover</custom-field>
+		<custom-field action="copy">imagefilter_applyto</custom-field>
+		<custom-field action="copy">hide_post_title</custom-field>
+		<custom-field action="copy">unlink_post_title</custom-field>
+		<custom-field action="copy">hide_meta_multi</custom-field>
+		<custom-field action="copy">hide_post_date</custom-field>
+		<custom-field action="copy">hide_post_image</custom-field>
+		<custom-field action="copy">unlink_post_image</custom-field>
+		<custom-field action="copy">video_url</custom-field>
+		<custom-field action="copy">external_link</custom-field>
+		<custom-field action="copy">multi_lightbox_link</custom-field>
+		<custom-field action="copy">custom_menu</custom-field>
+		<custom-field action="copy">body_background_color</custom-field>
+		<custom-field action="copy">body_background_image</custom-field>
+		<custom-field action="copy">body_background_repeat</custom-field>
+		<custom-field action="copy">color_scheme_mode</custom-field>
+		<custom-field action="copy">color_design</custom-field>
+		<custom-field action="copy">scheme_color</custom-field>
+		<custom-field action="copy">scheme_link</custom-field>
+		<custom-field action="copy">scheme_background</custom-field>
+		<custom-field action="copy">typography_mode</custom-field>
+		<custom-field action="copy">font_design</custom-field>
+		<custom-field action="copy">body_font</custom-field>
+		<custom-field action="copy">body_text_color</custom-field>
+		<custom-field action="copy">body_link_color</custom-field>
+		<custom-field action="copy">heading_font</custom-field>
+		<custom-field action="copy">heading_color</custom-field>
+		<custom-field action="copy">header_design</custom-field>
+		<custom-field action="copy">fixed_header</custom-field>
+		<custom-field action="copy">full_height_header</custom-field>
+		<custom-field action="copy">_multi_header_elements</custom-field>
+		<custom-field action="copy">header_wrap</custom-field>
+		<custom-field action="copy">_animated_colors</custom-field>
+		<custom-field action="copy">background_gallery</custom-field>
+		<custom-field action="copy">_video_select</custom-field>
+		<custom-field action="copy">background_color</custom-field>
+		<custom-field action="copy">background_image</custom-field>
+		<custom-field action="copy">background_repeat</custom-field>
+		<custom-field action="copy">headerwrap_text_color</custom-field>
+		<custom-field action="copy">headerwrap_link_color</custom-field>
+		<custom-field action="copy">footer_design</custom-field>
+		<custom-field action="copy">_multi_footer_elements</custom-field>
+		<custom-field action="copy">page_layout</custom-field>
+		<custom-field action="copy">hide_page_title</custom-field>
+		<custom-field action="copy">_video_select</custom-field>
+		<custom-field action="copy">_query_posts_notice</custom-field>
+		<custom-field action="copy">query_category</custom-field>
+		<custom-field action="copy">order</custom-field>
+		<custom-field action="copy">orderby</custom-field>
+		<custom-field action="copy">layout</custom-field>
+		<custom-field action="copy">post_content_layout</custom-field>
+		<custom-field action="copy">disable_masonry</custom-field>
+		<custom-field action="copy">post_gutter</custom-field>
+		<custom-field action="copy">more_posts</custom-field>
+		<custom-field action="copy">posts_per_page</custom-field>
+		<custom-field action="copy">display_content</custom-field>
+		<custom-field action="copy">feature_size_page</custom-field>
+		<custom-field action="copy">image_dimensions</custom-field>
+		<custom-field action="copy">hide_title</custom-field>
+		<custom-field action="copy">unlink_title</custom-field>
+		<custom-field action="copy">hide_date</custom-field>
+		<custom-field action="copy">hide_image</custom-field>
+		<custom-field action="copy">unlink_image</custom-field>
+		<custom-field action="copy">hide_navigation</custom-field>
+		<custom-field action="copy">portfolio_query_category</custom-field>
+		<custom-field action="copy">portfolio_order</custom-field>
+		<custom-field action="copy">portfolio_orderby</custom-field>
+		<custom-field action="copy">portfolio_layout</custom-field>
+		<custom-field action="copy">portfolio_post_content_layout</custom-field>
+		<custom-field action="copy">portfolio_disable_masonry</custom-field>
+		<custom-field action="copy">portfolio_post_gutter</custom-field>
+		<custom-field action="copy">portfolio_more_posts</custom-field>
+		<custom-field action="copy">portfolio_posts_per_page</custom-field>
+		<custom-field action="copy">portfolio_display_content</custom-field>
+		<custom-field action="copy">portfolio_feature_size_page</custom-field>
+		<custom-field action="copy">_portfolio_image_dimensions</custom-field>
+		<custom-field action="copy">portfolio_hide_title</custom-field>
+		<custom-field action="copy">portfolio_unlink_title</custom-field>
+		<custom-field action="copy">portfolio_hide_meta_all</custom-field>
+		<custom-field action="copy">portfolio_hide_image</custom-field>
+		<custom-field action="copy">portfolio_unlink_image</custom-field>
+		<custom-field action="copy">portfolio_hide_navigation</custom-field>
+		<custom-field action="copy">post_image</custom-field>
+		<custom-field action="copy">feature_size</custom-field>
+		<custom-field action="copy">hide_post_meta</custom-field>
+		<custom-field action="copy">post_id_info</custom-field>
+		<custom-field action="copy">_separator_project_info</custom-field>
+		<custom-field action="copy">project_date</custom-field>
+		<custom-field action="copy">project_client</custom-field>
+		<custom-field action="copy">project_services</custom-field>
+		<custom-field action="copy">project_launch</custom-field>
+		<custom-field action="copy">_video_select</custom-field>
+
+		<custom-field action="copy">image_dimensions</custom-field>
+		<custom-field action="copy">image_width</custom-field>
+		<custom-field action="copy">image_height</custom-field>
+		<custom-field action="copy">hide_meta_multi</custom-field>
+		<custom-field action="copy">hide_meta_all</custom-field>
+		<custom-field action="copy">hide_meta_author</custom-field>
+		<custom-field action="copy">hide_meta_category</custom-field>
+		<custom-field action="copy">hide_meta_comment</custom-field>
+		<custom-field action="copy">hide_meta_tag</custom-field>
+		<custom-field action="copy">iframe_url</custom-field>
+		<custom-field action="copy">lightbox_link</custom-field>
+	</custom-fields>
+	<custom-types>
+		<custom-type translate="1">portfolio</custom-type>
+		<custom-type translate="1">highlight</custom-type>
+		<custom-type translate="1">testimonial</custom-type>
+		<custom-type translate="1">slider</custom-type>
+	</custom-types>    
+	<taxonomies>
+		<taxonomy translate="1">portfolio-category</taxonomy>
+		<taxonomy translate="1">highlight-category</taxonomy>
+		<taxonomy translate="1">testimonial-category</taxonomy>
+		<taxonomy translate="1">slider-category</taxonomy>
+	</taxonomies>    
+	<admin-texts>
+		<key name="themify_data">
+			<key name="setting-header_html" />
+			<key name="setting-footer_html" />
+			<key name="setting-default_more_text" />
+		</key>
+	</admin-texts>
+	<custom-fields-texts>
+		<key name="_themify_builder_settings_json">
+			<key name="*">
+				<key name="cols">
+					<key name="*">
+						<key name="modules">
+							<key name="*">
+								<key name="mod_settings">
+									
+	<key name="__dc__">
+		<key name="*">
+			<key name="text_before"/>
+			<key name="text_after"/>
+		</key>
+	</key>
+	<key name="mod_title_portfolio"/>
+<key name="meta_key_portfolio"/>
+<key name="mod_title_highlight"/>
+<key name="meta_key_highlight"/>
+<key name="mod_title_testimonial"/>
+<key name="meta_key_testimonial"/>
+<key name="mod_title_playlist"/>
+<key name="music_playlist">
+	<key name="*">
+		<key name="audio_name"/>
+		<key name="audio_url"/>
+		<key name="audio_buy_button_text"/>
+		<key name="audio_buy_button_link"/>
+	</key>
+</key>
+<key name="mod_title_bar_chart"/>
+<key name="content_bar_chart">
+	<key name="*">
+		<key name="bar_chart_label"/>
+		<key name="bar_chart_number"/>
+	</key>
+</key>
+<key name="link_label"/>
+<key name="link_button"/>
+<key name="content_modal_button"/>
+<key name="show_less_label_button"/>
+<key name="mod_title_contact"/>
+<key name="mail_contact"/>
+<key name="specify_email_address"/>
+<key name="bcc_mail_contact"/>
+<key name="gdpr_label"/>
+<key name="success_url"/>
+<key name="success_message_text"/>
+<key name="auto_respond_subject"/>
+<key name="auto_respond_message"/>
+<key name="default_subject"/>
+<key name="template"/>
+<key name="mod_title_countdown"/>
+<key name="content_countdown"/>
+<key name="redirect_countdown"/>
+<key name="mod_title_counter"/>
+<key name="number_counter"/>
+<key name="number_grouping"/>
+<key name="label_counter"/>
+<key name="fittext_text"/>
+<key name="fittext_link"/>
+<key name="mod_title_image"/>
+<key name="url_image"/>
+<key name="image_content_modal"/>
+<key name="link_image"/>
+<key name="title_image"/>
+<key name="caption_image"/>
+<key name="action_button"/>
+<key name="link_address"/>
+<key name="content_modal"/>
+<key name="mod_title"/>
+<key name="read_more_text"/>
+<key name="map_center"/>
+<key name="markers">
+	<key name="*">
+		<key name="address"/>
+		<key name="latlng"/>
+		<key name="title"/>
+		<key name="image"/>
+	</key>
+</key>
+<key name="mask_image"/>
+<key name="mask_icon_data"/>
+<key name="mask_feather"/>
+<key name="alt_image"/>
+<key name="base_height"/>
+<key name="image_url"/>
+<key name="mod_title_pricing_table"/>
+<key name="mod_price_pricing_table"/>
+<key name="mod_recurring_fee_pricing_table"/>
+<key name="mod_description_pricing_table"/>
+<key name="mod_feature_list_pricing_table"/>
+<key name="mod_unavailable_feature_list_pricing_table"/>
+<key name="mod_button_text_pricing_table"/>
+<key name="mod_button_link_pricing_table"/>
+<key name="mod_pop_text_pricing_table"/>
+<key name="mod_title_progressbar"/>
+<key name="progress_bars">
+	<key name="*">
+		<key name="bar_label"/>
+		<key name="bar_percentage_label"/>
+	</key>
+</key>
+<key name="mod_title_slider"/>
+<key name="builder_slider_pro_slides">
+	<key name="*">
+		<key name="builder_ps_vbg_option"/>
+		<key name="builder-ps-slide-image"/>
+		<key name="builder_ps_heading"/>
+		<key name="builder_ps_text"/>
+	</key>
+</key>
+<key name="mod_title_timeline"/>
+<key name="text_source_timeline">
+	<key name="*">
+		<key name="title_timeline"/>
+		<key name="link_timeline"/>
+		<key name="date_timeline"/>
+		<key name="image_timeline"/>
+		<key name="content_timeline"/>
+	</key>
+</key>
+<key name="tw_username"/>
+<key name="mod_title_typewriter"/>
+<key name="builder_typewriter_text_before"/>
+<key name="builder_typewriter_text_after"/>
+<key name="builder_typewriter_terms">
+	<key name="*">
+		<key name="builder_typewriter_term"/>
+	</key>
+</key>
+<key name="mod_title_products"/>
+<key name="exclude"/>
+<key name="in_stock"/>
+<key name="out_of_stock"/>
+<key name="cat"/>
+<key name="tag"/>
+<key name="sku"/>
+<key name="next_link"/>
+<key name="prev_link"/>
+<key name="no_found"/>
+<key name="more_text"/>
+<key name="heading"/>
+<key name="sep_c"/>
+<key name="lb_home"/>
+<key name="lb_404"/>
+<key name="lb_archives"/>
+<key name="meta_key"/>
+<key name="custom_url"/>
+<key name="label"/>
+<key name="label_variable"/>
+<key name="label_outofstock"/>
+<key name="link"/>
+<key name="prev_label"/>
+<key name="next_label"/>
+<key name="sep"/>
+<key name="placeholder"/>
+<key name="button_t"/>
+<key name="mod_title_box"/>
+<key name="content_box"/>
+<key name="mod_title_tab"/>
+<key name="tab_content_tab">
+	<key name="*">
+		<key name="title_tab"/>
+		<key name="text_tab"/>
+	</key>
+</key>
+<key name="mod_title_feature"/>
+<key name="title_feature"/>
+<key name="content_feature"/>
+<key name="image_feature"/>
+<key name="link_feature"/>
+<key name="overlap_image_feature"/>
+<key name="icon_title"/>
+<key name="mod_title_divider"/>
+<key name="mod_title_widgetized"/>
+<key name="mod_title_alert"/>
+<key name="heading_alert"/>
+<key name="text_alert"/>
+<key name="action_btn_text_alert"/>
+<key name="alert_message_text"/>
+<key name="action_btn_link_alert"/>
+<key name="fn_placeholder"/>
+<key name="default_fname"/>
+<key name="ln_placeholder"/>
+<key name="default_lname"/>
+<key name="label_email"/>
+<key name="email_placeholder"/>
+<key name="label_submit"/>
+<key name="redirect_to"/>
+<key name="message"/>
+<key name="mod_title_layout_part"/>
+<key name="mod_title_video"/>
+<key name="url_video"/>
+<key name="o_i"/>
+<key name="title_video"/>
+<key name="title_link_video"/>
+<key name="caption_video"/>
+<key name="heading_link"/>
+<key name="sub_heading"/>
+<key name="sub_heading_link"/>
+<key name="mod_title_widget"/>
+<key name="plain_text"/>
+<key name="mod_title_accordion"/>
+<key name="content_accordion">
+	<key name="*">
+		<key name="title_accordion"/>
+		<key name="text_accordion"/>
+	</key>
+</key>
+<key name="content_icon">
+	<key name="*">
+		<key name="image"/>
+		<key name="label"/>
+		<key name="link"/>
+	</key>
+</key>
+<key name="msg_success"/>
+<key name="l_name"/>
+<key name="l_firstname"/>
+<key name="l_lastname"/>
+<key name="l_username"/>
+<key name="l_email"/>
+<key name="l_password"/>
+<key name="l_bio"/>
+<key name="l_submit"/>
+<key name="desc"/>
+<key name="optin_label"/>
+<key name="title_service_menu"/>
+<key name="description_service_menu"/>
+<key name="price_service_menu"/>
+<key name="image_service_menu"/>
+<key name="link_service_menu"/>
+<key name="highlight_text_service_menu"/>
+<key name="content_button">
+	<key name="*">
+		<key name="label"/>
+		<key name="link"/>
+		<key name="title"/>
+	</key>
+</key>
+<key name="mod_title_map"/>
+<key name="latlong_map"/>
+<key name="info_window_map"/>
+<key name="mod_title_gallery"/>
+<key name="thumbnail_gallery"/>
+<key name="mod_title_post"/>
+<key name="meta_key_post"/>
+<key name="mod_title_callout"/>
+<key name="heading_callout"/>
+<key name="text_callout"/>
+<key name="action_btn_link_callout"/>
+<key name="action_btn_text_callout"/>
+<key name="content_text"/>
+<key name="redirect_fail"/>
+<key name="msg_fail"/>
+<key name="label_username"/>
+<key name="label_password"/>
+<key name="label_remember"/>
+<key name="label_log_in"/>
+<key name="label_forgotten_password"/>
+<key name="lostpasswordform_redirect_to"/>
+<key name="lostpasswordform_label_username"/>
+<key name="lostpasswordform_label_reset"/>
+<key name="mod_title_menu"/>
+<key name="title"/>
+<key name="username"/>
+<key name="follow"/>
+<key name="tab_content_testimonial">
+	<key name="*">
+		<key name="title_testimonial"/>
+		<key name="content_testimonial"/>
+		<key name="person_picture_testimonial"/>
+		<key name="person_name_testimonial"/>
+		<key name="person_position_testimonial"/>
+		<key name="company_testimonial"/>
+		<key name="company_website_testimonial"/>
+	</key>
+</key>
+<key name="blurb"/>
+<key name="image"/>
+<key name="mod_title_text"/>
+<key name="meta_key_slider"/>
+<key name="img_content_slider">
+	<key name="*">
+		<key name="img_url_slider"/>
+		<key name="img_title_slider"/>
+		<key name="img_link_slider"/>
+		<key name="img_caption_slider"/>
+	</key>
+</key>
+<key name="video_content_slider">
+	<key name="*">
+		<key name="video_url_slider"/>
+		<key name="video_title_slider"/>
+		<key name="video_title_link_slider"/>
+		<key name="video_caption_slider"/>
+	</key>
+</key>
+<key name="text_content_slider">
+	<key name="*">
+		<key name="text_caption_slider"/>
+	</key>
+</key>
+<key name="field_name_label"/>
+<key name="field_name_placeholder"/>
+<key name="field_email_label"/>
+<key name="field_email_placeholder"/>
+<key name="field_subject_label"/>
+<key name="field_subject_placeholder"/>
+<key name="field_message_label"/>
+<key name="field_message_placeholder"/>
+<key name="field_captcha_label"/>
+<key name="field_sendcopy_label"/>
+<key name="field_optin_label"/>
+<key name="field_send_label"/>
+<key name="_tooltip"/>
+
+								</key>
+								<key name="cols">
+									<key name="*">
+										<key name="modules">
+											<key name="*">
+												<key name="mod_settings">
+													
+	<key name="__dc__">
+		<key name="*">
+			<key name="text_before"/>
+			<key name="text_after"/>
+		</key>
+	</key>
+	<key name="mod_title_portfolio"/>
+<key name="meta_key_portfolio"/>
+<key name="mod_title_highlight"/>
+<key name="meta_key_highlight"/>
+<key name="mod_title_testimonial"/>
+<key name="meta_key_testimonial"/>
+<key name="mod_title_playlist"/>
+<key name="music_playlist">
+	<key name="*">
+		<key name="audio_name"/>
+		<key name="audio_url"/>
+		<key name="audio_buy_button_text"/>
+		<key name="audio_buy_button_link"/>
+	</key>
+</key>
+<key name="mod_title_bar_chart"/>
+<key name="content_bar_chart">
+	<key name="*">
+		<key name="bar_chart_label"/>
+		<key name="bar_chart_number"/>
+	</key>
+</key>
+<key name="link_label"/>
+<key name="link_button"/>
+<key name="content_modal_button"/>
+<key name="show_less_label_button"/>
+<key name="mod_title_contact"/>
+<key name="mail_contact"/>
+<key name="specify_email_address"/>
+<key name="bcc_mail_contact"/>
+<key name="gdpr_label"/>
+<key name="success_url"/>
+<key name="success_message_text"/>
+<key name="auto_respond_subject"/>
+<key name="auto_respond_message"/>
+<key name="default_subject"/>
+<key name="template"/>
+<key name="mod_title_countdown"/>
+<key name="content_countdown"/>
+<key name="redirect_countdown"/>
+<key name="mod_title_counter"/>
+<key name="number_counter"/>
+<key name="number_grouping"/>
+<key name="label_counter"/>
+<key name="fittext_text"/>
+<key name="fittext_link"/>
+<key name="mod_title_image"/>
+<key name="url_image"/>
+<key name="image_content_modal"/>
+<key name="link_image"/>
+<key name="title_image"/>
+<key name="caption_image"/>
+<key name="action_button"/>
+<key name="link_address"/>
+<key name="content_modal"/>
+<key name="mod_title"/>
+<key name="read_more_text"/>
+<key name="map_center"/>
+<key name="markers">
+	<key name="*">
+		<key name="address"/>
+		<key name="latlng"/>
+		<key name="title"/>
+		<key name="image"/>
+	</key>
+</key>
+<key name="mask_image"/>
+<key name="mask_icon_data"/>
+<key name="mask_feather"/>
+<key name="alt_image"/>
+<key name="base_height"/>
+<key name="image_url"/>
+<key name="mod_title_pricing_table"/>
+<key name="mod_price_pricing_table"/>
+<key name="mod_recurring_fee_pricing_table"/>
+<key name="mod_description_pricing_table"/>
+<key name="mod_feature_list_pricing_table"/>
+<key name="mod_unavailable_feature_list_pricing_table"/>
+<key name="mod_button_text_pricing_table"/>
+<key name="mod_button_link_pricing_table"/>
+<key name="mod_pop_text_pricing_table"/>
+<key name="mod_title_progressbar"/>
+<key name="progress_bars">
+	<key name="*">
+		<key name="bar_label"/>
+		<key name="bar_percentage_label"/>
+	</key>
+</key>
+<key name="mod_title_slider"/>
+<key name="builder_slider_pro_slides">
+	<key name="*">
+		<key name="builder_ps_vbg_option"/>
+		<key name="builder-ps-slide-image"/>
+		<key name="builder_ps_heading"/>
+		<key name="builder_ps_text"/>
+	</key>
+</key>
+<key name="mod_title_timeline"/>
+<key name="text_source_timeline">
+	<key name="*">
+		<key name="title_timeline"/>
+		<key name="link_timeline"/>
+		<key name="date_timeline"/>
+		<key name="image_timeline"/>
+		<key name="content_timeline"/>
+	</key>
+</key>
+<key name="tw_username"/>
+<key name="mod_title_typewriter"/>
+<key name="builder_typewriter_text_before"/>
+<key name="builder_typewriter_text_after"/>
+<key name="builder_typewriter_terms">
+	<key name="*">
+		<key name="builder_typewriter_term"/>
+	</key>
+</key>
+<key name="mod_title_products"/>
+<key name="exclude"/>
+<key name="in_stock"/>
+<key name="out_of_stock"/>
+<key name="cat"/>
+<key name="tag"/>
+<key name="sku"/>
+<key name="next_link"/>
+<key name="prev_link"/>
+<key name="no_found"/>
+<key name="more_text"/>
+<key name="heading"/>
+<key name="sep_c"/>
+<key name="lb_home"/>
+<key name="lb_404"/>
+<key name="lb_archives"/>
+<key name="meta_key"/>
+<key name="custom_url"/>
+<key name="label"/>
+<key name="label_variable"/>
+<key name="label_outofstock"/>
+<key name="link"/>
+<key name="prev_label"/>
+<key name="next_label"/>
+<key name="sep"/>
+<key name="placeholder"/>
+<key name="button_t"/>
+<key name="mod_title_box"/>
+<key name="content_box"/>
+<key name="mod_title_tab"/>
+<key name="tab_content_tab">
+	<key name="*">
+		<key name="title_tab"/>
+		<key name="text_tab"/>
+	</key>
+</key>
+<key name="mod_title_feature"/>
+<key name="title_feature"/>
+<key name="content_feature"/>
+<key name="image_feature"/>
+<key name="link_feature"/>
+<key name="overlap_image_feature"/>
+<key name="icon_title"/>
+<key name="mod_title_divider"/>
+<key name="mod_title_widgetized"/>
+<key name="mod_title_alert"/>
+<key name="heading_alert"/>
+<key name="text_alert"/>
+<key name="action_btn_text_alert"/>
+<key name="alert_message_text"/>
+<key name="action_btn_link_alert"/>
+<key name="fn_placeholder"/>
+<key name="default_fname"/>
+<key name="ln_placeholder"/>
+<key name="default_lname"/>
+<key name="label_email"/>
+<key name="email_placeholder"/>
+<key name="label_submit"/>
+<key name="redirect_to"/>
+<key name="message"/>
+<key name="mod_title_layout_part"/>
+<key name="mod_title_video"/>
+<key name="url_video"/>
+<key name="o_i"/>
+<key name="title_video"/>
+<key name="title_link_video"/>
+<key name="caption_video"/>
+<key name="heading_link"/>
+<key name="sub_heading"/>
+<key name="sub_heading_link"/>
+<key name="mod_title_widget"/>
+<key name="plain_text"/>
+<key name="mod_title_accordion"/>
+<key name="content_accordion">
+	<key name="*">
+		<key name="title_accordion"/>
+		<key name="text_accordion"/>
+	</key>
+</key>
+<key name="content_icon">
+	<key name="*">
+		<key name="image"/>
+		<key name="label"/>
+		<key name="link"/>
+	</key>
+</key>
+<key name="msg_success"/>
+<key name="l_name"/>
+<key name="l_firstname"/>
+<key name="l_lastname"/>
+<key name="l_username"/>
+<key name="l_email"/>
+<key name="l_password"/>
+<key name="l_bio"/>
+<key name="l_submit"/>
+<key name="desc"/>
+<key name="optin_label"/>
+<key name="title_service_menu"/>
+<key name="description_service_menu"/>
+<key name="price_service_menu"/>
+<key name="image_service_menu"/>
+<key name="link_service_menu"/>
+<key name="highlight_text_service_menu"/>
+<key name="content_button">
+	<key name="*">
+		<key name="label"/>
+		<key name="link"/>
+		<key name="title"/>
+	</key>
+</key>
+<key name="mod_title_map"/>
+<key name="latlong_map"/>
+<key name="info_window_map"/>
+<key name="mod_title_gallery"/>
+<key name="thumbnail_gallery"/>
+<key name="mod_title_post"/>
+<key name="meta_key_post"/>
+<key name="mod_title_callout"/>
+<key name="heading_callout"/>
+<key name="text_callout"/>
+<key name="action_btn_link_callout"/>
+<key name="action_btn_text_callout"/>
+<key name="content_text"/>
+<key name="redirect_fail"/>
+<key name="msg_fail"/>
+<key name="label_username"/>
+<key name="label_password"/>
+<key name="label_remember"/>
+<key name="label_log_in"/>
+<key name="label_forgotten_password"/>
+<key name="lostpasswordform_redirect_to"/>
+<key name="lostpasswordform_label_username"/>
+<key name="lostpasswordform_label_reset"/>
+<key name="mod_title_menu"/>
+<key name="title"/>
+<key name="username"/>
+<key name="follow"/>
+<key name="tab_content_testimonial">
+	<key name="*">
+		<key name="title_testimonial"/>
+		<key name="content_testimonial"/>
+		<key name="person_picture_testimonial"/>
+		<key name="person_name_testimonial"/>
+		<key name="person_position_testimonial"/>
+		<key name="company_testimonial"/>
+		<key name="company_website_testimonial"/>
+	</key>
+</key>
+<key name="blurb"/>
+<key name="image"/>
+<key name="mod_title_text"/>
+<key name="meta_key_slider"/>
+<key name="img_content_slider">
+	<key name="*">
+		<key name="img_url_slider"/>
+		<key name="img_title_slider"/>
+		<key name="img_link_slider"/>
+		<key name="img_caption_slider"/>
+	</key>
+</key>
+<key name="video_content_slider">
+	<key name="*">
+		<key name="video_url_slider"/>
+		<key name="video_title_slider"/>
+		<key name="video_title_link_slider"/>
+		<key name="video_caption_slider"/>
+	</key>
+</key>
+<key name="text_content_slider">
+	<key name="*">
+		<key name="text_caption_slider"/>
+	</key>
+</key>
+<key name="field_name_label"/>
+<key name="field_name_placeholder"/>
+<key name="field_email_label"/>
+<key name="field_email_placeholder"/>
+<key name="field_subject_label"/>
+<key name="field_subject_placeholder"/>
+<key name="field_message_label"/>
+<key name="field_message_placeholder"/>
+<key name="field_captcha_label"/>
+<key name="field_sendcopy_label"/>
+<key name="field_optin_label"/>
+<key name="field_send_label"/>
+<key name="_tooltip"/>
+
+												</key>
+											</key>
+										</key>
+									</key>
+								</key>
+							</key>
+						</key>
+					</key>
+				</key>
+			</key>
+		</key>
+	</custom-fields-texts>
+	<gutenberg-blocks>
+		<gutenberg-block type="core/classic-block" translate="0"/>
+	</gutenberg-blocks>
+</wpml-config>
+	

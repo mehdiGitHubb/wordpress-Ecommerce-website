@@ -1,0 +1,30 @@
+.mobile-menu-visible.sidemenu-active #headerwrap,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-active,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-active #headerwrap.fixed-header{
+	left:0;
+	right:0
+}
+#mobile-menu.sidemenu{
+	left:0;
+	right:0;
+	width:100%;
+	transform-origin:center;
+	transform:scale(.2);
+	transition:.8s ease;
+	opacity:0;
+	visibility:hidden;
+	border:0;
+	pointer-events:none
+}
+.mobile-menu-visible #mobile-menu.sidemenu{
+	transform:none;
+	opacity:1;
+	visibility:visible;
+	pointer-events:auto
+}
+.mobile-menu-visible .body-overlay,
+.body-overlay,
+.body-overlay.body-overlay-on,
+body:not(.mobile-menu-visible) #headerwrap #menu-icon-close{
+	display:none
+}

@@ -1,0 +1,62 @@
+body:not(.mobile-menu-visible) #headerwrap{
+	overflow:visible!important
+}
+#headerwrap{
+	box-shadow:6px 0 20px 0 rgba(0,0,0,.25);
+	transition:left .2s ease-in-out
+}
+.sidemenu-on .wishlist + #cart-icon-count #cart-wrap{
+    left:0;
+    right:0;
+    transform:none
+}
+.top-icon-wrap #cart-icon-count{
+	display:inline-block
+}
+#footerwrap,
+#body{
+	padding-left:0;
+	padding-right:0;
+	margin-left:0
+}
+.slide-cart-visible.sidemenu-right,
+.full_width.mobile-menu-visible{
+	left:300px
+}
+#mobile-menu.sidemenu-on{
+	box-shadow:none
+}
+.mobile-menu-visible.sidemenu-active #headerwrap{
+	left:0
+}
+.sidemenu-active #headerwrap{
+	left:-320px
+}
+.header-icons{
+	margin:1.1em;
+}
+#menu-icon{
+	display:block;
+	position:fixed;
+	right:auto;
+	left:0;
+	margin:0;
+	background-color:#f4f4f4;
+	padding:10px 8px;
+	box-shadow:0 0 0 1px rgba(0,0,0,.05),0 1px 5px 0 rgba(0,0,0,.12);
+	border-radius:0 8px 8px 0
+}
+#menu-icon:hover{
+	background:#fff;
+}
+.menu-icon-inner{
+	width:18px;
+	height:14px
+}
+#headerwrap #main-nav ul ul{
+	margin-left:0
+}
+.search-button .tf_fa{
+	font-size:19px;
+	padding:9px;
+}

@@ -1,0 +1,16 @@
+ul.ui.separate{
+    background:0;
+    border:0
+}
+ul.ui.separate > li{
+	background-color:var(--tb_pr_bg,#F7F7F7);
+	box-shadow:var(--tb_app_shadow,none);
+	background-image:var(--tb_app_gr,none);
+	border-radius:var(--tb_app_r,0);
+    margin-bottom:5px;
+    border-width:1px
+}
+.separate .accordion-content{
+	border-bottom-left-radius:inherit;
+	border-bottom-right-radius:inherit
+}

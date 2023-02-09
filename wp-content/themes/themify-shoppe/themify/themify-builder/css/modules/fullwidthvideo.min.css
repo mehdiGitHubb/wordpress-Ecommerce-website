@@ -1,0 +1,1 @@
+.tb_fullwidth_video{z-index:0;color:#000;user-select:none;contain:strict;pointer-events:none}.tf_lazy.tb_fullwidth_video{opacity:1}.tb_fullwidth_video iframe{position:absolute;top:50%;left:50%;width:100%;height:100%;transition:opacity .3s ease-in-out;transform:translate(-50%,-50%)}.tb_fullwidth_video video{object-fit:cover}.tf_lazy.tb_fullwidth_video iframe{opacity:0}

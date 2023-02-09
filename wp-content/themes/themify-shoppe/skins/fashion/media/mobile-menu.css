@@ -1,0 +1,23 @@
+.header-block .logo-wrap{
+	margin-bottom:0
+}
+.header-block .top-icon-wrap,
+.header-block .search-button{
+	position:static;
+	margin:0
+}
+.header-block .icon-menu .cart a .cart_empty + .tooltip,
+.header-block .cart-style-slide-out .icon-menu .cart a .cart_empty + .tooltip,
+.header-block .icon-menu li > a .tooltip{
+	display:block
+}
+@media (max-width:1200px){
+	.header-block #header{
+		max-width:96%
+	}
+}
+@media (max-width:760px){
+	.header-block #header{
+		max-width:90%
+	}
+}

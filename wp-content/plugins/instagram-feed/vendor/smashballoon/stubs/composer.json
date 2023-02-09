@@ -1,0 +1,19 @@
+{
+    "name": "smashballoon/stubs",
+    "description": "Shared common stubs.",
+    "type": "library",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Smashballoon\\Stubs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ahmed Hussein",
+            "email": "ahussein@awesomemotive.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

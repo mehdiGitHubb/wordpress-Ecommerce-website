@@ -1,0 +1,18 @@
+.mobile-menu-dropdown.module-menu-mobile-active .module-menu-container{
+    position:absolute;
+    top:100%;
+    z-index:1
+}
+.mobile-menu-dropdown.module-menu-mobile-active .module-menu-container.tf_textc{
+    left:50%;
+    transform:translateX(-50%)
+}
+.mobile-menu-dropdown.module-menu-mobile-active .module-menu-container.tf_textr{
+    right:0
+}
+.mobile-menu-dropdown.module-menu-mobile-active .module-menu-container .nav.transparent{
+    background:#fff
+}
+.mobile-menu-dropdown.module-menu-mobile-active .module-menu-container.is-open{
+    display:block!important
+}

@@ -1,0 +1,256 @@
+table.contact_fields{
+	width:100%;
+	margin:20px 0 0;
+	border-collapse:collapse;
+	border:0
+}
+table.contact_fields th{
+	text-align:initial;
+	padding:12px 0
+}
+table.contact_fields tr{
+	border-top:solid 1px rgba(180,180,180,.3)
+}
+table.contact_fields thead tr:first-child{
+	border-bottom:none
+}
+table.contact_fields td{
+	vertical-align:top;
+	padding:12px 0 10px;
+	box-sizing:border-box
+}
+table.contact_fields tr:not(.tb_contact_new_row) td:last-child{
+	width:30px;
+}
+table.contact_fields tr:not(.tb_contact_new_row) td:last-child .tb_field{
+	justify-content:center
+}
+table.contact_fields tr:not(.tb_contact_new_row) td .tb_field.send_icon{
+	justify-content:unset
+}
+table.contact_fields td:last-child input[type=checkbox]{
+	margin:0
+}
+table.contact_fields td:last-child .tb_contact_field_remove{
+	position:absolute;
+	inset-inline-end:5px;
+	top:20px;
+	width:1.2em;
+	height:1.2em
+}
+table.contact_fields tr.tb_contact_new_row td{
+	position:relative
+}
+table.contact_fields .tb_field{
+	margin:0 0 2px
+}
+input.tb_new_field_textbox{
+	border:1px solid #ccc;
+	padding:3px
+}
+table.contact_fields tbody p{
+	margin-bottom:0
+}
+table.contact_fields tbody tr td:first-child,
+table.contact_fields tfoot tr td:first-child{
+	padding-inline-end:12px
+}
+table.contact_fields tbody tr td:first-child{
+	position:relative
+}
+table.contact_fields .ui-state-highlight{
+	height:36px
+}
+table.contact_fields .ui-sortable-handle:not(.tb_no_sort){
+	cursor:move
+}
+table.contact_fields .ui-sortable-handle:not(.tb_no_sort):hover{
+	background:rgba(250,250,250,.1);
+	box-shadow:0 8px 8px -10px rgba(0,0,0,.3), 0 -8px 8px -10px rgba(0,0,0,.3)
+}
+table.contact_fields .tb_new_field_action{
+	display:inline-block;
+	margin:0 0 15px;
+	white-space:nowrap
+}
+table.contact_fields .tb_add_field_option{
+	margin-bottom:10px;
+	display:inline-block
+} 
+.contact_fields .tb_new_field_action .tf_plus_icon:before,
+.contact_fields .tb_new_field_action .tf_plus_icon:after{
+	height:80%
+}
+table.contact_fields .tb_new_field_action span{
+	margin-inline-end:12px
+}
+table.contact_fields .tb_field .tb_icon_wrap,
+table.contact_fields .tb_field input[type=text]{
+	margin-inline-end:0
+}
+table.contact_fields .tb_help {
+	display: inline-block;
+}
+ul.tb_new_field_type{
+	margin:0;
+	padding:0
+}
+ul.tb_new_field_type  li{
+	font-size:.9em;
+	display:inline-block;
+	margin:0 1em .5em 0
+}
+.tb_new_field ul{
+	list-style:none;
+	margin:0 0 10px;
+	padding:0;
+	display:grid;
+	row-gap:5px;
+	align-items:center
+}
+.tb_new_field ul li{
+	display:grid;
+	grid-auto-flow:column;
+	align-items:center;
+	column-gap:10px;
+	grid-template-columns:auto 1fr auto
+}
+.tb_new_field ul li:first-child{
+	padding-top:11px;/*for ui dnd*/
+}
+.tb_new_field ul li .tb_contact_value_remove{
+	width:1em;
+	height:1em
+}
+table.contact_fields .tb_field.tb_new_field_icon{
+	margin-top:5px
+}
+table.contact_fields .tb_contact_value_remove{
+	color:inherit;
+	font-size:.85em
+}
+.tb_move_opt {
+    display:grid;
+    place-content:center;
+    row-gap:5px;
+    grid-auto-rows:25% 50% 25%
+}
+.tb_drag_opt:before,
+.tb_drag_opt:after{
+	content:'';
+	height:100%;
+	width:1px;
+	background:rgba(180,180,180,.8)
+}
+.tb_move_opt .tb_drag_opt{
+	cursor:grab;
+	display:grid;
+	grid-auto-flow:column;
+	align-items:center;
+	justify-content:center;
+	column-gap:4px
+}
+.tb_move_opt .tb_arrow{
+	width:7px;
+	height:7px;
+	transition:opacity .3s;
+	margin:0;
+	opacity:0
+}
+.tb_move_opt:hover div{
+	opacity:1
+}
+.tb_move_opt div:hover svg{	
+	stroke-width:1px
+}
+.tb_new_field ul li:first-child .tb_up_row,
+.tb_new_field ul li:last-child .tb_down_row{
+	opacity:0
+}
+table.contact_fields td:first-child{
+	max-width:80px
+}
+table.contact_fields td:last-child{
+	padding-top:.7em
+}
+table.contact_fields input[type=text].small{
+	width:30%
+}
+.tb_field.builder_contact_fields .tb_input{
+	float:none;
+	width:100%
+}
+.fields_contact .tb_field.optin .tb_label,
+.fields_contact .tb_field.optin .tb_input{
+    width:auto
+}
+.fields_contact .tb_field.optin .tb_field{
+    display:flex;
+    flex-flow:row-reverse;
+    justify-content:flex-end
+}
+.tb_panel_docked .fields_contact .selectwrapper{
+    width:100%
+}
+.tb_panel_docked .fields_contact .tb_field.optin .tb_label,
+.tb_panel_docked .fields_contact .tb_field.optin .tb_input{
+	width:100%;
+	padding-top:0
+}
+.tb_panel_docked .tb_new_field_type ul{
+	flex-direction:column
+}
+table.contact_fields .tpb_dc_toggle.switch-wrapper{
+	inset-inline-end:0
+}
+/* tb_panel_docked mode */
+.tb_field.user_role .selectwrapper{
+	margin:0
+}
+.tb_lightbox_small .fields_contact .tb_field.optin .tb_field,
+.tb_panel_docked .fields_contact .tb_field.optin .tb_field{
+    flex-wrap:wrap;
+    flex-flow:row wrap;
+    justify-content:normal
+}
+.tb_lightbox_small .fields_contact .tb_field.optin .tb_label,
+.tb_panel_docked .fields_contact .tb_field.optin .tb_label{
+    order:2
+}
+.tb_field.template .tb_label,
+.tb_field.template .tb_input{
+	float:none;
+	width:auto
+}
+.tb_field.template .tb_input textarea{
+	min-height:170px
+}
+.tb_panel_docked table.contact_fields thead{
+	display:none
+}
+table.contact_fields .tb_checkbox_wrap{
+	grid-auto-flow:column;
+}
+
+/* email template */
+.template_fields{
+	background:rgba(180,180,180,.1);
+	clear:both;
+	padding:10px;
+	border-radius:12px
+}
+.template_fields span{
+	background:rgba(180,180,180,.2);
+    padding:3px 6px;
+    border-radius:5px;
+    cursor:pointer;
+    display:inline-block;
+    margin:0 2px 4px 0;
+    white-space:nowrap
+}
+.template_fields span:hover{
+    background:rgba(180,180,180,.4)
+}
+.tb_field.template textarea{
+	min-height:200px
+}

@@ -1,0 +1,2290 @@
+# Translation of Plugins - WooCommerce Shipping &amp; Tax - Stable (latest release) in Portuguese (Brazil)
+# This file is distributed under the same license as the Plugins - WooCommerce Shipping &amp; Tax - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-04-16 12:34:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: pt_BR\n"
+"Project-Id-Version: Plugins - WooCommerce Shipping &amp; Tax - Stable (latest release)\n"
+
+#: i18n/strings.php:108
+msgid "Save the package selection from previous transaction."
+msgstr ""
+
+#: i18n/strings.php:107
+msgid "Package Selection"
+msgstr ""
+
+#: i18n/strings.php:106
+msgid "Save the service selection from previous transaction."
+msgstr ""
+
+#: i18n/strings.php:105
+msgid "Service Selection"
+msgstr ""
+
+#: classes/class-wc-connect-taxjar-integration.php:391
+msgctxt "%s - ZIP/Postal code checkout field label"
+msgid "%s is not formatted correctly."
+msgstr ""
+
+#: i18n/strings.php:427
+msgid "Click a file below to download it, then import it into the {{taxRatesA}}tax rates table{{/taxRatesA}}."
+msgstr ""
+
+#: i18n/strings.php:426
+msgid "Download Backed-up Tax Rates"
+msgstr ""
+
+#: i18n/strings.php:425
+msgid "Tax Rates"
+msgstr ""
+
+#: classes/class-wc-connect-taxjar-integration.php:186
+msgid "Your existing tax rates will be backed-up to a CSV that you can download %1$shere%2$s."
+msgstr ""
+
+#: classes/class-wc-connect-taxjar-integration.php:182
+msgid "Your previous tax rates were backed up and can be downloaded %1$shere%2$s."
+msgstr ""
+
+#: i18n/strings.php:380
+msgid "One of the address data has non-roman character(s) that might not be printed properly!"
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:137
+msgid "Successfully deleted %1$d transients from the database."
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:45
+msgid "Deletes the all the transients in your database that represent cached Tax Rates responses"
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:44
+msgid "Delete cached Tax transients"
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:43
+msgid "Delete WooCommerce Tax cached tax rate responses"
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:118
+msgid "Successfully deleted %1$d rows from the database."
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:101
+msgid "No \"CA\" tax rates were found."
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:77
+msgid "ERROR: The \"CA\" tax rate deletion process was cancelled because the existing tax rates could not be backed up."
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:33
+msgid "Additional information."
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:33
+msgid "A backup CSV of all existing tax rates will be made before the deletion process runs."
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:33
+msgid "This option will delete ALL of your \"CA\" tax rates where the tax name ends with \" Tax\" (case insensitive)."
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:33
+msgid "Note:"
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:32
+msgid "Delete CA tax rates"
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:31
+msgid "Delete California tax rates"
+msgstr ""
+
+#: classes/class-wc-connect-taxjar-integration.php:185
+msgid "Enabling this option overrides any tax rates you have manually added."
+msgstr ""
+
+#: i18n/strings.php:437
+msgid "Automated taxes documentation"
+msgstr ""
+
+#: i18n/strings.php:436
+msgid "Go to General settings"
+msgstr ""
+
+#: i18n/strings.php:435
+msgid "Go to the Tax settings"
+msgstr ""
+
+#: i18n/strings.php:434
+msgid "Automated Taxes"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:366
+msgid "Automated taxes are enabled"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:359
+msgid "The automated taxes functionality is disabled. Enable the \"Automated taxes\" setting on the WooCommerce settings page"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:351
+msgid "The core WooCommerce taxes functionality is disabled. Please ensure the \"Enable tax rates and calculations\" setting is turned \"on\" in the WooCommerce settings page"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:343
+msgid "TaxJar extension detected. Automated taxes functionality is disabled"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:335
+msgid "Your store's country (%s) is not supported. Automated taxes functionality is disabled"
+msgstr ""
+
+#: i18n/strings.php:155
+msgid "Features"
+msgstr ""
+
+#: i18n/strings.php:154
+msgid "Carrier"
+msgstr ""
+
+#: i18n/strings.php:150
+msgid "Express delivery from the experts in international shipping"
+msgstr ""
+
+#: i18n/strings.php:147 i18n/strings.php:152
+msgid "Live rates for %(carrierName)s at checkout"
+msgstr ""
+
+#: i18n/strings.php:145
+msgid "Ship with the largest delivery network in the United States"
+msgstr ""
+
+#: i18n/strings.php:143
+msgid "Discounted %(carrierName)s shipping labels"
+msgstr ""
+
+#: i18n/strings.php:142
+msgid "To be displayed at checkout, this carrier must be added as a shipping method to selected shipping zones"
+msgstr ""
+
+#: i18n/strings.php:141
+msgid "Add to shipping zones"
+msgstr ""
+
+#: i18n/strings.php:140
+msgid "Show live rates directly on your store - never under or overcharge for shipping again"
+msgstr ""
+
+#: i18n/strings.php:139
+msgid "Live rates at checkout"
+msgstr ""
+
+#: i18n/strings.php:444
+msgid "Last updated %s."
+msgstr ""
+
+#: classes/class-wc-rest-connect-packages-controller.php:139
+msgid "At least one of the new predefined packages has the same name as existing packages."
+msgstr ""
+
+#: classes/class-wc-rest-connect-packages-controller.php:118
+msgid "The new predefined package names are not unique."
+msgstr ""
+
+#: classes/class-wc-rest-connect-packages-controller.php:91
+msgid "At least one of the new custom packages has the same name as existing packages."
+msgstr ""
+
+#: classes/class-wc-rest-connect-packages-controller.php:77
+msgid "The new custom package names are not unique."
+msgstr ""
+
+#: classes/class-wc-connect-note-dhl-live-rates-available.php:46
+msgid "Go to shipping zones"
+msgstr ""
+
+#: classes/class-wc-connect-note-dhl-live-rates-available.php:40
+msgid "Add DHL Express as a shipping method to selected shipping zones to display live rates at checkout."
+msgstr ""
+
+#: classes/class-wc-connect-note-dhl-live-rates-available.php:39
+msgid "DHL Express live rates are now available"
+msgstr ""
+
+#. Translators: %1$s: State name, %2$s: Country name
+#: classes/class-wc-connect-shipping-method.php:299
+msgid "State %1$s is invalid for %2$s."
+msgstr ""
+
+#. Translators: %1$s: Localized label for Zip/postal code, %2$s: submitted
+#. zip/postal code, %3$s: Country name
+#: classes/class-wc-connect-shipping-method.php:262
+msgid "%1$s %2$s is invalid for %3$s."
+msgstr ""
+
+#. Translators: %1$s: Localized label for Zip/postal code, %2$s: Country name
+#. Translators: %1$s: Localized label for province/region/state, %2$s: Country
+#. name
+#: classes/class-wc-connect-shipping-method.php:248
+#: classes/class-wc-connect-shipping-method.php:285
+msgid "A %1$s is required for %2$s."
+msgstr ""
+
+#: classes/class-wc-connect-shipping-method.php:235
+msgid "A country is required"
+msgstr ""
+
+#: i18n/strings.php:160
+msgid "Your store is over the limit for rate calls this month and your account will be charged for overages. To prevent future overage charges you can upgrade your plan."
+msgstr ""
+
+#: i18n/strings.php:163
+msgid "There was an error trying to activate your subscription."
+msgstr ""
+
+#: i18n/strings.php:162
+msgid "Your subscription was succesfully activated."
+msgstr ""
+
+#: i18n/strings.php:161
+msgid "Manage"
+msgstr ""
+
+#: i18n/strings.php:159
+msgid "Usage"
+msgstr ""
+
+#: i18n/strings.php:157
+msgid "View and manage your subscription usage"
+msgstr ""
+
+#: i18n/strings.php:156
+msgid "Shipping method"
+msgstr ""
+
+#: classes/class-wc-rest-connect-subscription-activate-controller.php:28
+msgid "The subscription is already active."
+msgstr ""
+
+#: i18n/strings.php:215
+msgid "Set up your own carrier account to compare rates and print labels from multiple carriers in WooCommerce Shipping. Learn more about adding {{a}}carrier accounts{{/a}}."
+msgstr ""
+
+#: i18n/strings.php:181 i18n/strings.php:213
+msgid "There was an error connecting to your %(carrierName)s account. Please check that all of the information entered matches your %(carrierName)s account and try to connect again."
+msgstr ""
+
+#: i18n/strings.php:180 i18n/strings.php:212
+msgid "Your carrier account was connected successfully."
+msgstr ""
+
+#: i18n/strings.php:172
+msgid "The date must be a valid date in the format YYYY-MM-DD"
+msgstr ""
+
+#: i18n/strings.php:171
+msgid "The invoice number needs to be 9 or 13 letters and digits in length"
+msgstr ""
+
+#: i18n/strings.php:170
+msgid "The company website format is not valid"
+msgstr ""
+
+#: i18n/strings.php:169
+msgid "The email format is not valid"
+msgstr ""
+
+#: i18n/strings.php:168
+msgid "The ZIP/Postal code needs to be 5 digits in length"
+msgstr ""
+
+#: i18n/strings.php:167
+msgid "The phone number needs to be 10 digits in length"
+msgstr ""
+
+#: i18n/strings.php:166
+msgid "The UPS account number needs to be 6 letters and digits in length"
+msgstr ""
+
+#: i18n/strings.php:138
+msgid "This will remove the connection with %(carrier_name)s. All of your %(carrier_name)s account information will be deleted and you won\\u2019t see %(carrier_name)s rates."
+msgstr ""
+
+#: i18n/strings.php:137
+msgid "Disconnect your %(carrier_name)s account"
+msgstr ""
+
+#: i18n/strings.php:132
+msgid "There was an error trying to disconnect your carrier account"
+msgstr ""
+
+#: i18n/strings.php:131
+msgid "Your carrier account was disconnected succesfully."
+msgstr ""
+
+#: i18n/strings.php:149 i18n/strings.php:151 i18n/strings.php:153
+msgid "DHL Express"
+msgstr ""
+
+#: classes/class-wc-connect-taxjar-integration.php:179
+msgid "Powered by WooCommerce Tax. If automated taxes are enabled, you'll need to enter prices exclusive of tax."
+msgstr ""
+
+#: classes/class-wc-connect-functions.php:39
+msgid "WooCommerce Helper auth is missing"
+msgstr ""
+
+#: i18n/strings.php:7
+msgid "USPS labels without tracking are not eligible for refund."
+msgstr ""
+
+#: i18n/strings.php:216
+msgid "General Information"
+msgstr ""
+
+#: i18n/strings.php:214
+msgid "Connect your %(carrierName)s account"
+msgstr ""
+
+#: i18n/strings.php:211
+msgid "%(carrierName)s not supported."
+msgstr ""
+
+#: i18n/strings.php:210
+msgid "Loading"
+msgstr ""
+
+#: i18n/strings.php:443
+msgid "WooCommerce Shipping & Tax Data"
+msgstr ""
+
+#: i18n/strings.php:15
+msgid "Print customs form"
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:20
+msgid "Test your WooCommerce Shipping & Tax connection"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:304
+msgid "WooCommerce Shipping & Tax Status"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:274
+msgctxt "The WooCommerce Shipping & Tax brandname"
+msgid "WooCommerce Shipping & Tax"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:599
+msgid "Connect your store to activate WooCommerce Shipping & Tax"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:499
+msgid "Connect Jetpack to activate WooCommerce Shipping & Tax"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:206
+msgid "WooCommerce Shipping now supports DHL labels for international shipments. Purchase and print discounted labels from DHL and USPS right here."
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:205
+msgid "Discounted DHL Shipping Labels"
+msgstr ""
+
+#: classes/class-wc-connect-settings-pages.php:43
+msgid "WooCommerce Shipping"
+msgstr ""
+
+#: classes/class-wc-connect-settings-pages.php:24
+msgctxt "The WooCommerce Shipping & Tax brandname"
+msgid "WooCommerce Shipping"
+msgstr ""
+
+#: classes/class-wc-connect-api-client.php:64
+msgid "Invalid WooCommerce Shipping & Tax service slug provided"
+msgstr ""
+
+#. Plugin Name of the plugin
+#: classes/class-wc-connect-privacy.php:36
+#: classes/class-wc-connect-settings-pages.php:126
+msgid "WooCommerce Shipping & Tax"
+msgstr ""
+
+#: classes/class-wc-connect-taxjar-integration.php:383 i18n/strings.php:193
+#: i18n/strings.php:390
+msgid "ZIP/Postal code"
+msgstr ""
+
+#: i18n/strings.php:176
+msgid "This action will delete any information entered on the form."
+msgstr ""
+
+#: i18n/strings.php:175
+msgid "Cancel connection"
+msgstr ""
+
+#: i18n/strings.php:174
+msgid "Ok"
+msgstr ""
+
+#: i18n/strings.php:207
+msgid "UPS invoice control id"
+msgstr ""
+
+#: i18n/strings.php:206
+msgid "UPS invoice currency"
+msgstr ""
+
+#: i18n/strings.php:205
+msgid "UPS invoice amount"
+msgstr ""
+
+#: i18n/strings.php:204
+msgid "UPS invoice date"
+msgstr ""
+
+#: i18n/strings.php:203
+msgid "UPS invoice number"
+msgstr ""
+
+#: i18n/strings.php:202
+msgid "I have been issued an invoice from UPS within the past 90 days"
+msgstr ""
+
+#: i18n/strings.php:201
+msgid "UPS account information"
+msgstr ""
+
+#: i18n/strings.php:200
+msgid "Company website"
+msgstr ""
+
+#: i18n/strings.php:199
+msgid "Job title"
+msgstr ""
+
+#: i18n/strings.php:198
+msgid "Company name"
+msgstr ""
+
+#: i18n/strings.php:197
+msgid "This is the company info you used to create your UPS account"
+msgstr ""
+
+#: i18n/strings.php:196
+msgid "Company information"
+msgstr ""
+
+#: i18n/strings.php:195
+msgid "Email"
+msgstr ""
+
+#: i18n/strings.php:190
+msgid "Address 2 (optional)"
+msgstr ""
+
+#: i18n/strings.php:187
+msgid "Account number"
+msgstr ""
+
+#: i18n/strings.php:186
+msgid "This is the account number and address from your UPS profile"
+msgstr ""
+
+#: i18n/strings.php:185
+msgid "General information"
+msgstr ""
+
+#: i18n/strings.php:184
+msgid "If you need a UPS account number, go to {{a}}UPS.com{{/a}} to create a new account."
+msgstr ""
+
+#: i18n/strings.php:183
+msgid "Set up your own UPS carrier account to compare rates and print labels from multiple carriers in WooCommerce Shipping. Learn more about adding {{a}}carrier accounts{{/a}}."
+msgstr ""
+
+#: i18n/strings.php:182
+msgid "Connect your UPS account"
+msgstr ""
+
+#: i18n/strings.php:128
+msgid "Set up your own carrier account by adding your credentials here"
+msgstr ""
+
+#: i18n/strings.php:127
+msgid "Carrier account"
+msgstr ""
+
+#: i18n/strings.php:130
+msgid "Credentials"
+msgstr ""
+
+#: i18n/strings.php:313
+msgid "Adult signature required"
+msgstr ""
+
+#: i18n/strings.php:312
+msgid "Signature required"
+msgstr ""
+
+#: i18n/strings.php:289 i18n/strings.php:295
+msgid "Other\\u2026"
+msgstr ""
+
+#: i18n/strings.php:177 i18n/strings.php:388
+msgid "Select one\\u2026"
+msgstr ""
+
+#: i18n/strings.php:377
+msgid "Validating address\\u2026"
+msgstr ""
+
+#: i18n/strings.php:47 i18n/strings.php:332
+msgid "Purchasing\\u2026"
+msgstr ""
+
+#: i18n/strings.php:322
+msgid "Your UPS account will be charged"
+msgstr ""
+
+#: i18n/strings.php:321
+msgid "Package %(index)s \\u2013 %(title)s"
+msgstr ""
+
+#: i18n/strings.php:53 i18n/strings.php:337 i18n/strings.php:454
+msgid "Saving\\u2026"
+msgstr ""
+
+#. translators: 1: full country name
+#: classes/class-wc-connect-taxjar-integration.php:241
+msgid "Your tax rates and settings will be automatically configured for %1$s. <a href=\"https://docs.woocommerce.com/document/setting-up-taxes-in-woocommerce/#section-12\">Learn more about setting up tax rates for additional nexuses</a>"
+msgstr ""
+
+#. translators: 1: Full state name 2: full country name
+#: classes/class-wc-connect-taxjar-integration.php:238
+msgid "Your tax rates and settings will be automatically configured for %1$s, %2$s. <a href=\"https://docs.woocommerce.com/document/setting-up-taxes-in-woocommerce/#section-12\">Learn more about setting up tax rates for additional nexuses</a>"
+msgstr ""
+
+#: i18n/strings.php:408
+msgid "%(itemCount)d item is ready to be fulfilled"
+msgid_plural "%(itemCount)d items are ready to be fulfilled"
+msgstr[0] ""
+msgstr[1] ""
+
+#: i18n/strings.php:407
+msgid "%(itemCount)d item was fulfilled on {{span}}%(createdDate)s{{/span}}"
+msgid_plural "%(itemCount)d items were fulfilled on {{span}}%(createdDate)s{{/span}}"
+msgstr[0] ""
+msgstr[1] ""
+
+#: i18n/strings.php:14
+msgid "Schedule a pickup"
+msgstr ""
+
+#: i18n/strings.php:10
+msgid "Label images older than 180 days are deleted by our technology partners for general security and data privacy concerns."
+msgstr ""
+
+#: i18n/strings.php:6
+msgid "Labels older than 30 days cannot be refunded."
+msgstr ""
+
+#: i18n/strings.php:318
+msgid "Mark this order as complete and notify the customer"
+msgstr ""
+
+#: i18n/strings.php:317
+msgid "Notify the customer with shipment details"
+msgstr ""
+
+#: i18n/strings.php:320
+msgid "You save %s with WooCommerce Shipping"
+msgstr ""
+
+#. translators: %s WC download URL link.
+#: woocommerce-services.php:535
+msgid "WooCommerce Shipping & Tax requires the WooCommerce plugin to be installed and active. You can download %s here."
+msgstr ""
+
+#: i18n/strings.php:400
+msgid "No tracking information available at this time"
+msgstr ""
+
+#: i18n/strings.php:406
+msgid "Connection error: unable to create label at this time"
+msgstr ""
+
+#: i18n/strings.php:402 i18n/strings.php:404
+msgid "Track Package"
+msgid_plural "Track Packages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: i18n/strings.php:4
+msgid "Which package would you like to track?"
+msgstr ""
+
+#: i18n/strings.php:16 i18n/strings.php:46
+msgid "%(service)s label (#%(labelIndex)d)"
+msgstr ""
+
+#: i18n/strings.php:330
+msgid "To print this shipping label, {{a}}add a credit card to your account{{/a}}."
+msgstr ""
+
+#: i18n/strings.php:329
+msgid "Add credit card"
+msgstr ""
+
+#: i18n/strings.php:328
+msgid "To print this shipping label, {{a}}choose a credit card to add to your account{{/a}}."
+msgstr ""
+
+#: i18n/strings.php:327
+msgid "Choose credit card"
+msgstr ""
+
+#: i18n/strings.php:333
+msgid "Buy shipping label"
+msgid_plural "Buy shipping labels"
+msgstr[0] ""
+msgstr[1] ""
+
+#: i18n/strings.php:326
+msgid "shipping label ready"
+msgid_plural "shipping labels ready"
+msgstr[0] ""
+msgstr[1] ""
+
+#: i18n/strings.php:324
+msgid "Shipping from"
+msgstr ""
+
+#: i18n/strings.php:314 i18n/strings.php:315
+msgid "Shipping summary"
+msgstr ""
+
+#: i18n/strings.php:307
+msgid "Customer paid a {{shippingMethod/}} of {{shippingCost/}} for shipping"
+msgstr ""
+
+#: i18n/strings.php:309
+msgid "Shipping rates"
+msgstr ""
+
+#: i18n/strings.php:367
+msgid "HS Tariff number"
+msgstr ""
+
+#: i18n/strings.php:269
+msgid "Submit"
+msgstr ""
+
+#: i18n/strings.php:256
+msgid "Total Weight (with package)"
+msgstr ""
+
+#: i18n/strings.php:254
+msgid "QTY"
+msgstr ""
+
+#: i18n/strings.php:253
+msgid "Weight"
+msgstr ""
+
+#: i18n/strings.php:252
+msgid "Items to fulfill"
+msgstr ""
+
+#: i18n/strings.php:263
+msgid "Select a package type"
+msgstr ""
+
+#: i18n/strings.php:261
+msgid "Package details"
+msgstr ""
+
+#: i18n/strings.php:59 i18n/strings.php:341
+msgid "Your shipping packages have been saved."
+msgstr ""
+
+#: i18n/strings.php:75 i18n/strings.php:357
+msgid "0.0"
+msgstr ""
+
+#: woocommerce-services.php:1469
+msgid "Shipment Tracking"
+msgstr ""
+
+#: i18n/strings.php:280
+msgid "Customs information valid"
+msgstr ""
+
+#: i18n/strings.php:279
+msgid "Customs information incomplete"
+msgstr ""
+
+#: woocommerce-services.php:1513
+msgid "Packing Log:"
+msgstr ""
+
+#: woocommerce-services.php:1500
+msgid "Chosen Rate:"
+msgstr ""
+
+#: woocommerce-services.php:1496
+msgid "Shipping Method ID:"
+msgstr ""
+
+#: woocommerce-services.php:1492
+msgid "Shipping Method Name:"
+msgstr ""
+
+#: woocommerce-services.php:1476
+msgid "Shipping Debug"
+msgstr ""
+
+#: classes/class-wc-connect-error-notice.php:87
+msgid "<strong>\"%2$s\" is missing weight, length, width, or height.</strong><br />Shipping rates cannot be calculated. <a href=\"%1$s\">Enter dimensions and weight for %2$s</a> so your customers can purchase this item."
+msgstr ""
+
+#: classes/class-wc-connect-api-client.php:588
+msgid "Unable to send request to WooCommerce Shipping & Tax server. The timestamp generated for the signature is too old."
+msgstr ""
+
+#: classes/class-wc-connect-api-client.php:527
+msgid "Unable to send request to WooCommerce Shipping & Tax server. Jetpack Token is malformed."
+msgstr ""
+
+#: classes/class-wc-connect-api-client.php:520
+msgid "Unable to send request to WooCommerce Shipping & Tax server. Jetpack Token is missing"
+msgstr ""
+
+#. translators: %1$s: error code, %2$s: error message, %3$d: HTTP response code
+#: classes/class-wc-connect-api-client-live.php:127
+msgid "Error: The WooCommerce Shipping & Tax server returned: %1$s %2$s ( %3$d )"
+msgstr ""
+
+#: classes/class-wc-connect-api-client-live.php:108
+msgid "Error: The WooCommerce Shipping & Tax server returned ( %d ) and an empty response body."
+msgstr ""
+
+#: classes/class-wc-connect-api-client-live.php:87
+msgid "Error: The WooCommerce Shipping & Tax server returned HTTP code: %d"
+msgstr ""
+
+#: classes/class-wc-connect-api-client-live.php:53
+msgid "Unable to encode body for request to WooCommerce Shipping & Tax server."
+msgstr ""
+
+#: classes/class-wc-connect-api-client-live.php:37
+msgid "Unable to send request to WooCommerce Shipping & Tax server. Body must be an array."
+msgstr ""
+
+#: classes/class-wc-connect-api-client-live.php:30
+msgid "Unable to send request to WooCommerce Shipping & Tax server. Jetpack connection does not implement get_access_token."
+msgstr ""
+
+#: classes/class-wc-connect-api-client-live.php:23
+msgid "Unable to send request to WooCommerce Shipping & Tax server. Jetpack_Data was not found."
+msgstr ""
+
+#: classes/class-wc-connect-api-client.php:160
+msgid "No shipping rate could be calculated. No items in the package are shippable."
+msgstr ""
+
+#: classes/class-wc-connect-api-client.php:112
+msgid "Product ( ID: %d ) is missing a dimension value. Shipping rates cannot be calculated."
+msgstr ""
+
+#: classes/class-wc-connect-api-client.php:97
+msgid "Product ( ID: %d ) did not include a weight. Shipping rates cannot be calculated."
+msgstr ""
+
+#: classes/class-wc-connect-shipping-method.php:566
+msgid "Packing log:"
+msgstr ""
+
+#. translators: 1: name of shipping service, 2: shipping rate (price)
+#: classes/class-wc-connect-shipping-method.php:559
+msgid "Received rate: %1$s (%2$s)"
+msgstr ""
+
+#: i18n/strings.php:308
+msgid "Your customer selected {{shippingMethod/}}"
+msgstr ""
+
+#: i18n/strings.php:306
+msgid "Total rate: %(total)s"
+msgstr ""
+
+#: i18n/strings.php:305
+msgid "%(serviceName)s: %(rate)s"
+msgstr ""
+
+#: i18n/strings.php:304
+msgid "No rates found"
+msgstr ""
+
+#: i18n/strings.php:319
+msgid "WooCommerce Shipping gives you access to USPS Commercial Pricing, which is discounted over Retail rates."
+msgstr ""
+
+#: i18n/strings.php:257
+msgid "0"
+msgstr ""
+
+#: i18n/strings.php:298 i18n/strings.php:368
+msgid "more info"
+msgstr ""
+
+#: i18n/strings.php:297
+msgid "ITN"
+msgstr ""
+
+#: i18n/strings.php:294
+msgid "Sanitary / Phytosanitary inspection"
+msgstr ""
+
+#: i18n/strings.php:293
+msgid "Quarantine"
+msgstr ""
+
+#: i18n/strings.php:292
+msgid "None"
+msgstr ""
+
+#: i18n/strings.php:291
+msgid "Restriction type"
+msgstr ""
+
+#: i18n/strings.php:290 i18n/strings.php:296
+msgid "Details"
+msgstr ""
+
+#: i18n/strings.php:288
+msgid "Sample"
+msgstr ""
+
+#: i18n/strings.php:287
+msgid "Gift"
+msgstr ""
+
+#: i18n/strings.php:286
+msgid "Documents"
+msgstr ""
+
+#: i18n/strings.php:285
+msgid "Merchandise"
+msgstr ""
+
+#: i18n/strings.php:284
+msgid "Contents type"
+msgstr ""
+
+#: i18n/strings.php:283
+msgid "Return to sender if package is unable to be delivered"
+msgstr ""
+
+#: i18n/strings.php:302
+msgid "Value (per unit)"
+msgstr ""
+
+#: i18n/strings.php:301
+msgid "Weight (per unit)"
+msgstr ""
+
+#: i18n/strings.php:282
+msgid "Save customs form"
+msgstr ""
+
+#: i18n/strings.php:281
+msgid "Customs"
+msgstr ""
+
+#: i18n/strings.php:243 i18n/strings.php:393
+msgid "Use address as entered"
+msgstr ""
+
+#: i18n/strings.php:241
+msgid "View on Google Maps"
+msgstr ""
+
+#: i18n/strings.php:240
+msgid "Verify with USPS"
+msgstr ""
+
+#: i18n/strings.php:239
+msgid "Automatic verification failed for this address. It may still be a valid address \\u2014 use the tools below to manually verify."
+msgstr ""
+
+#: i18n/strings.php:237
+msgid "We were unable to automatically verify the address."
+msgstr ""
+
+#: i18n/strings.php:236
+msgid "We were unable to automatically verify the address \\u2014 %(error)s."
+msgstr ""
+
+#: i18n/strings.php:379
+msgid "You've edited the address, please revalidate it for accurate rates"
+msgstr ""
+
+#: i18n/strings.php:392
+msgid "Verify address"
+msgstr ""
+
+#: i18n/strings.php:384
+msgid "%(message)s. Please modify the address and try again."
+msgstr ""
+
+#: i18n/strings.php:13
+msgid "View details"
+msgstr ""
+
+#: i18n/strings.php:44
+msgid "Items"
+msgstr ""
+
+#: i18n/strings.php:43
+msgid "Package"
+msgstr ""
+
+#: i18n/strings.php:41
+msgid "Receipt"
+msgstr ""
+
+#: i18n/strings.php:40
+msgid "Label #%(labelIndex)s details"
+msgstr ""
+
+#: i18n/strings.php:64 i18n/strings.php:346
+msgid "{{icon/}} Delete this package"
+msgstr ""
+
+#: i18n/strings.php:62 i18n/strings.php:344
+msgid "Done"
+msgstr ""
+
+#: i18n/strings.php:125
+msgid "Add boxes, envelopes, and other packages you use most frequently"
+msgstr ""
+
+#: i18n/strings.php:123
+msgid "Remove"
+msgstr ""
+
+#: i18n/strings.php:122 i18n/strings.php:325
+msgid "Edit"
+msgstr ""
+
+#: i18n/strings.php:74 i18n/strings.php:356
+msgid "Weight of empty package"
+msgstr ""
+
+#: i18n/strings.php:71 i18n/strings.php:353
+msgid "Unique package name"
+msgstr ""
+
+#: i18n/strings.php:69 i18n/strings.php:351
+msgid "Envelope"
+msgstr ""
+
+#: i18n/strings.php:68 i18n/strings.php:350
+msgid "Box"
+msgstr ""
+
+#: i18n/strings.php:66 i18n/strings.php:348
+msgid "This field is required."
+msgstr ""
+
+#: i18n/strings.php:110
+msgid "Payment"
+msgstr ""
+
+#: i18n/strings.php:104
+msgid "Email the label purchase receipts to %(ownerName)s (%(ownerLogin)s) at %(ownerEmail)s"
+msgstr ""
+
+#: i18n/strings.php:103
+msgid "Email Receipts"
+msgstr ""
+
+#: i18n/strings.php:99
+msgid "To purchase shipping labels, choose a credit card you have on file or add a new card."
+msgstr ""
+
+#: i18n/strings.php:98
+msgid "Choose a different card"
+msgstr ""
+
+#: i18n/strings.php:97 i18n/strings.php:101
+msgid "To purchase shipping labels, add a credit card."
+msgstr ""
+
+#: i18n/strings.php:96
+msgid "We'll charge the credit card on your account (%(card)s) to pay for the labels you print"
+msgstr ""
+
+#: i18n/strings.php:95
+msgid "Credit cards are retrieved from the following WordPress.com account: %(wpcomLogin)s <%(wpcomEmail)s>"
+msgstr ""
+
+#: i18n/strings.php:94
+msgid "Only the site owner can change these settings. Please contact %(ownerName)s (%(ownerLogin)s) to change the shipping label settings."
+msgstr ""
+
+#: i18n/strings.php:92
+msgid "Only the site owner can manage shipping label payment methods. Please contact %(ownerName)s (%(ownerLogin)s) to manage payment methods."
+msgstr ""
+
+#: i18n/strings.php:116
+msgid "%(card)s ****%(digits)s"
+msgstr ""
+
+#: i18n/strings.php:91
+msgid "Print shipping labels yourself and save a trip to the post office"
+msgstr ""
+
+#. translators: Height placeholder for dimensions input
+#: i18n/strings.php:81 i18n/strings.php:363
+msgid "H"
+msgstr ""
+
+#. translators: Width placeholder for dimensions input
+#: i18n/strings.php:79 i18n/strings.php:361
+msgid "W"
+msgstr ""
+
+#. translators: Length placeholder for dimensions input
+#: i18n/strings.php:77 i18n/strings.php:359
+msgid "L"
+msgstr ""
+
+#: i18n/strings.php:134 i18n/strings.php:135
+msgid "Disconnect"
+msgstr ""
+
+#: i18n/strings.php:164
+msgid "Activate"
+msgstr ""
+
+#: i18n/strings.php:5
+msgid "No activity yet"
+msgstr ""
+
+#: i18n/strings.php:25
+msgid "Note"
+msgstr ""
+
+#: i18n/strings.php:24
+msgid "Refunded %(amount)s"
+msgstr ""
+
+#: i18n/strings.php:22
+msgid "%(service)s label (#%(labelNum)d) refund rejected"
+msgstr ""
+
+#: i18n/strings.php:21
+msgid "%(service)s label (#%(labelNum)d) refunded (%(amount)s)"
+msgstr ""
+
+#: i18n/strings.php:20
+msgid "%(service)s label (#%(labelNum)d) refund requested (%(amount)s)"
+msgstr ""
+
+#: i18n/strings.php:19
+msgid "Note sent to customer"
+msgstr ""
+
+#: i18n/strings.php:18
+msgid "Internal note"
+msgstr ""
+
+#: i18n/strings.php:49
+msgid "Show notes from %(date)s"
+msgstr ""
+
+#: i18n/strings.php:48
+msgid "%(count)s event"
+msgid_plural "%(count)s events"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: Name for WeChat Pay - https://pay.weixin.qq.com
+#: i18n/strings.php:119
+msgid "WeChat Pay"
+msgstr ""
+
+#: i18n/strings.php:26
+msgid "Toggle menu"
+msgstr ""
+
+#: i18n/strings.php:85
+msgid "Return to Order #%(orderId)s"
+msgstr ""
+
+#: i18n/strings.php:430
+msgid "Our team is here for you. View our {{docsA}}support docs{{/docsA}} or {{ticketA}}open a support ticket{{/ticketA}}."
+msgstr ""
+
+#: i18n/strings.php:418
+msgid "Logging"
+msgstr ""
+
+#: i18n/strings.php:452
+msgid "No services configured. {{a}}Add a shipping service{{/a}}"
+msgstr ""
+
+#: i18n/strings.php:450
+msgid "Edit service settings"
+msgstr ""
+
+#: i18n/strings.php:449
+msgid "Request was made %s - check logs below or {{a}}edit service settings{{/a}}"
+msgstr ""
+
+#: i18n/strings.php:448
+msgid "Copy for support"
+msgstr ""
+
+#: i18n/strings.php:447
+msgid "Last %s entry. {{a}}Show full log{{/a}}"
+msgid_plural "Last %s entries. {{a}}Show full log{{/a}}"
+msgstr[0] ""
+msgstr[1] ""
+
+#: i18n/strings.php:446
+msgid "Log tail copied to clipboard"
+msgstr ""
+
+#: i18n/strings.php:58 i18n/strings.php:224
+msgid "You have unsaved changes. Are you sure you want to leave this page?"
+msgstr ""
+
+#: i18n/strings.php:373
+msgid "Value ($ per unit)"
+msgstr ""
+
+#: i18n/strings.php:372
+msgid "Weight (%s per unit)"
+msgstr ""
+
+#: i18n/strings.php:299 i18n/strings.php:371
+msgid "Description"
+msgstr ""
+
+#: i18n/strings.php:370
+msgid "Country where the product was manufactured or assembled"
+msgstr ""
+
+#: i18n/strings.php:369
+msgid "Origin country"
+msgstr ""
+
+#: i18n/strings.php:144 i18n/strings.php:146 i18n/strings.php:148
+msgid "USPS"
+msgstr ""
+
+#: i18n/strings.php:51 i18n/strings.php:220 i18n/strings.php:300
+#: i18n/strings.php:335 i18n/strings.php:411
+msgid "Optional"
+msgstr ""
+
+#: i18n/strings.php:93
+msgid "Retry"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:399
+msgid "shipping label printing"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:393
+msgid "shipping label printing and smoother payment setup"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:391
+msgid "automated tax calculation and shipping label printing"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:387
+msgid "automated tax calculation, shipping label printing, and smoother payment setup"
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-controller.php:182
+msgid "Data resource description."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-controller.php:176
+msgid "Data resource ID."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-controller.php:109
+msgid "List of supported currencies."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-controller.php:105
+msgid "List of supported states in a given country."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-controller.php:101
+msgid "List of supported continents, countries, and states."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-controller.php:83
+msgid "Sorry, you cannot view this resource."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-controller.php:69
+msgid "Sorry, you cannot list resources."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:279
+msgid "The unit weights are defined in for this country."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:273
+msgid "Thousands separator for displayed prices in this country."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:264
+msgid "Full name of state."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:258
+msgid "State code."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:248
+msgid "List of states in this country."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:242
+msgid "Number of decimal points shown in displayed prices for this country."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:236
+msgid "Full name of country."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:230
+msgid "The unit lengths are defined in for this country."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:224
+msgid "Decimal separator for displayed prices for this country."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:218
+msgid "Currency symbol position for this country."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:212
+msgid "Default ISO4127 alpha-3 currency code for the country."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:206
+msgid "ISO3166 alpha-2 country code."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:196
+msgid "List of countries on this continent."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:190
+msgid "Full name of continent."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:119
+msgid "There are no locations matching these parameters."
+msgstr ""
+
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:79
+#: classes/wc-api-dev/class-wc-rest-dev-data-continents-controller.php:184
+msgid "2 character continent code."
+msgstr ""
+
+#: classes/class-wc-connect-taxjar-integration.php:393
+msgctxt "%s - ZIP/Postal code checkout field label"
+msgid "Invalid %s entered."
+msgstr ""
+
+#: classes/class-wc-connect-taxjar-integration.php:389
+msgctxt "%s - ZIP/Postal code checkout field label"
+msgid "%s does not match the selected state."
+msgstr ""
+
+#: classes/class-wc-connect-privacy.php:96
+msgid "Shipping label tracking number"
+msgstr ""
+
+#: classes/class-wc-connect-privacy.php:92
+msgid "Shipping label service"
+msgstr ""
+
+#: classes/class-wc-connect-privacy.php:71
+msgid "Warning: Erasing personal data will cause the ability to reprint or refund WooCommerce Shipping & Tax shipping labels to be lost on the affected orders."
+msgstr ""
+
+#: classes/class-wc-connect-privacy.php:40
+msgid "By using this extension, you may be storing personal data or sharing data with external services. <a href=\"%s\" target=\"_blank\">Learn more about how this works, including what you may want to include in your privacy policy.</a>"
+msgstr ""
+
+#: classes/class-wc-connect-account-settings.php:28
+msgid "There was a problem updating your saved credit cards."
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:219
+msgid "No labels found for this period"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:205 i18n/strings.php:323
+msgid "Total"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:173 i18n/strings.php:23
+msgid "Refund"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:167
+msgid "Price"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:164
+msgid "Order"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:161
+msgid "Time"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:147
+msgid "Requested"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:110
+msgid "Last 7 days"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:109
+msgid "This month"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:108
+msgid "Last month"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:107
+msgid "Year"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:27
+msgid "Export CSV"
+msgstr ""
+
+#: i18n/strings.php:424
+msgid "Other Log"
+msgstr ""
+
+#: i18n/strings.php:423
+msgid "Taxes Log"
+msgstr ""
+
+#: i18n/strings.php:422
+msgid "Shipping Log"
+msgstr ""
+
+#: i18n/strings.php:415
+msgid "Display troubleshooting information on the Cart and Checkout pages."
+msgstr ""
+
+#: i18n/strings.php:419
+msgid "Write diagnostic messages to log files. Helpful when contacting support."
+msgstr ""
+
+#: classes/class-wc-connect-paypal-ec.php:322
+msgid "Enter your email address at which to accept payments. You'll need to link your own account in order to perform anything other than \"sale\" transactions."
+msgstr ""
+
+#: classes/class-wc-connect-paypal-ec.php:318
+msgid "Payment Email"
+msgstr ""
+
+#: classes/class-wc-connect-paypal-ec.php:300
+msgid "To authenticate payments with WooCommerce Shipping & Tax, <a href=\"%s\">click here</a>."
+msgstr ""
+
+#: classes/class-wc-connect-paypal-ec.php:280
+msgid "Payments will be authenticated by WooCommerce Shipping & Tax and directed to the following email address. To disable this feature and link a PayPal account, <a href=\"%s\">click here</a>."
+msgstr ""
+
+#: classes/class-wc-connect-paypal-ec.php:270
+msgid "%s (Note that \"authorizing payment only\" requires linking a PayPal account.)"
+msgstr ""
+
+#: classes/class-wc-connect-paypal-ec.php:216
+msgid "Link account"
+msgstr ""
+
+#: classes/class-wc-connect-paypal-ec.php:215
+msgid "Link a new or existing PayPal account to make sure future orders are marked “Processing” instead of “On hold”, and so refunds can be issued without leaving WooCommerce."
+msgstr ""
+
+#: classes/class-wc-connect-paypal-ec.php:214
+msgid "Link your PayPal account"
+msgstr ""
+
+#: classes/class-wc-connect-paypal-ec.php:137
+msgid "To issue refunds via PayPal Checkout, you will need to <a href=\"%s\">link a PayPal account</a> with the email address that received this payment."
+msgstr ""
+
+#: classes/class-wc-connect-paypal-ec.php:134
+msgid "Link a PayPal account"
+msgstr ""
+
+#: i18n/strings.php:445
+msgid "Refresh"
+msgstr ""
+
+#: woocommerce-services.php:1249
+msgid "Tracking number"
+msgstr ""
+
+#: woocommerce-services.php:1248
+msgid "Provider"
+msgstr ""
+
+#. translators: %s: list of features, potentially comma separated
+#: classes/class-wc-connect-nux.php:513
+msgid "WooCommerce Shipping & Tax is almost ready to go! Once you connect Jetpack you'll have access to %s."
+msgstr ""
+
+#. Description of the plugin
+msgid "Hosted services for WooCommerce: automated tax calculation, shipping label printing, and smoother payment setup."
+msgstr ""
+
+#: classes/class-wc-connect-functions.php:176
+msgid "Tax Class"
+msgstr ""
+
+#: classes/class-wc-connect-functions.php:175
+msgid "Shipping"
+msgstr ""
+
+#: classes/class-wc-connect-functions.php:174
+msgid "Compound"
+msgstr ""
+
+#: classes/class-wc-connect-functions.php:173
+msgid "Priority"
+msgstr ""
+
+#: classes/class-wc-connect-functions.php:172
+msgid "Tax Name"
+msgstr ""
+
+#: classes/class-wc-connect-functions.php:171
+msgid "Rate %"
+msgstr ""
+
+#: classes/class-wc-connect-functions.php:169
+msgid "ZIP/Postcode"
+msgstr ""
+
+#: classes/class-wc-connect-functions.php:168
+msgid "State Code"
+msgstr ""
+
+#: classes/class-wc-connect-functions.php:167
+msgid "Country Code"
+msgstr ""
+
+#: classes/class-wc-connect-taxjar-integration.php:207
+msgid "Enable automated taxes"
+msgstr "Ativar taxas automatizadas"
+
+#: classes/class-wc-connect-taxjar-integration.php:206
+msgid "Disable automated taxes"
+msgstr "Desativar taxas automatizadas"
+
+#: classes/class-wc-connect-taxjar-integration.php:198
+msgid "Automated taxes"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:646
+msgid "By clicking \"%1$s\", you agree to the <a href=\"%2$s\">Terms of Service</a> and to <a href=\"%3$s\">share certain data and settings</a> with WordPress.com and/or third parties."
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:556
+msgid "Setup complete."
+msgstr ""
+
+#. translators: %s: list of features, potentially comma separated
+#: classes/class-wc-connect-nux.php:551
+msgid "You can now enjoy %s."
+msgstr ""
+
+#. translators: %s: list of features, potentially comma separated
+#: classes/class-wc-connect-nux.php:594
+msgid "WooCommerce Shipping & Tax is almost ready to go! Once you connect your store you'll have access to %s."
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:397
+msgid "automated tax calculation"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:395
+msgid "smoother payment setup"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:389
+msgid "automated tax calculation and smoother payment setup"
+msgstr ""
+
+#: classes/class-wc-connect-paypal-ec.php:326 i18n/strings.php:50
+#: i18n/strings.php:219 i18n/strings.php:334 i18n/strings.php:410
+msgid "Required"
+msgstr ""
+
+#: i18n/strings.php:86
+msgid "Your shipping settings have been saved."
+msgstr ""
+
+#: i18n/strings.php:87
+msgid "Unable to save your shipping settings. Please try again."
+msgstr ""
+
+#: i18n/strings.php:121
+msgid "Dimensions"
+msgstr ""
+
+#: i18n/strings.php:39 i18n/strings.php:275
+msgid "Close"
+msgstr ""
+
+#: i18n/strings.php:250
+msgid "Packages to be Shipped"
+msgstr ""
+
+#: i18n/strings.php:272
+msgid "Add to a New Package"
+msgstr ""
+
+#: i18n/strings.php:251
+msgid "Add items"
+msgstr ""
+
+#: i18n/strings.php:259
+msgid "Individually Shipped Item"
+msgstr ""
+
+#: i18n/strings.php:260
+msgid "Item Dimensions"
+msgstr ""
+
+#: i18n/strings.php:264
+msgid "Please select a package"
+msgstr ""
+
+#: classes/class-wc-rest-connect-services-controller.php:40
+msgid "Service schemas were not loaded"
+msgstr ""
+
+#: classes/class-wc-rest-connect-tos-controller.php:29
+msgid "Bad request"
+msgstr ""
+
+#: classes/class-wc-rest-connect-shipping-label-controller.php:50
+msgid "Order not found"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:558
+msgid "Got it, thanks!"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:507
+msgid "Activate Jetpack and connect"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:504
+msgid "Install Jetpack and connect"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:446
+msgid "Something went wrong. Please try connecting to Jetpack manually, or contact support on the WordPress.org forums."
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:444
+msgid "Connecting..."
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:443
+msgid "Activating..."
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:173
+msgid "When you're ready, purchase and print discounted labels from %s right here."
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:172
+msgid "Discounted Shipping Labels"
+msgstr ""
+
+#: i18n/strings.php:111
+msgid "American Express"
+msgstr ""
+
+#: i18n/strings.php:112
+msgid "Discover"
+msgstr ""
+
+#: i18n/strings.php:113
+msgid "MasterCard"
+msgstr ""
+
+#: i18n/strings.php:114
+msgid "VISA"
+msgstr ""
+
+#: i18n/strings.php:115
+msgid "PayPal"
+msgstr ""
+
+#: i18n/strings.php:117
+msgctxt "date is of the form MM/YY"
+msgid "Expires %(date)s"
+msgstr ""
+
+#: i18n/strings.php:100
+msgid "Add another credit card"
+msgstr ""
+
+#: i18n/strings.php:83 i18n/strings.php:365
+msgid "%(selectedCount)d package selected"
+msgid_plural "%(selectedCount)d packages selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: i18n/strings.php:89
+msgid "Unable to get your settings. Please refresh the page to try again."
+msgstr ""
+
+#: i18n/strings.php:231
+msgid "%(numSelected)d service selected"
+msgid_plural "%(numSelected)d services selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: i18n/strings.php:229
+msgid "Add and edit saved packages using the {{a}}Packaging Manager{{/a}}."
+msgstr ""
+
+#: i18n/strings.php:17
+msgid "Tracking #: {{trackingLink/}}"
+msgstr ""
+
+#: i18n/strings.php:274
+msgid "%(item)s from {{pckg/}}"
+msgstr ""
+
+#: i18n/strings.php:278
+msgid "Which items would you like to add to {{pckg/}}?"
+msgstr ""
+
+#: i18n/strings.php:246
+msgid "1 item in 1 package: %(weight)s %(unit)s total"
+msgstr ""
+
+#: i18n/strings.php:247
+msgid "%(itemsCount)d items in 1 package: %(weight)s %(unit)s total"
+msgstr ""
+
+#: i18n/strings.php:248
+msgid "%(itemsCount)d items in %(packageCount)d packages: %(weight)s %(unit)s total"
+msgstr ""
+
+#: i18n/strings.php:265
+msgid "{{itemLink/}} is currently saved for a later shipment."
+msgstr ""
+
+#: i18n/strings.php:266
+msgid "{{itemLink/}} is currently shipped in its original packaging."
+msgstr ""
+
+#: i18n/strings.php:267
+msgid "{{itemLink/}} is currently in {{pckg/}}."
+msgstr ""
+
+#: i18n/strings.php:311
+msgid "Choose rate: %(pckg)s"
+msgstr ""
+
+#: i18n/strings.php:28
+msgid "Refund label (-%(amount)s)"
+msgstr ""
+
+#: i18n/strings.php:271
+msgid "Where would you like to move it?"
+msgstr ""
+
+#: i18n/strings.php:303
+msgid "Unsaved changes made to packages"
+msgstr ""
+
+#: i18n/strings.php:255
+msgid "There are no items in this package."
+msgstr ""
+
+#: i18n/strings.php:273
+msgid "Ship in original packaging"
+msgstr ""
+
+#: i18n/strings.php:8 i18n/strings.php:9
+msgid "Request refund"
+msgstr ""
+
+#: i18n/strings.php:11
+msgid "Reprint"
+msgstr ""
+
+#: i18n/strings.php:38 i18n/strings.php:109 i18n/strings.php:316
+msgid "Paper size"
+msgstr ""
+
+#: i18n/strings.php:245
+msgid "No packages selected"
+msgstr ""
+
+#: i18n/strings.php:258
+msgid "Move"
+msgstr ""
+
+#: i18n/strings.php:270
+msgid "Move item"
+msgstr ""
+
+#: i18n/strings.php:235
+msgid "Increase the rates calculated by the carrier to account for packaging and handling costs. You can also add a negative amount to save your customers money."
+msgstr ""
+
+#: i18n/strings.php:403
+msgid "Create new label"
+msgstr ""
+
+#: i18n/strings.php:82 i18n/strings.php:364
+msgid "All packages selected"
+msgstr ""
+
+#: i18n/strings.php:276
+msgid "Add"
+msgstr ""
+
+#: i18n/strings.php:277
+msgid "Add item"
+msgstr ""
+
+#: i18n/strings.php:102
+msgid "Add a credit card"
+msgstr ""
+
+#. translators: %d: Deleted Product ID
+#: classes/class-wc-connect-utils.php:33
+msgid "#%d - [Deleted product]"
+msgstr ""
+
+#. translators: %1$d: Product ID, %2$s: Product Name
+#: classes/class-wc-connect-utils.php:37
+msgid "#%1$d - %2$s"
+msgstr ""
+
+#. translators: %s Support url
+#: woocommerce-services.php:1583
+msgid "<a href=\"%s\">Support</a>"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:445
+msgid "There was an error installing Jetpack. Please try installing it manually."
+msgstr ""
+
+#: i18n/strings.php:90 woocommerce-services.php:1082
+#: woocommerce-services.php:1085
+msgid "Shipping Labels"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://woocommerce.com/"
+msgstr ""
+
+#: i18n/strings.php:194 i18n/strings.php:383 woocommerce-services.php:1536
+#: woocommerce-services.php:1564
+msgid "Phone"
+msgstr ""
+
+#: classes/class-wc-connect-nux.php:498 classes/class-wc-connect-nux.php:601
+#: i18n/strings.php:136 i18n/strings.php:208 i18n/strings.php:217
+msgid "Connect"
+msgstr ""
+
+#: i18n/strings.php:54 i18n/strings.php:338 i18n/strings.php:455
+msgid "Save Settings"
+msgstr ""
+
+#: i18n/strings.php:225
+msgid "Your changes have been saved."
+msgstr ""
+
+#: i18n/strings.php:226
+msgid "There was a problem with one or more entries. Please fix the errors below and try saving again."
+msgstr ""
+
+#: i18n/strings.php:340
+msgid "Expand"
+msgstr ""
+
+#: i18n/strings.php:52 i18n/strings.php:221 i18n/strings.php:336
+#: i18n/strings.php:399 i18n/strings.php:412 i18n/strings.php:453
+msgid "Dismiss"
+msgstr ""
+
+#: i18n/strings.php:57 i18n/strings.php:223
+msgid "You have unsaved changes."
+msgstr ""
+
+#: i18n/strings.php:67 i18n/strings.php:349
+msgid "Type of package"
+msgstr ""
+
+#: i18n/strings.php:61 i18n/strings.php:126 i18n/strings.php:262
+#: i18n/strings.php:343
+msgid "Add package"
+msgid_plural "Add packages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: i18n/strings.php:65 i18n/strings.php:347
+msgid "Invalid value."
+msgstr ""
+
+#: i18n/strings.php:165
+msgid "This field is required"
+msgstr ""
+
+#: i18n/strings.php:70 i18n/strings.php:352
+msgid "Package name"
+msgstr ""
+
+#: i18n/strings.php:72 i18n/strings.php:354
+msgid "This field must be unique"
+msgstr ""
+
+#: i18n/strings.php:60 i18n/strings.php:342
+msgid "Unable to save your shipping packages. Please try again."
+msgstr ""
+
+#: i18n/strings.php:88 i18n/strings.php:227
+msgid "Save changes"
+msgstr ""
+
+#: i18n/strings.php:56 i18n/strings.php:339
+msgid "Untitled"
+msgstr ""
+
+#: i18n/strings.php:73 i18n/strings.php:355
+msgid "Dimensions (L x W x H)"
+msgstr ""
+
+#: i18n/strings.php:230
+msgid "All services selected"
+msgstr ""
+
+#: i18n/strings.php:84 i18n/strings.php:232 i18n/strings.php:366
+msgid "Expand Services"
+msgstr ""
+
+#: classes/class-wc-connect-label-reports.php:170 i18n/strings.php:42
+#: i18n/strings.php:233
+msgid "Service"
+msgstr ""
+
+#: i18n/strings.php:234
+msgid "Price adjustment"
+msgstr ""
+
+#: i18n/strings.php:228
+msgid "Saved Packages"
+msgstr ""
+
+#: woocommerce-services.php:1237 woocommerce-services.php:1244
+msgid "Tracking"
+msgstr ""
+
+#: i18n/strings.php:374 i18n/strings.php:401 i18n/strings.php:405
+msgid "Create shipping label"
+msgid_plural "Create shipping labels"
+msgstr[0] ""
+msgstr[1] ""
+
+#: i18n/strings.php:120 i18n/strings.php:129 i18n/strings.php:158
+#: i18n/strings.php:188 i18n/strings.php:381
+msgid "Name"
+msgstr ""
+
+#: i18n/strings.php:382
+msgid "Company"
+msgstr ""
+
+#: i18n/strings.php:189 i18n/strings.php:385
+msgid "Address"
+msgstr ""
+
+#: classes/class-wc-connect-functions.php:170 i18n/strings.php:191
+#: i18n/strings.php:386
+msgid "City"
+msgstr ""
+
+#: i18n/strings.php:178 i18n/strings.php:179 i18n/strings.php:387
+#: i18n/strings.php:389
+msgid "State"
+msgstr ""
+
+#: i18n/strings.php:192 i18n/strings.php:391
+msgid "Country"
+msgstr ""
+
+#: i18n/strings.php:378
+msgid "Invalid address"
+msgstr ""
+
+#: i18n/strings.php:375
+msgid "Origin address"
+msgstr ""
+
+#: i18n/strings.php:376
+msgid "Destination address"
+msgstr ""
+
+#: i18n/strings.php:394
+msgid "We have slightly modified the address entered. If correct, please use the suggested address to ensure accurate delivery."
+msgstr ""
+
+#: i18n/strings.php:238 i18n/strings.php:395
+msgid "Address entered"
+msgstr ""
+
+#: i18n/strings.php:242 i18n/strings.php:398
+msgid "Edit address"
+msgstr ""
+
+#: i18n/strings.php:396
+msgid "Suggested address"
+msgstr ""
+
+#: i18n/strings.php:397
+msgid "Use selected address"
+msgstr ""
+
+#: i18n/strings.php:249
+msgid "Use these packages"
+msgstr ""
+
+#: i18n/strings.php:310
+msgid "The service and rate chosen by the customer at checkout is not available. Please choose another."
+msgstr ""
+
+#: i18n/strings.php:29
+msgid "Request a refund"
+msgstr ""
+
+#: i18n/strings.php:30
+msgid "You can request a refund for a shipping label that has not been used to ship a package. It will take at least %(days)s days to process."
+msgstr ""
+
+#: i18n/strings.php:31
+msgid "Purchase date"
+msgstr ""
+
+#: i18n/strings.php:32
+msgid "Amount eligible for refund"
+msgstr ""
+
+#: i18n/strings.php:12 i18n/strings.php:35
+msgid "Reprint shipping label"
+msgstr ""
+
+#: i18n/strings.php:36
+msgid "If there was a printing error when you purchased the label, you can print it again."
+msgstr ""
+
+#: i18n/strings.php:37
+msgid "NOTE: If you already used the label in a package, printing and using it again is a violation of our terms of service and may result in criminal charges."
+msgstr ""
+
+#: i18n/strings.php:34 i18n/strings.php:331
+msgid "Print"
+msgstr ""
+
+#: i18n/strings.php:27 i18n/strings.php:33 i18n/strings.php:63
+#: i18n/strings.php:133 i18n/strings.php:173 i18n/strings.php:209
+#: i18n/strings.php:218 i18n/strings.php:268 i18n/strings.php:345
+msgid "Cancel"
+msgstr ""
+
+#: i18n/strings.php:45
+msgid "N/A"
+msgstr ""
+
+#: i18n/strings.php:55 i18n/strings.php:222 i18n/strings.php:409
+msgid "More"
+msgstr ""
+
+#: classes/class-wc-rest-connect-shipping-label-print-controller.php:27
+msgid "Invalid PDF request."
+msgstr ""
+
+#: classes/class-wc-connect-shipping-method.php:513
+#: classes/class-wc-rest-connect-shipping-label-controller.php:147
+msgid "Unknown package"
+msgstr ""
+
+#: classes/class-wc-connect-shipping-method.php:515
+#: classes/class-wc-rest-connect-shipping-label-controller.php:143
+msgid "Individual packaging"
+msgstr ""
+
+#: classes/class-wc-rest-connect-services-controller.php:92
+msgid "Unable to update service settings. Validation failed. %s"
+msgstr ""
+
+#: classes/class-wc-rest-connect-services-controller.php:79
+msgid "Unable to update service settings. The form data could not be read."
+msgstr ""
+
+#: classes/class-wc-rest-connect-services-controller.php:67
+msgid "Unable to update service settings. Form data is missing service ID."
+msgstr ""
+
+#: classes/class-wc-rest-connect-self-help-controller.php:24
+msgid "Unable to update settings. The form data could not be read."
+msgstr ""
+
+#: classes/class-wc-rest-connect-account-settings-controller.php:60
+msgid "Unable to update settings. %s"
+msgstr ""
+
+#: classes/class-wc-connect-shipping-method.php:546 i18n/strings.php:124
+#: i18n/strings.php:244
+msgid "Packaging"
+msgstr ""
+
+#: woocommerce-services.php:1619
+msgid "Section not loading? Visit the <a href=\"%s\">status page</a> for troubleshooting steps."
+msgstr ""
+
+#: classes/class-wc-connect-settings-pages.php:73
+msgid "Note: Jetpack development mode is enabled on this site. This site will not be able to obtain payment methods from WooCommerce Shipping & Tax production servers."
+msgstr ""
+
+#: classes/class-wc-connect-settings-pages.php:71
+msgid "Note: Jetpack is connected, but development mode is also enabled on this site. Please disable development mode."
+msgstr ""
+
+#: woocommerce-services.php:1471
+msgid "Shipping Label"
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:635
+msgid "yd"
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:633
+msgid "in"
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:631
+msgid "mm"
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:629
+msgid "cm"
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:627
+msgid "m"
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:625
+msgid "oz"
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:623
+msgid "lbs"
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:621
+msgid "g"
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:619
+msgid "kg"
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:492
+msgid "An invalid service ID was received."
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:487
+msgid "An invalid service instance was received."
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:403
+msgid "Rest of the World"
+msgstr ""
+
+#: classes/class-wc-connect-service-settings-store.php:399
+msgctxt "A service with an unknown title and unknown method_title"
+msgid "Unknown"
+msgstr ""
+
+#: i18n/strings.php:428
+msgid "Support"
+msgstr ""
+
+#: i18n/strings.php:413 i18n/strings.php:414
+msgid "Debug"
+msgstr ""
+
+#: i18n/strings.php:451
+msgid "Services"
+msgstr ""
+
+#: i18n/strings.php:431
+msgctxt "This section displays the overall health of WooCommerce Shipping & Tax and the things it depends on"
+msgid "Health"
+msgstr ""
+
+#: i18n/strings.php:429
+msgid "Need help?"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:245
+msgid "Log is empty"
+msgstr ""
+
+#: i18n/strings.php:417 i18n/strings.php:421
+msgid "Disabled"
+msgstr ""
+
+#: i18n/strings.php:416 i18n/strings.php:420
+msgid "Enabled"
+msgstr "Ativado"
+
+#: classes/class-wc-connect-help-view.php:184
+msgid "%s Shipping Zone"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:180
+msgid "The most recent rate request failed"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:177
+msgid "The most recent rate request was successful"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:174
+msgid "No rate requests have yet been made for this service"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:171
+msgid "Setup for this service has not yet been completed"
+msgstr ""
+
+#: i18n/strings.php:440
+msgid "Service data is up-to-date"
+msgstr ""
+
+#: i18n/strings.php:439
+msgid "Service data was found, but is more than one day old"
+msgstr ""
+
+#: i18n/strings.php:438
+msgid "Service data was found, but is more than three days old"
+msgstr ""
+
+#: i18n/strings.php:441
+msgid "Service data found, but may be out of date"
+msgstr ""
+
+#: i18n/strings.php:442
+msgid "No service data available"
+msgstr ""
+
+#: i18n/strings.php:433
+msgid "Jetpack"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:118
+msgid "Jetpack %s is connected and working correctly"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:112
+msgid "This is a Jetpack staging site"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:107
+msgid "Jetpack is not connected to WordPress.com. Make sure the Jetpack plugin is installed, activated, and connected."
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:99
+msgid "Jetpack %1$s or higher is required (You are running %2$s)"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:91
+msgid "Please install and activate the Jetpack plugin, version %s or higher"
+msgstr ""
+
+#. Author of the plugin
+#: i18n/strings.php:432
+msgid "WooCommerce"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:74
+msgid "WooCommerce %s is configured correctly"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:68
+msgid "Please set Base Location in WooCommerce Settings > General"
+msgstr ""
+
+#: classes/class-wc-connect-help-view.php:60
+msgid "WooCommerce %1$s or higher is required (You are running %2$s)"
+msgstr ""
+
+#: classes/class-wc-connect-error-notice.php:104 woocommerce-services.php:1655
+msgid "Dismiss this notice"
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:58
+msgid "ERROR: Your site has a problem connecting to the WooCommerce Shipping & Tax API. Please make sure your Jetpack connection is working."
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:56
+msgid "Your site is successfully communicating to the WooCommerce Shipping & Tax API."
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:22
+msgid "This will test your WooCommerce Shipping & Tax connection to ensure everything is working correctly"
+msgstr ""
+
+#: classes/class-wc-connect-debug-tools.php:21
+msgid "Test Connection"
+msgstr ""

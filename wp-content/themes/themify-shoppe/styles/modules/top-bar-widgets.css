@@ -1,0 +1,37 @@
+.top-bar-widgets{
+	background-color:rgba(0,0,0,.1);
+	font-size:.9em
+}
+.top-bar-widgets p:last-child{
+	margin:0
+}
+.top-bar-widgets .top-bar-widget-inner{
+	max-width:none;
+	width:auto;
+	padding:0 32px
+}
+.top-bar-widgets .widget{
+	display:inline-block;
+	margin-top:8px;
+	margin-bottom:8px
+}
+.top-bar-left .widget{
+	margin-left:1em
+}
+.top-bar-left .widget:first-child{
+	margin-left:0
+}
+.top-bar-right .widget{
+	margin-right:1em
+}
+.top-bar-right .widget:last-child{
+	margin-right:0
+}
+.top-bar-left,
+.top-bar-right{
+	width:50%
+}
+.fixed-header .top-bar-widgets,
+.sidemenu .top-bar-widgets{
+	display:none
+}

@@ -1,0 +1,425 @@
+:host{
+    position:fixed;
+    top:0;
+    left:0;
+    min-height:var(--tb_toolbar_h);
+    z-index:9999;
+    font:normal 13px/1.6 Arial,sans-serif;
+    font-weight:400;
+    contain:size style layout
+}
+:host(.tb_drag_start){
+    pointer-events:auto!important
+}
+ul,
+li{
+    outline:0;
+    list-style:none;
+    margin:0;
+    padding:0
+}
+label{
+    cursor:pointer
+}
+button,
+a{
+    text-decoration:none;
+    outline:0;
+    background:0;
+    border:0;
+	margin:0;
+	font-size:1em;
+	cursor:pointer;
+    text-align:inherit;
+    color:#dcdcdc;
+    display:inline-block;
+	touch-action:none;
+    box-shadow:none
+}
+.btn{
+	border-radius:8px;
+    padding:6px;
+    min-width:16px;
+    transition:background .3s
+}
+#toolbar .switch_label:after,
+.btn.active,
+.btn:hover{
+    color:#fff
+}
+.flex{
+    display:flex;
+    align-items:center
+}
+@keyframes fadeInUp{
+    from{transform:translate3d(0,10px,0);opacity:0}
+    to{transform:translate3d(0,0,0);opacity:1}
+}
+@keyframes switch_left{
+	0%{transform:translateX(0)}
+	50%{transform:translateX(-8px)}
+	100%{transform:translateX(0)}
+}
+@keyframes switch_right{
+	0%{transform:translateX(0)}
+	50%{transform:translateX(8px)}
+	100%{transform:translateX(0)}
+}
+#toolbar{
+    background-color:#4a4a4a;
+    color:#999;
+    position:fixed;
+    left:0;
+    top:0;
+    min-height:inherit;
+    user-select:none;
+    box-shadow:inset 0 -1px 0 0 rgba(0,0,0,.1),0 1px 8px rgba(0,0,0,.2);
+	flex-wrap:wrap;
+    contain:inherit
+}
+.disabled{
+    opacity:.4;
+    cursor:not-allowed
+}
+.save_wrap.disabled a,
+.save_wrap.disabled .save_btn_wrap,
+.save_wrap.disabled button{
+	pointer-events:none
+}
+.plus{
+    background:#52bb33;
+    color:#fff;
+    min-width:37px;
+    min-height:inherit;
+    margin-right:5px;
+    box-shadow:inset 0 -1px 0 rgba(0,0,0,.1);
+    opacity:.4;
+    cursor:not-allowed;
+    pointer-events:none;
+    padding:0 1em
+}
+.plus:hover{
+    background:#459a2c
+}
+.tb_panel_closed:not(.tb_panel_docked):not(.tb_preview_only) .plus{
+    opacity:1;
+    cursor:pointer;
+    pointer-events:auto
+}
+/* TOOLBAR MENU */
+.menu li{
+    position:relative
+}
+.btn.active,
+.selected_device,
+.btn:hover{
+    background:#000
+}
+.menu .tb_tooltip{
+    padding-inline:8px;
+    box-sizing:border-box
+}
+.menu .tf_fa{
+    font-size:17px
+}
+.breakpoint_switcher .tb_tooltip{
+    margin:0 2px
+}
+.divider{
+    width:1px;
+    height:16px;
+    background:#aeaeae;
+    opacity:.2;
+    margin:0 5px
+}
+.submenu{
+    background-color:#353535;
+    margin:10px 0 0 0;
+    padding:6px 0;
+    top:100%;
+    inset-inline-start:0;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,.3)
+}
+.submenu:after{
+    content:'';
+    display:block;
+    position:absolute;
+    inset-inline-start:13px;
+    bottom:100%;
+    border:6px solid transparent;
+    border-bottom-color:#353535
+}
+.submenu .btn{
+    box-sizing:border-box;
+    width:140px;
+    padding-inline:12px
+}
+.submenu .btn:hover{
+    border-radius:0
+}
+.submenu:not(.devices):hover,
+.revision_btn:focus ul,
+.btn:focus+ul:not(.devices){
+    animation:fadeInUp .25s alternate cubic-bezier(.1,.1,.8,1);
+    display:grid
+}
+.zoom_menu ul .btn{
+    width:70px
+}
+.selected_zoom > .btn{
+    cursor:default;
+    background:#000;
+    color:#a0a0a0
+}
+.devices{
+    width:max-content;
+    color:#dcdcdc
+}
+.devices li{
+    padding:6px 12px;
+    line-height:1.3;
+    cursor:pointer
+}
+.devices li:hover{
+	background-color:#000
+}
+.mode ul{
+    padding:10px;
+    min-width:140px;
+    row-gap:10px
+}
+.save_btn_wrap,
+.switch,
+.save_wrap{
+    display:grid;
+    grid-auto-flow:column;
+    align-content:center;
+    align-items:stretch
+}
+.save_wrap{
+    background:#4a4a4a;
+    position:absolute;
+    top:3px;
+    inset-inline-end:3px;
+	align-items:center;
+    column-gap:16px
+}
+.switch{
+    column-gap:6px;
+	align-items:center;
+    animation-timing-function:linear
+}
+#backend:hover svg{
+    animation:switch_left 1s infinite
+}
+#frontend:hover svg{
+    animation:switch_right 1s infinite
+}
+.tf_close{
+    font-size:15px;
+    width:1em;
+    height:1em
+}
+.save{
+    background:#f26522;
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:14px;
+    line-height:1;
+    letter-spacing:.05em;
+    padding:9px 0 8px;
+    padding-inline:14px;
+    border-radius:8px 0 0 8px;
+	border-start-end-radius:0;
+	border-end-end-radius:0;
+	border-end-start-radius:8px;
+	border-start-start-radius:8px;
+    color:#fff
+}
+.revision_btn:hover,
+.save:hover{
+    background:#ff7635
+}
+.revision_btn{
+    background:#f26522;
+    border-inline-start:1px solid rgba(255,255,255,.15);
+    padding-block:6px 5px;
+    padding-inline:9px;
+    cursor:pointer;
+    border-radius:0 8px 8px 0;
+	border-start-start-radius:0;
+	border-end-start-radius:0;
+	border-start-end-radius:8px;
+	border-end-end-radius:8px;
+    color:#fff;
+    outline:0
+}
+.revision_btn ul{
+    inset-inline:auto 0;
+    margin-top:9px
+}
+.revision_btn ul:after{
+    inset-inline:auto 10px
+}
+.global-styles-breadcrumb{
+	background:#bdbdbd;
+	color:#000;
+	padding:10px 12px;
+	width:100%;
+	margin-top:3px
+}
+.global-styles-breadcrumb a{
+	color:#000
+}
+.global-styles-breadcrumb .arrow{
+	color:#888;
+	margin:0 7px
+}
+.gs_post#toolbar{
+	flex-wrap:wrap;
+	padding-top:3px
+}
+.btn:focus span,
+.gs_post .menu > li:not(.breakpoint_switcher),
+.gs_post .revision_btn,
+.gs_post .plus,
+.gs_post .switch{
+    display:none
+}
+.gs_post .save{
+	border-radius:8px
+}
+
+/*Layout part Toolbar*/
+:host(#tb_small_toolbar_root){
+	position:relative
+}
+:host(#tb_small_toolbar_root) #toolbar{
+	z-index:100;
+	position:relative;
+	margin-top:-4px;
+	padding-left:5px;
+	border-radius:8px;
+	box-shadow:0 1px 3px rgba(0,0,0,.3)
+}
+:host(#tb_small_toolbar_root) .save{
+	border-radius:8px
+}
+/*Layout Part active */
+.tb_preview_only .custom_css,
+.tb_preview_only .layout,
+.tb_preview_only .mode,
+.tb_responsive_mode .zoom_menu,
+.tb_layout_part_edit .import,
+.tb_layout_part_edit .export,
+.tb_layout_part_edit .layout,
+.tb_layout_part_edit .duplicate,
+.tb_layout_part_edit .menu_undo,
+.tb_layout_part_edit .custom_css{
+	opacity:.4;
+	pointer-events:none
+}
+.tb_layout_part_edit .menu{
+    cursor:not-allowed
+}
+.builder-breakpoint-desktop .breakpoint-desktop,
+.builder-breakpoint-tablet .breakpoint-tablet,
+.builder-breakpoint-tablet_landscape .breakpoint-tablet_landscape,
+.builder-breakpoint-mobile .breakpoint-mobile{
+	background-color:#000;
+	color:#fff;
+	cursor:default
+}
+
+/* COMPACT TOOLBAR */
+.compact_menu .compact{
+	display:inline-block
+}
+.compact_menu .menu ul{
+	display:none;
+	flex-direction:column;
+	position:absolute;
+	top:100%;
+	inset-inline-start:0;
+	background-color:#353535;
+	padding:6px 0;
+	row-gap:2px;
+	border-radius:8px;
+	margin-top:10px;
+	z-index:1
+}
+.tb_preview_only .devices:hover,
+.devices:focus-within,
+.tb_preview_only .btn:focus+.devices,
+.compact_menu .menu ul:hover,
+.compact_menu .menu ul:focus-within{
+	display:grid
+}
+.compact_menu .menu ul:after{
+	content:'';
+	display:block;
+	position:absolute;
+	inset-inline-start:13px;
+	bottom:100%;
+	border:6px solid transparent;
+	border-bottom-color:#353535
+}
+.compact_menu .mode .submenu{
+	padding:10px;
+    row-gap:10px
+}
+.compact_menu .menu ul .submenu{
+	inset-inline-start:13px;
+	margin-inline-start:13px;
+	margin-top:0;
+	top:0
+}
+.compact_menu .menu ul .submenu:after{
+	border:6px solid transparent;
+	border-inline-end-color:#353535;
+	inset-inline-start:-12px;
+	top:12px;
+	bottom:auto
+}
+.compact_menu#toolbar{
+	contain:unset
+}
+.compact_menu .switch span,
+.compact_menu.tb_preview_only .breakpoint_switcher ~ li,
+.compact_menu .import ul .tb_tooltip span:before{
+	display:none
+}
+.compact_menu .breakpoint_switch span{
+	top:0;
+	inset-inline:100% auto;
+	margin-block:6px 0;
+	margin-inline:6px 0;
+}
+.compact_menu .breakpoint_switch span:before{
+	bottom:6px;
+	inset-inline-start:-9px;
+	border-bottom-color:transparent;
+	border-inline-end-color:#000
+}
+.compact_menu .import > ul > li .tb_tooltip{
+	min-width:97px;
+	padding-left:15px;
+	padding-right:15px;
+	border-radius:0
+}
+.compact_menu .import ul .tb_tooltip span{
+	display:inline-block;
+	margin:0;
+	margin-inline-start:12px;
+	position:static;
+	visibility:visible;
+	opacity:1;
+	padding:0;
+	background:0
+}
+@media(hover:none) {
+	.right_click_wrap{
+		display:none
+	}
+}

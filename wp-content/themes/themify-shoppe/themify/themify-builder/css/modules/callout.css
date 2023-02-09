@@ -1,0 +1,65 @@
+.module-callout p{
+    margin:0 0 5px
+}
+.ui.module-callout{
+    border:solid 1px rgba(0,0,0,.05);
+    padding:1em 1.5em
+}
+.module .callout-heading{
+    color:inherit;
+    font-size:140%;
+    line-height:130%;
+    margin:0 0 5px;
+    padding:0
+}
+.module .callout-button{
+	--tb_app_r:0;
+	--tb_app_gr:none;
+	--tb_app_shadow:none;
+    margin-top:5px
+}
+.module.module-callout .ui:not(.transparent){
+    color:var(--tb_pr_color,#555)
+}
+.module-callout .builder_button.transparent{
+    background:none;
+    border:none;
+    box-shadow:none
+}
+/* button left */
+.module.button-left .callout-content{
+    float:right;
+    width:70%
+}
+.module.button-left .callout-button{
+    float:left;
+    width:25%;
+    text-align:left
+}
+/* button bottom */
+.module.button-bottom .callout-content,
+.module.button-bottom .callout-button{
+    width:auto!important;
+    float:none
+}
+/* button center */
+.module.button-bottom-center .callout-content,
+.module.button-bottom-center .callout-button{
+    width:auto!important;
+    float:none;
+    text-align:center
+}
+.module.button-bottom .callout-button,
+.module.button-bottom-center .callout-button{
+    margin-top:15px
+}
+@media (max-width:680px){
+    .ui.module .callout-content,
+    .ui.module .callout-button{
+        float:none!important;
+        width:auto!important
+    }
+    .ui.module .callout-button{
+        margin-top:15px
+    }
+}

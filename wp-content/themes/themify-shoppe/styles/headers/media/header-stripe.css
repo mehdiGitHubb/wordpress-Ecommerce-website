@@ -1,0 +1,19 @@
+#headerwrap #cart-link-mobile{
+	top:50%;
+	right:70px;
+	transform:translateY(-50%)
+}
+#header{
+        padding:0 0 0 26px;
+	width:auto;
+	max-width:100%
+}
+.top-bar-widgets{
+	max-width:100%
+}
+.top-bar-widget-inner{
+	padding:0 1.4em
+}
+#site-logo{
+	font-size:1.7em
+}

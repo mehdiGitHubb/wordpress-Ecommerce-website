@@ -1,0 +1,46 @@
+.mobile-menu-visible.sidemenu-right #headerwrap,
+.mobile-menu-visible.sidemenu-active.sidemenu-right #headerwrap,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-right #headerwrap.fixed-header{
+	right:100%;
+	left:auto;
+	transition:none
+}
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-right{
+	left:0;
+	right:0
+}
+#mobile-menu.sidemenu{
+	left:0;
+	right:0;
+	bottom:0;
+	width:90%;
+	height:auto;
+	margin:50px auto;
+	overflow-x:hidden;
+	box-sizing:border-box;
+	transition:all .5s ease;
+	box-shadow:0 1px 8px 2px rgba(0,0,0,.10);
+	transform:translateY(100%) scale(.5);
+	transform-origin:bottom;
+	border:0;
+	display:none
+}
+.mobile-menu-visible #mobile-menu.sidemenu{
+	transform:translateY(0) scale(1)
+}
+.body-overlay{
+	display:block;
+	z-index:998;
+	left:0;
+	right:0;
+	top:0;
+	box-shadow:none;
+	background-color:rgba(0,0,0,.7);
+	transition:all .5s ease;
+	visibility:hidden;
+	opacity:0
+}
+.mobile-menu-visible .body-overlay{
+	visibility:visible;
+	opacity:1
+}

@@ -1,0 +1,8 @@
+.module-image.image-center .image-wrap{
+    text-align:center
+}
+.module-image.image-center .image-content{
+    text-align:center;
+    padding-top:.5em;
+    padding-bottom:1em
+}

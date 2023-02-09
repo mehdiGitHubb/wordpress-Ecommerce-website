@@ -1,0 +1,12 @@
+<wpml-config>
+  <admin-texts>
+    <key name="sb_instagram_settings">
+      <key name="sb_instagram_btn_background"/>
+      <key name="sb_instagram_btn_text_color"/>
+      <key name="sb_instagram_btn_text"/>
+      <key name="sb_instagram_folow_btn_background"/>
+      <key name="sb_instagram_follow_btn_text_color"/>
+      <key name="sb_instagram_follow_btn_text"/>
+    </key>
+  </admin-texts>
+</wpml-config>

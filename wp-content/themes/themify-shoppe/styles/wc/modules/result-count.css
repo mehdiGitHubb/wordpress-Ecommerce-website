@@ -1,0 +1,13 @@
+.woocommerce .woocommerce-result-count{
+	font-size:.95em;
+	padding:0 0 1.5em;
+	margin:0
+}
+@media(max-width:680px){
+    .woocommerce .woocommerce-result-count{
+		float:none
+    }
+	.woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering{
+    	float:none;
+    }
+}

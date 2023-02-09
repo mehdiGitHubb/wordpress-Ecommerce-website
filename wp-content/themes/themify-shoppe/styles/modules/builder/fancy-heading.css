@@ -1,0 +1,46 @@
+.module-fancy-heading{
+	margin:0 0 .7em;
+}
+.module-fancy-heading .fancy-heading{
+	line-height:.9;
+	font-weight:600;	
+}
+h2.fancy-heading{
+	font-size:2.8em;
+}
+h3.fancy-heading{
+	font-size:2.4em;
+}
+.module-fancy-heading .main-head{
+	text-transform:uppercase;
+	font-size:.3em;
+	letter-spacing:.13em;
+	margin:0 0 .7em;
+}
+.module-fancy-heading .sub-head{
+	font-size:100%;
+	padding:0;
+	color:var(--theme_accent);
+}
+.module-fancy-heading .main-head + .sub-head:after{
+	content:'';
+	display:block;
+	width:50px;
+	border-bottom:1px solid;
+	margin:.3em 0 0;
+}
+.tf_textc .main-head + .sub-head:after{
+	margin-left:auto;
+	margin-right:auto;	
+}
+.tf_textr .main-head + .sub-head:after{
+	margin-left:auto;
+	margin-right:0;	
+}
+.module-fancy-heading .main-head + .sub-head:before,
+.module-fancy-heading.tb_hide_divider .sub-head:after{
+    display:none
+}
+.module-fancy-heading:not(.inline-fancy-heading) .tb_fancy_heading_icon_wrap{
+	margin:0 0 .2em;
+}

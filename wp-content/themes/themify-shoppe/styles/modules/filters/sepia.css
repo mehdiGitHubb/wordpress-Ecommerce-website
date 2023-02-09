@@ -1,0 +1,21 @@
+body .filter-sepia img,
+body .filter-hover-sepia img:hover,
+.filter-featured-only.filter-sepia .post-image,
+.filter-featured-only.filter-sepia .post-img,
+.filter-featured-only.filter-sepia .module-feature-image,
+.filter-featured-only.filter-sepia .slide-image,
+.filter-featured-only.filter-sepia .featured-area img,
+.filter-featured-only.filter-hover-sepia .post-image:hover,
+.filter-featured-only.filter-hover-sepia .post-img:hover,
+.filter-featured-only.filter-hover-sepia .module-feature-image:hover,
+.filter-featured-only.filter-hover-sepia .slide-image:hover,
+.filter-featured-only.filter-hover-sepia .featured-area img:hover,
+.filter-featured-only.filter-hover-sepia .loops-wrapper article:hover .post-image,
+.filter-all.filter-sepia img,
+.filter-all.filter-hover-sepia img:hover,
+.filter-all.filter-hover-sepia .loops-wrapper article:hover .post-image{
+	filter:sepia(100%);
+	transition:filter .2s ease-in-out;
+	-webkit-backface-visibility:hidden;
+    transform:translateZ(0) scale(1,1)
+}

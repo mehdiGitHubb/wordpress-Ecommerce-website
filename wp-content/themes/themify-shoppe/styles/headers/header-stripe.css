@@ -1,0 +1,78 @@
+#headerwrap{
+	text-align:inherit;
+	border:0;
+	padding-bottom:10px;
+	padding-top:20px;
+	background-color:transparent;
+	box-shadow:none
+}
+#headerwrap.fixed-header:before{
+	display:none
+}
+#header{
+	width:1160px;
+	background-color:#fff;
+	max-width:96%;
+	box-shadow:0 1px 15px rgba(0,0,0,.12);
+	margin:0 auto;
+	padding-left:25px;
+	border-radius:8px;
+}
+#headerwrap.fixed-header{
+	padding-bottom:0;
+	padding-top:0;
+	top:10px;
+	transition:padding-top .5s
+}
+.top-bar-widgets{
+	width:1160px;
+	max-width:96%;
+	margin:auto;
+	margin-bottom:1em;
+	background-color:transparent
+}
+.top-bar-widget-inner{
+	padding:0;
+	max-width:none
+}
+.logo-wrap{
+	float:left;
+	margin-top:3px
+}
+.header-icons .search-button{
+	margin-right:0;
+	border-radius:0 8px 8px 0
+}
+#site-logo{
+	margin:0
+}
+#site-description{
+	left:0;
+	transform:none;
+	text-align:left
+}
+#site-description:before{
+	left:0;
+	margin-left:24px
+}
+#main-nav{
+	position:static;
+	float:left;
+	width:auto;
+	max-width:none;
+	padding-left:23px
+}
+#headerwrap #menu-icon{
+	position:absolute;
+	top:50%;
+	right:26px;
+	transform:translateY(-50%)
+}
+.revealing-header #headerwrap{
+	transition:transform .5s ease-in-out,opacity .5s ease-in-out,padding-top .5s
+}
+@media(max-width:760px){
+	#headerwrap #header{
+		padding-left:20px
+	}
+}

@@ -1,0 +1,36 @@
+.tb_star_wrap{
+    display:inline-grid;
+    line-height:1em;
+	row-gap:10px
+}
+.tb_star_container,
+.tb_star_item{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center
+}
+.tb_star_item{
+    column-gap:3px
+}
+.tb_star_container{
+    column-gap:inherit;
+    row-gap:5px
+}
+.tb_star_fill{
+	color:#ffd700;
+	stop-color:currentColor
+}
+.tb_star_half{
+	fill:var(--tb_star_half)
+}
+.tb_star_item:not(.tb_star_animate) .tf_fa{
+    transition:color .2s,fill .2s;
+    --tb_star_half:currentColor!important;
+    color:currentColor!important
+}
+.tb_star_text_b{
+    margin-inline-end:5px
+}
+.tb_star_text_a{
+    margin-inline-start:5px
+}

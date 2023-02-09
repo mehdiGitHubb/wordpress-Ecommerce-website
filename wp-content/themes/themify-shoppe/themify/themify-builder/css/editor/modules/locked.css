@@ -1,0 +1,79 @@
+:host{
+    position:fixed;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,.7);
+    z-index:99999999;
+    font:normal 14px/1.6 Arial,sans-serif;
+	color:#666;
+    contain:strict
+}
+img{
+    border-radius:8px
+}
+button{
+    margin:0;
+	border:0;
+    cursor:pointer
+}
+
+a:hover{
+    color:#7958d4
+}
+/* Builder Edit Restriction */
+.lb{
+    position:fixed;
+    display:grid;
+    column-gap:20px;
+    grid-auto-flow:column;
+    background:#fff;
+    z-index:999999999;
+    padding-block:35px 25px;
+    padding-inline:25px;
+    border-radius:12px;
+    box-shadow:0 1px 20px 3px rgba(0,0,0,.4)
+}
+.content{
+    display:grid;
+    row-gap:20px
+}
+.buttons{
+    display:grid;
+    align-items:center;
+    grid-auto-flow:column;
+    column-gap:15px;
+    margin-inline-start:auto
+}
+.btn{
+    background:#664c9e;
+    color:#fff;
+    font-size:14px;
+    padding:.7em 1.4em;
+    border-radius:8px;
+    outline:0;
+    white-space:nowrap;
+    margin-bottom:10px
+}
+.btn:hover{
+    background:#a188d6
+}
+a.btn{
+    color:#704cd4;
+	padding:0;
+	text-decoration:none;
+    background:0;
+    box-shadow:none;
+    text-shadow:none
+}
+a.btn:hover{
+    background:0
+}
+.tf_close{
+    position:absolute;
+    top:15px;
+    inset-inline-end:25px;
+	width:1em;
+	height:1em;
+	background:0;
+    font-size:16px
+}

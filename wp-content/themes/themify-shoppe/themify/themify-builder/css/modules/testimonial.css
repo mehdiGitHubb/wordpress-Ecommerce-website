@@ -1,0 +1,56 @@
+.module-testimonial .testimonial-post{
+    text-align:left
+}
+.module-testimonial .testimonial-post .post-image{
+    float:left;
+    margin:0 1.5em .4em 0
+}
+.module-testimonial .testimonial-post .post-image img,
+.module-testimonial .testimonial-post .post-image .image-wrap:after{
+    border-radius:20em
+}
+.module-testimonial .testimonial-post .post-content{
+    overflow:hidden
+}
+.module-testimonial .testimonial-post .testimonial-author{
+    clear:both;
+    text-align:right;
+    margin:.7em 0 0
+}
+.testimonial-author .person-position{
+    font-size:.85em
+}
+.module-testimonial .testimonial-post .testimonial-author .dash{
+    width:20px;
+    border-bottom:solid 1px #ddd;
+    margin:-10px 6px 0 0;
+    height:10px;
+    display:inline-block;
+    vertical-align:middle
+}
+.module-testimonial .testimonial-post .testimonial-name{
+    font-style:normal;
+    font-weight:bold;
+    display:inline-block;
+    vertical-align:middle
+}
+.module-testimonial .testimonial-post .testimonial-title{
+    display:block
+}
+.module-testimonial .testimonial-post .post-title{
+    font-size:1.2em;
+    margin:0 0 .5em
+}
+.module-testimonial .testimonial-post .post-title a{
+    text-decoration:none
+}
+.module-testimonial .testimonial-post .post-title a:hover{
+    text-decoration:underline
+}
+.module-testimonial .fullwidth .testimonial-post .post-image{
+    float:none;
+    margin:0 0 .4em
+}
+.module-testimonial .fullwidth .testimonial-post{
+    margin-left:0
+}

@@ -1,0 +1,16 @@
+#main-nav a:hover,
+#main-nav ul a:hover,
+#main-nav .current_page_item > a,
+#main-nav .current-menu-item > a{
+	color:var(--theme_accent)
+}
+#site-logo{
+	margin:0
+}
+.menu-icon-inner{
+	width:1.25em;
+	height:1em
+}
+#cart-link-mobile{
+	right:40px
+}

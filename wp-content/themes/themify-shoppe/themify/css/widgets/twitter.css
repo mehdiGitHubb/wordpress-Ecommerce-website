@@ -1,0 +1,21 @@
+.shortcode.twitter-list{
+    margin:0 0 1.3em
+}
+.shortcode.twitter-list ul{
+    margin:0;
+    padding:0
+}
+.shortcode.twitter-list li{
+    margin:0 0 1em;
+    padding:0;
+    list-style:none
+}
+.shortcode.twitter-list .twitter-timestamp a{
+    font-size:85%;
+    color:inherit;
+    text-decoration:none
+}
+.shortcode.twitter-list .follow-user{
+    margin:0;
+    padding:.2em 0
+}

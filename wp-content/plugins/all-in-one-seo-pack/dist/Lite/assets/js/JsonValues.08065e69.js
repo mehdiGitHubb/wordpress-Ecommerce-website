@@ -1,0 +1,1 @@
+const s={methods:{getJsonValue(n,r=null){try{n=JSON.parse(n)}catch{n=r}return n},setJsonValue(n){return JSON.stringify(n)},getJsonValues(n){return n.map(r=>JSON.parse(r))},setJsonValues(n){return n.map(r=>JSON.stringify(r))}}};export{s as J};

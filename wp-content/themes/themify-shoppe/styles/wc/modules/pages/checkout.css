@@ -1,0 +1,58 @@
+#add_payment_method .checkout .col-2 h3#ship-to-different-address, 
+.woocommerce-cart .checkout .col-2 h3#ship-to-different-address, 
+.woocommerce-checkout .checkout .col-2 h3#ship-to-different-address{
+	font-size:1.1em;
+}
+#add_payment_method .wc-proceed-to-checkout,
+.woocommerce-checkout .wc-proceed-to-checkout{
+	padding:0;
+	margin-top:1em
+}
+body:not(.sidebar-none) .woocommerce-checkout.checkout h3{
+	font-size:1.4em
+}
+.woocommerce table.shop_table{
+	border-radius:8px;
+}
+/* payment box */
+.woocommerce-checkout #payment{
+	background-color:rgba(0,0,0,.05);
+	border-radius:12px
+}
+.woocommerce-checkout #payment div.payment_box{
+	background-color:#ddd;
+	color:#333;
+	text-shadow:none;
+	border-radius:10px;
+}
+.woocommerce-checkout #payment div.payment_box:before{
+	border-bottom-color:#ddd
+}
+.woocommerce-checkout #payment div.payment_box:after{
+	border-bottom-color:#ddd;
+	top:-1px
+}
+.woocommerce-checkout #payment ul.payment_methods{
+	border-bottom:1px solid rgba(180,180,180,.2)
+}
+.woocommerce-checkout #payment #place_order{
+	font-size:1.05em;
+}
+.woocommerce form .form-row .select2-container .select2-choice{
+	padding:.275em;
+	border-radius:0
+}
+.select2-container--default .select2-selection--single{
+	height:43px;
+	border-radius:8px;
+	border:1px solid rgba(0,0,0,.15)
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+	height:43px
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	line-height:43px
+}
+.select2-results__option{
+	margin-bottom:0
+}

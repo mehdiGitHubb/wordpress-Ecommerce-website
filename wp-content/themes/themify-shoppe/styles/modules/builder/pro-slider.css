@@ -1,0 +1,91 @@
+.module.module-pro-slider .bsp-slide-post-title{
+	font-size:4em;
+	font-weight:600;
+	text-transform:none;
+	letter-spacing:-.035em;
+	line-height:.8em;
+	margin:0 0 .5em
+}
+/* excerpt */
+.module.module-pro-slider .bsp-slide-excerpt{
+	font-size:1.5em;
+	line-height:1.4;
+	font-weight:300;
+	margin:0 0 1.8em;
+}
+/* button */
+.module.module-pro-slider .bsp-slide-button{
+	border:0;
+	background:#fff;
+	color:#000;
+	border-radius:30px;
+	letter-spacing:.13em;
+	font-weight:500;
+	padding:.8em 1.5em;
+	margin:0 0 .07em;
+	text-transform:uppercase;
+}
+/* bullet */
+.module.module-pro-slider .sp-button{
+	background-color:transparent;
+	opacity:.5;
+	border-width:1px;
+}
+.module.module-pro-slider .sp-selected-button{
+	opacity:1;
+}
+/* arrow */
+.module.module-pro-slider .sp-arrow:after{
+	content:'';
+	display:block;
+	width:1em;
+	height:1em;
+	border:1px solid transparent;
+	border-top-color:inherit;	
+}
+.module.module-pro-slider .sp-previous-arrow:after{
+	border-left-color:inherit;
+	transform:rotateZ(-45deg);
+}
+.module.module-pro-slider .sp-next-arrow:after{
+	border-right-color:inherit;
+	transform:rotateZ(45deg);
+}
+.module.module-pro-slider .bsp-timer-bar{
+	background-color:transparent;
+	top:auto;
+	bottom:0;
+	height:auto;
+	border:2px solid #ff5c55;
+        box-sizing:border-box;
+}
+@media(max-width:1200px){
+        .module.module-pro-slider .bsp-slide-post-title{
+                font-size:5vw;
+        }
+        .module.module-pro-slider .bsp-slide-excerpt{
+                font-size:1.3em;
+                line-height:1.4em;
+                margin:0 0 .3em
+        }
+        .module.module-pro-slider .bsp-slide-button{
+                font-size:.9em
+        }
+}
+@media(max-width:760px){
+	.module.module-pro-slider .bsp-slide-post-title{
+		font-size:4vw
+	}
+	.module.module-pro-slider .bsp-slide-excerpt{
+		font-size:.8em;
+		line-height:1.3em;
+	}
+	.module.module-pro-slider .bsp-slide-button{
+		font-size:.6em
+	}
+}
+@media(max-width:680px){
+        .module.module-pro-slider .sp-arrow{
+		font-size:1em
+	}
+}

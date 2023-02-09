@@ -1,0 +1,183 @@
+.module-code pre,
+.module-code code{
+	border:0;
+	background:0;
+	box-shadow:none;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+	color:inherit;
+	font-family:inherit;
+    line-height:inherit;
+	font-size:inherit;
+	text-shadow: var(--tb_mc_sh,0 1px #fff);
+}
+.module-code pre{
+    direction: ltr;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    hyphens: none;
+    padding:1em;
+    background: var(--tb_mc_bg,#f5f2f0);
+	color: var(--tb_mc_c,#000);
+	font-family:var(--tb_mc_f,Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace);
+	font-size: var(--tb_mc_fz, 1em);
+    line-height:1.5;
+    border-radius:.3em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height:500px;
+	--tf_scroll_color:var(--tb_mc_c);
+	display:flex
+}
+.module-code .token{
+	all:unset
+}
+.module-code ::selection{
+    text-shadow:none;
+    background:var(--tb_mc_sbg,#b3d4fc);
+}
+.module-code .comment{
+	color:var(--tb_mc_p_com,#708090);
+}
+.module-code .prolog{
+	color:var(--tb_mc_p_prol,#708090);
+}
+
+.module-code .prolog{
+	color:var(--tb_mc_p_doc,#708090);
+}
+.module-code .cdata{
+	color:var(--tb_mc_p_cdata,#708090);
+}
+.module-code .punctuation {
+    color: var(--tb_mc_p_pun,#999);
+}
+.module-code .namespace {
+    opacity: var(--tb_mc_p_namespp,.7);
+}
+
+.module-code .property{
+	color:var(--tb_mc_p_prop,#905);
+}
+
+.module-code .tag{
+	color:var(--tb_mc_p_tag,#905);
+}
+
+.module-code .boolean{
+	color:var(--tb_mc_p_bool,#905);
+}
+
+.module-code .number{
+	color:var(--tb_mc_p_num,#905);
+}
+.module-code .constant{
+	color:var(--tb_mc_p_const,#905);
+}
+.module-code .symbol{
+	color:var(--tb_mc_p_sym,#905);
+}
+.module-code .deleted{
+	color:var(--tb_mc_p_del,#905);
+}
+.module-code .inserted{
+	color:var(--tb_mc_p_ins,#690);
+}
+.module-code .char{
+	color:var(--tb_mc_p_char,#690);
+}
+.module-code .string{
+	color:var(--tb_mc_p_str,#690);
+}
+.module-code .selector{
+	color:var(--tb_mc_p_sel,#690);
+}
+.module-code .builtin{
+	color:var(--tb_mc_p_built,#690);
+}
+.module-code .attr-name{
+	color:var(--tb_mc_p_an,#690);
+}
+
+
+.module-code .atrule{
+	color:var(--tb_mc_p_ar,#07a);
+}
+.module-code .attr-value{
+	color:var(--tb_mc_p_av,#07a);
+}
+
+.module-code .keyword{
+	color:var(--tb_mc_p_keyw,#07a);
+}
+
+.module-code .class-name{
+	color:var(--tb_mc_p_cl,inherit);
+}
+
+.module-code .function {
+	color:var(--tb_mc_p_func,#dd4a68);
+}
+
+.module-code .regex{
+	color:var(--tb_mc_p_reg,#e90);
+}
+.module-code .important{
+	color:var(--tb_mc_p_imp,#e90);
+}
+.module-code .variable{
+	color:var(--tb_mc_p_var,#e90);
+}
+.module-code .operator{
+	color:var(--tb_mc_p_oper,#a67f59);
+	background: var(--tb_mc_p_o_bg,hsla(0, 0%, 100%, .5))
+}
+.module-code .entity{
+	color:var(--tb_mc_p_entity,#a67f59);
+	background: var(--tb_mc_p_en_bg,hsla(0, 0%, 100%, .5))
+}
+.module-code .url{
+	color:var(--tb_mc_p_url,#a67f59);
+	background: var(--tb_mc_p_url_bg,hsla(0, 0%, 100%, .5))
+}
+.module-code .style .string,
+.module-code .language-css-extras .string{
+	--tb_mc_p_str:var(--tb_mc_p_css,#a67f59);
+	background: var(--tb_mc_p_css_st_bg,hsla(0, 0%, 100%, .5))
+}
+
+.module-code .important,
+.module-code .bold {
+    font-weight: bold
+}
+
+.module-code .italic {
+    font-style: italic
+}
+
+.module-code .entity {
+    cursor: help
+}
+.tb_code_copy{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+	cursor:pointer;
+	color: var(--tb_mc_copy,#000);
+    display: flex;
+	transition:opacity .3s;
+    z-index: 1;
+}
+.tb_code_copy svg{
+	transition:font-size .3s;
+}
+.tb_copy_done:before{
+	content:'\2713';
+}
+.tb_copy_done.tb_code_copy svg{
+	font-size:0
+}
+.module-code:hover .tb_code_copy{
+	opacity:1
+}

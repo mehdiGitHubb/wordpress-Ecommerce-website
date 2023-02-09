@@ -1,0 +1,261 @@
+/*
+Skin Name:Shoppe Artist
+Version:1.0
+Demo URI:https://themify.me/demo/themes/shoppe-artist
+Required Plugins:builder-contact, builder-woocommerce, woocommerce, themify-portfolio-post
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#e11c1c;
+}
+body{
+	color:#777;
+	font:1.05em/1.6em 'Jost', sans-serif;
+}
+
+/* reset general border-radius */
+textarea,input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week],#pagewrap input[type=checkbox],input[type=reset],input[type=submit],button[type=submit],.back-top a,.woocommerce .product-lightbox div.product div.images img,.woocommerce table.shop_table,.woocommerce .cart-collaterals .cart_totals,.cart-style-dropdown .cart-total-checkout-wrap,#cart-wrap .product-image img,.cart-style-dropdown #cart-wrap,ul.products li.product .post-image,.woocommerce-checkout #payment,.woocommerce-checkout #payment div.payment_box,#add_payment_method table.cart img,.woocommerce-error,.woocommerce-info,.woocommerce-message,.woocommerce-cart table.cart img,.woocommerce-checkout table.cart img,.woocommerce-product-gallery__wrapper .swiper-container-initialized,.woocommerce div.product div.images img,.loops-wrapper.boxed .post-image img,.loops-wrapper.boxed li.product .post-image,.woocommerce .loops-wrapper.boxed .product,.loops-wrapper.boxed .post,.post-nav .arrow,ul.products li.product .post-image,.post-image img,.product img,.woocommerce span.onsale:before,#cart-wrap .button,.woocommerce-product-search button,.woocommerce ul.products li.product .button,.woocommerce #respond input#submit,.woocommerce #respond input#submit.alt,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.select2-container--default .select2-selection--single,.select2-container--default .select2-selection--single .select2-selection__arrow,.woo_qty_btn #post-lightbox-container div.product form.cart div.quantity,.woocommerce.woo_qty_btn div.product form.cart div.quantity,.woo_qty_btn .product .cart .quantity .qty,.woo_qty_btn .product .cart .quantity .minus,.woo_qty_btn .product .cart .quantity .plus,.wpf_items_group .wpf_slider.ui-slider .ui-slider-handle,.themify_builder_slider_wrap.themify_builder_slider_vertical .carousel-prev,.themify_builder_slider_wrap.themify_builder_slider_vertical .carousel-next,.themify_builder_slider_wrap .carousel-prev,.themify_builder_slider_wrap .carousel-next,.themify_builder_slider_wrap .carousel-pager a,#site-description{
+	border-radius:0
+}
+
+/* HEADINGS
+================================================ */
+.post-title,.page-title,
+h1,h2,h3{
+	font-family:'Playfair Display SC',serif;
+	font-weight:bold
+}
+
+/* FORMS
+================================================ */
+textarea,input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week],#pagewrap input[type=checkbox]{
+	border-color:#d0d0d0
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+/* SITE LOGO
+================================================ */
+#site-logo{
+	font:normal 1.65em/1em 'Playfair Display SC', serif;
+	letter-spacing:.04em;
+	text-transform:none
+}
+/* SITE DESCRIPTION
+================================================ */
+.header-block #site-description,
+.header-boxed-content #site-description,
+.header-left-pane #site-description,
+.header-right-pane #site-description{
+	background-color:transparent
+}
+/* MAIN NAVIGATION
+================================================ */
+#main-nav a{
+	color:#777;
+	font-size:1.05em;
+	letter-spacing:.06em;
+	padding-left:1.04em;
+	padding-right:1.04em;
+}
+#main-nav li a:before{
+	display:none
+}
+/************************************************************************************
+WIDGET
+*************************************************************************************/
+.widgettitle:after{
+	display:none
+}
+.footer-widgets .widgettitle,
+#pagewrap .wpf_item .wpf_item_name,
+.widgettitle{
+	color:inherit;
+	font-family:'Playfair Display SC',serif;
+	font-size:1.1em;
+	text-transform:none;
+	margin:0 0 1.1em
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap{
+	background-color:#000;
+	color:#fff
+}
+#footerwrap a{
+	color:#fff
+}
+#footerwrap .back-top a{
+	color:#000;
+}
+/* FOOTER LOGO
+================================================ */
+#footer-logo{
+	font-family:'Playfair Display SC',serif;
+	font-size:1.7em;
+	font-weight:bold;
+	margin:0 0 .9em;
+	letter-spacing:-.005em;
+	line-height:1
+}
+/* Footer Block */
+.footer-block .footer-widgets-wrap{
+	max-width:100%;
+	margin:0 0 20px
+}
+
+/************************************************************************************
+WOOCOMMERCE
+*************************************************************************************/
+/* Buttons */
+.woocommerce span.onsale:before,#cart-wrap .button,.woocommerce-product-search button,.woocommerce ul.products li.product .button,.woocommerce #respond input#submit,.woocommerce #respond input#submit.alt,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled]{
+	background-color:#000;
+	font-weight:normal;
+	font-size:.8em;
+	padding:.45em 1.6em;
+	line-height:normal;
+}
+#cart-wrap .button:hover,.woocommerce ul.products li.product .button:hover,.woocommerce #respond input#submit:hover,.woocommerce #respond input#submit.alt:hover,.woocommerce a.button:hover,.woocommerce button.button:hover,.woocommerce input.button:hover,.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover,.woocommerce button.button:disabled:hover,.woocommerce button.button.alt.disabled:hover,.woocommerce button.button.alt.disabled:hover,.woocommerce button.button:disabled:hover,.woocommerce button.button:disabled[disabled]:hover{
+	background-color:var(--theme_accent);
+	transform:none
+}
+/* SINGLE PRODUCT
+================================================ */
+.woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3{
+	font-family:'Jost', sans-serif;
+	font-weight:normal
+}
+.woocommerce div.product form.cart .button{
+	padding:.85em 1.6em
+}
+/* CART
+================================================ */
+.woocommerce #content table.cart td.actions .coupon .input-text,
+#content .woocommerce .woocommerce-cart-form table.cart td.actions .coupon .input-text{
+	padding:.65em .75em
+}
+.woocommerce a.remove:hover{
+	color:var(--theme_accent) !important
+}
+/* CHECKOUT
+================================================ */
+.select2-container--default .select2-selection--single{
+	border-color:#ababab
+}
+.woocommerce-form-coupon .form-row.form-row-first,
+.woocommerce-form-coupon .form-row.form-row-last{
+	width:50%;
+	margin:0;
+	box-sizing:border-box
+}
+.woocommerce-form-coupon .form-row input.input-text{
+	padding:.45em
+}
+
+/************************************************************************************
+BUILDER STYLING
+*************************************************************************************/
+/* BUTTON MODULE
+================================================ */
+.ui.builder_button{
+	font:normal 1.2em 'Playfair Display', serif;
+	text-transform:uppercase;
+	border:0;
+	padding:.7em 1.8em 1em;
+	letter-spacing:.03em
+}
+.module.module-buttons .tb_default_color{
+	background-color:#000;
+	color:#fff
+}
+.module.module-buttons .tb_default_color:hover{
+	background-color:var(--theme_accent);
+	color:#fff
+}
+
+/* SLIDER MODULE
+================================================ */
+/* slider controls */
+.themify_builder_slider_wrap .carousel-prev,
+.themify_builder_slider_wrap .carousel-next{
+	padding:17px 18px;
+	position:relative
+}
+.themify_builder_slider_wrap .carousel-prev:before,
+.themify_builder_slider_wrap .carousel-next:before,
+.themify_builder_slider_wrap .carousel-prev:after,
+.themify_builder_slider_wrap .carousel-next:after{
+	border-radius:0px;
+	margin-left:0;
+	margin-right:0
+}
+.themify_builder_slider_wrap .carousel-prev:after,
+.themify_builder_slider_wrap .carousel-next:after{
+	content:"";
+	display:inline-block;
+	border-top:1px solid;
+	position:absolute;
+	margin-top:0;
+	width:34px;
+	top:50%
+}
+.themify_builder_slider_wrap .carousel-prev:after{
+	left:50%;
+	margin-left:-11px
+}
+.themify_builder_slider_wrap .carousel-next:after{
+	right:50%;
+	margin-right:-11px
+}
+.themify_builder_slider_wrap .carousel-prev:before,
+.themify_builder_slider_wrap .carousel-next:before{
+	border-width:1px;
+	width:16px;
+	height:16px
+}
+.themify_builder_slider_wrap .carousel-prev:before{
+	margin-left:-2px;
+}
+.themify_builder_slider_wrap .carousel-next:before{
+	margin-right:-2px
+}
+div.themify_builder_slider_vertical .carousel-prev,
+div.themify_builder_slider_vertical .carousel-next{
+	padding:17px 18px
+}
+.tf_carousel_nav_wrap .carousel-prev:hover,
+.tf_carousel_nav_wrap .carousel-next:hover{
+	background:0
+}
+/* TILES MODULE
+================================================ */
+.loops-wrapper.auto_tiles>.post,
+.loops-wrapper.auto_tiles>.product{
+	
+}
+.auto_tiles .post-image + .post-content{
+	background-color:#fff;
+	padding:1em
+}
+.loops-wrapper.auto_tiles .post,
+.woocommerce ul.products.auto_tiles li.product{
+	text-align:inherit;
+	border-radius:0
+}
+.auto_tiles .post-title{
+	font-family:'Jost', sans-serif;
+	text-transform:none
+}
+/* PRODUCT FILTER PLUGIN
+================================================ */
+#pagewrap .wpf_slider.ui-slider .ui-widget-header,
+.wpf_item .wpf_search_button{
+	background-color:var(--theme_accent)
+}

@@ -1,0 +1,497 @@
+/* 
+Skin Name:Shoppe Elegant
+Version:1.0
+Demo URI:https://themify.me/demo/themes/shoppe-elegant/
+Required Plugins:builder-contact,builder-maps-pro,builder-slider-pro,builder-woocommerce,woocommerce
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#000;
+}
+body{
+	font-family:'Sorts Mill Goudy',serif;
+	font-size:1.1em
+}
+a:hover{
+	color:#b78711
+}
+/* reset general border-radius */
+textarea,input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week],.post-date:before,.post-comment:before,.post-tag:before{
+	border-radius:0;
+}
+/* FORM
+================================================ */
+textarea,input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week]{
+	background:0;
+	border:0;
+	border-bottom:solid 1px #999;
+	box-shadow:none;
+	padding:.5em
+}
+textarea{
+	border:solid 1px #999
+}
+input[type=reset],
+input[type=submit],
+button{
+	border:1px solid var(--theme_accent);
+	background-color:#fff;
+	color:var(--theme_accent);
+	font-family:'Prata',serif;
+	font-size:.85em
+}
+input[type=reset]:hover,
+input[type=submit]:hover,
+button:hover{
+	background-color:var(--theme_accent);
+	color:#fff
+}
+/* HEADING
+================================================ */
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal
+}
+h2{
+	font-size:2.4em;
+	letter-spacing:-.03em
+}
+h3{
+	font-size:1.8em;
+	letter-spacing:-.03em
+}
+h4{
+	font-family:'Poppins',Arial,sans-serif;
+	font-size:.95em;
+	letter-spacing:.1em
+}
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#content{
+	width:73%
+}
+#sidebar{
+	width:22%
+}
+/************************************************************************************
+HEADER
+*************************************************************************************/
+#headerwrap{
+	border-bottom:none
+}
+/* SITE LOGO
+================================================ */
+#site-logo{
+	font-family:'Prata',serif;
+	font-size:1.3em;
+	letter-spacing:.015em;
+}
+#site-logo a span{
+	padding-top:.85em; /* padding for logo text only */
+	padding-bottom:.85em	
+}
+/* MAIN NAVIGATION
+================================================ */
+#main-nav a{
+	margin-right:.3em;
+	letter-spacing:.035em
+}
+#main-nav > li > a:before{
+	width:30px;
+	left:50%;
+	margin-left:-15px;
+	border-width:1px
+}
+#main-nav > li:hover > a:before,
+#main-nav > .current_page_item > a:before,
+#main-nav > .current-menu-item > a:before,
+#main-nav > .current_page_item > a:hover:before,
+#main-nav > .current-menu-item > a:hover:before{
+	bottom:0
+}
+/* dropdown */
+#main-nav ul{
+	padding-top:.6em;
+	padding-bottom:.6em
+}
+#main-nav ul a{
+	border:0;
+	font-size:1em;
+	padding:.5em 0
+}
+#main-nav .has-mega-column .product-categories .count{
+	background:0;
+	font-size:1.1em;
+	line-height:.8em;
+	padding:2px 9px
+}
+#main-nav .has-mega-column .product-categories .count:before{
+	content:'';
+	display:block;
+	border-left:1px solid rgba(0,0,0,.12);
+	height:100%;
+	width:100%;
+	position:absolute;
+	left:0;
+	transform:skewX(-35deg)
+}
+#main-nav .has-mega-column .product-categories li:hover > .count{
+	background:0;
+	color:inherit
+}
+
+/* search button */
+#mobile-menu.sidemenu .search-button{
+	width:auto;
+	padding:0;
+	margin-right:0
+}
+.header-icons .search-button{
+	border-radius:100%;
+	border:0;
+}
+.search-button .tf_fa{
+	padding:7px;
+	font-size:19px;
+}
+
+/* HEADER MINBAR LEFT & RIGHT
+================================================ */
+.header-minbar-right #site-logo,
+.header-minbar-left #site-logo{
+	padding:0
+}
+.header-minbar-right .top-icon-wrap,
+.header-minbar-left .top-icon-wrap{
+	text-transform:uppercase;
+	font-family:'Poppins',Arial,sans-serif;
+	font-weight:300
+}
+.header-minbar-right .sidemenu-on .top-icon-wrap li a .tooltip,
+.header-minbar-left .sidemenu-on .top-icon-wrap li a .tooltip{
+	margin-top:0;
+	font-size:.65em;
+	letter-spacing:.02em
+}
+.header-minbar-right #main-nav ul,
+.header-minbar-left #main-nav ul{
+	padding:0 0 0 3em
+}
+.header-minbar-right #main-nav a,
+.header-minbar-right #main-nav ul a,
+.header-minbar-left #main-nav a,
+.header-minbar-left #main-nav ul a{
+	border-top:1px solid rgba(180,180,180,.2)
+}
+.header-minbar-left #mobile-menu.sidemenu .search-button,
+.header-minbar-right #mobile-menu.sidemenu .search-button{
+	margin:14px
+}
+.header-minbar-left .search-button .tf_fa,
+.header-minbar-right .search-button .tf_fa{
+	padding:10px
+}
+
+.header-overlay #headerwrap .search-button{
+	margin-bottom:1.8em
+}
+
+/************************************************************************************
+POST
+*************************************************************************************/
+.sidebar-none.single h1,
+.sidebar-none.single .page-title{
+	font-size:3.5em;
+	margin:0 0 .3em
+}
+/* post image */
+.post-image{
+	margin:0 0 .85em
+}
+/* post title */
+.post-title{
+	font-family:'Sorts Mill Goudy',serif;
+	font-weight:normal;
+	font-size:2.8em;
+	letter-spacing:-.0375em;
+	margin:0 0 .35em
+}
+/* post meta */
+.post-meta{
+	margin:0 0 1.8em
+}
+/* post category & post author */
+.post-cat-tag-wrap{
+	font-size:.75em;
+	margin:0 0 .5em
+}
+.post-cat-tag-wrap a{
+	text-decoration:none
+}
+.post-category,
+.post-author{
+	font-family:'Poppins',Arial,sans-serif;
+	font-weight:300;
+	letter-spacing:.15em
+}
+.post-author:before{
+	display:none
+}
+/* post tag,comment,date */
+.post-tag,
+.post-comment,
+.post-date{
+	font-style:italic;
+	font-size:1.1em;
+	letter-spacing:.04em
+}
+.post-tag{
+	letter-spacing:-.01em
+}
+.post-comment{
+	text-transform:lowercase
+}
+.post-date:before,
+.post-comment:before,
+.post-tag:before{
+	background:rgba(0,0,0,.09);
+	width:2px;
+	height:19px;
+	margin:0 17px 0 7px;
+	transform:skewX(-15deg);
+	opacity:.5
+}
+/* Comment wrap */
+#commentwrap{
+	font-size:1.1em
+}
+.comment-title,
+.comment-reply-title,
+.commentlist .comment-reply-link{
+	font-family:'Poppins',Arial,sans-serif;
+	font-weight:500
+}
+.comment-title{
+	letter-spacing:.1em;
+	line-height:1.5em
+}
+/* Comment form */
+#commentform{
+	margin:30px 0 0
+}
+#commentform label{
+	font-family:'Poppins',Arial,sans-serif;
+	font-weight:300;
+	color:#666;
+	letter-spacing:.08em
+}
+/************************************************************************************
+SIDEBAR
+*************************************************************************************/
+#main-nav .has-mega-column .widgettitle,
+#main-nav .has-mega-column > .sub-menu > .columns-sub-item > a,
+.widgettitle{
+	font-family:'Poppins',Arial,sans-serif;
+	font-size:.95em;
+	font-weight:normal;
+	letter-spacing:.1em
+}
+/************************************************************************************
+BUILDER STYLE
+*************************************************************************************/
+.module.module-image.image-overlay .image-content{
+	background-color:rgba(255,255,255,.8);
+	color:var(--theme_accent);
+	padding:.7em 1.5em
+}
+.module.module-image.image-overlay h1,
+.module.module-image.image-overlay h2,
+.module.module-image.image-overlay h3:not(.module-title),
+.module.module-image.image-overlay h4,
+.module.module-image.image-overlay h5,
+.module.module-image.image-overlay h6{
+	color:var(--theme_accent)
+}
+.module.module-image.image-overlay h1 a,
+.module.module-image.image-overlay h2 a,
+.module.module-image.image-overlay h3:not(.module-title) a,
+.module.module-image.image-overlay h4 a,
+.module.module-image.image-overlay h5 a,
+.module.module-image.image-overlay h6 a{
+	color:inherit
+}
+.module.module-image.image-overlay .image-title{
+	margin:0;
+	font-size:1.3em
+}
+.module.module-image.image-overlay .image-title + .image-caption{
+	margin-top:.4em
+}
+.module.module-pro-slider .bsp-slide-post-title{
+	font-weight:normal
+}
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footer-logo{
+	font-weight:normal
+}
+#footer a{
+	text-decoration:none
+}
+.footer-text{
+	font-style:italic
+}
+/************************************************************************************
+WOOCOMMERCE
+*************************************************************************************/
+/* buttons */
+.woocommerce ul.products li.product .button,
+.woocommerce #respond input#submit,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce button.button.alt.disabled,
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled]{
+	background-color:#fff;
+	color:var(--theme_accent);
+	border:1px solid;
+    font-family:'Prata',serif;
+	font-size:.9em;
+	font-weight:500
+}
+.woocommerce ul.products li.product .button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce button.button.alt.disabled:hover,
+.woocommerce button.button:disabled:hover,
+.woocommerce button.button:disabled[disabled]:hover{
+	background:var(--theme_accent);
+	border-color:var(--theme_accent);
+	color:#fff
+}
+#cart-wrap .button{
+	border:0
+}
+.woocommerce ul.products li.product h3{
+	font-family:'Prata',serif
+}
+.woocommerce ul.products li.product .price{
+	font-style:italic
+}
+
+/* quantity */
+.woocommerce .quantity .qty{
+	padding:.4em .5em
+}
+/* checkout select */
+.woocommerce form .form-row .select2-container .select2-choice{
+	padding:.4em
+}
+/* related products */
+.related.products .fancy-heading{
+	font-weight:normal
+}
+/* Archive Product Add to Cart */
+.woocommerce ul.products li.product .button{
+	font-size:.7em;
+	padding:.8em 1em .6em
+}
+/* Archive Product Align center */
+.woocommerce ul.products li.product{
+	text-align:center
+}
+/* tooltip */
+.quick-look .tooltip,
+.wishlist-button .tooltip{
+	font-size:.8em;
+	padding:.3em .7em .1em
+}
+/* MY ACCOUNT */
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a{
+	text-decoration:none
+}
+/* Related Product */
+.related ul.products li.product,
+.archive.woocommerce .wc-products .product,
+.archive.woocommerce ul.products li.product{
+	text-align:center
+}
+.grid4 .product-share-wrap,
+.grid3 .product-share-wrap,
+.related .product-share-wrap,
+.archive .product-share-wrap{
+	display:block
+}
+/* Coupon */
+.woocommerce #content table.cart td.actions .coupon .input-text{
+	font-size:.75em
+}
+/* proceed to checkout */
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button{
+	font-size:.75em;
+}
+.woocommerce table.shop_table tfoot th,
+.woocommerce table.shop_table th{
+	font-size:.85em
+}
+/* box shadow & border */
+.search-option-tab li:hover a,.search-option-tab li.active a{
+	box-shadow:inset 0 -2px 0 0 var(--theme_accent);
+	color:#060604
+}
+/* background */
+.module.module-pro-slider .bsp-timer-bar,
+#pagewrap .wpf_slider.ui-slider .ui-widget-header{
+	background-color:var(--theme_accent)
+}
+/* color */
+.inline-fancy-heading .fancy-heading .sub-head,
+.woocommerce .woocommerce-product-rating{
+	color:var(--theme_accent)
+}
+.fancy-heading{
+	color:var(--theme_accent)
+}
+.woocommerce ul.products li.product .share:hover,
+.social-share .share:hover{
+	color:rgba(255,255,255,.6)
+}
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+@media(max-width:1200px){
+	body{
+		font-size:.95em
+	}
+}
+@media(max-width:680px){
+	h2{
+		font-size:1.6em
+	}
+	h3{
+		font-size:1.4em
+	}
+}
+/************************************************************************************
+THEMIFY POPUP PLUGIN
+*************************************************************************************/
+body .themify-popup.style-slide-out{
+	box-shadow:none;
+	border:1px solid rgba(180,180,180,.2);
+	border-bottom:none
+}

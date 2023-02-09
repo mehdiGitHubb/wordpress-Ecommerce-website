@@ -1,0 +1,38 @@
+.woocommerce .wc-products.grid2-thumb .post-image{
+	width:20%;
+	float:left;
+	margin:0 1.6em 1.3em 0
+}
+.woocommerce .wc-products.grid2-thumb .post-content{
+	overflow:hidden;
+	min-width:120px
+}
+.woocommerce .wc-products.grid2-thumb .star-rating{
+	float:none
+}
+.woocommerce .wc-products.grid2-thumb .onsale{
+	font-size:75%;
+	right:auto;
+	left:0;
+	margin:-.65em 0 0 -1.6em;
+	transform:rotate(-45deg)
+}
+.wc-products.list-thumb-image .product.has-post-thumbnail{
+	overflow:hidden
+}
+.wc-products.list-thumb-image .product.has-post-thumbnail .onsale{
+	right:auto;
+	left:0;
+	margin:-1em 0 0 -1.6em;
+	transform:rotate(-45deg)
+}
+.wc-products.slider-agency .post-image{
+	border-radius:8px;
+	position:relative;
+	overflow:hidden
+}
+.products.wc-products.slider-agency .onsale{
+	transform:rotate(-45deg);
+	margin-left:-1.6em;
+	z-index:1
+}

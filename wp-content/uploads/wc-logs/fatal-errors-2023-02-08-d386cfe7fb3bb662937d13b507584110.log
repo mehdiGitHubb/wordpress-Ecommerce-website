@@ -1,0 +1,4 @@
+2023-02-08T15:07:17+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\Bitnami\wordpress\apps\wordpress\htdocs\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\ActiveFilters.php on line 7
+
+2023-02-08T15:12:05+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\Bitnami\wordpress\apps\wordpress\htdocs\wp-includes\class-wpdb.php on line 2187
+

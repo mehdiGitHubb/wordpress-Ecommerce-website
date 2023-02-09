@@ -1,0 +1,36 @@
+.mobile-menu-visible.sidemenu-right #headerwrap,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-right,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-right #headerwrap.fixed-header{
+	left:0;
+	right:0
+}
+#mobile-menu.sidemenu{
+	left:0;
+	right:0;
+	width:100%;
+	perspective:400px;
+	opacity:0;
+	visibility:hidden;
+	transition:.5s ease;
+	overflow-x:hidden;
+	border:0;
+	pointer-events:none
+}
+.mobile-menu-visible #mobile-menu.sidemenu{
+	opacity:1;
+	visibility:visible;
+	pointer-events:auto
+}
+#searchform,
+.social-widget{
+	display:block
+}
+.mobile-menu-visible .body-overlay,
+.body-overlay,
+.body-overlay.body-overlay-on{
+	display:none
+}
+.top-icon-wrap,
+#main-nav li{
+	transform:translate(0,-40px)!important
+}

@@ -1,0 +1,27 @@
+.woocommerce .woocommerce-ordering{
+	margin:0 0 1.5em;
+	max-width:360px
+}
+.woocommerce .woocommerce-ordering select{
+	font-weight:500;
+	font-size:.75em;
+	background-color:transparent;
+	color:inherit;
+	border-radius:0;
+	border:0;
+	border-bottom:1px solid rgba(180,180,180,.3);
+	letter-spacing:.08em;
+	margin-right:0;
+	max-width:none;
+	padding:9px 0;
+	padding-right:30px;
+	text-transform:uppercase
+}
+body.sidebar-none .woocommerce-ordering{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:3em;
+	float:none;
+	text-align:center
+}

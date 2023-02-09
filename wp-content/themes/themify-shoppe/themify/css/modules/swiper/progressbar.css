@@ -1,0 +1,31 @@
+.tf_swiper-pagination-progressbar{
+  background:rgba(0,0,0,.25);
+  position:absolute
+}
+.tf_swiper-pagination-progressbar-fill{
+  background:#fff;
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  transform:scale(0);
+  transform-origin:left top
+}
+.tf_swiper-container-rtl .tf_swiper-pagination-progressbar-fill{
+  transform-origin:right top
+}
+.tf_swiper-container-horizontal  .tf_swiper-pagination-progressbar,
+.tf_swiper-container-vertical  .tf_swiper-pagination-progressbar-opposite{
+  width:100%;
+  height:4px;
+  left:0;
+  top:0
+}
+.tf_swiper-container-vertical  .tf_swiper-pagination-progressbar,
+.tf_swiper-container-horizontal .tf_swiper-pagination-progressbar-opposite{
+  width:4px;
+  height:100%;
+  left:0;
+  top:0
+}

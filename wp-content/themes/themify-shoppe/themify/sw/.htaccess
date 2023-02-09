@@ -1,0 +1,3 @@
+<FilesMatch "sw\.js|sw\.min\.js">
+Header Set Service-Worker-allowed '/'
+</FilesMatch>

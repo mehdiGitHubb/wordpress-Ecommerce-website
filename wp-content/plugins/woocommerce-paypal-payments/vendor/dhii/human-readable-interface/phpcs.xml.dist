@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<ruleset name="plugin"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+
+    <file>./src</file>
+
+
+    <config name="installed_paths" value="../../slevomat/coding-standard"/>
+
+    <rule ref="PSR12"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
+        <type>warning</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
+        <type>warning</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
+            <property name="newlinesCountAfterDeclare" value="2"/>
+            <property name="spacesCountAroundEqualsSign" value="0"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.ClassStructure">
+        <properties>
+            <property name="groups" type="array">
+                <element value="uses"/>
+
+                <!-- Public constants are first but you don't care about the order of protected or private constants -->
+                <element value="public constants"/>
+                <element value="constants"/>
+
+                <!-- You don't care about the order among the properties. The same can be done with "properties" shortcut -->
+                <element value="public properties, protected properties, private properties, properties"/>
+
+                <!-- Constructor is first, then all public methods, then protected/private methods and magic methods are last -->
+                <element value="constructor"/>
+                <element value="all public methods"/>
+                <element value="methods"/>
+                <element value="magic methods"/>
+            </property>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
+    <rule ref="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall"/>
+    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
+    <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>
+</ruleset>

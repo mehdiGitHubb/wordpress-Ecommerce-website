@@ -1,0 +1,75 @@
+.ui.module-alert{
+    margin-bottom:2em;
+    padding:1.5em 2em
+}
+.ui .alert-inner{
+    display:grid;
+    grid-template-columns:1fr auto
+}
+.module-alert > .tf_close{
+    position:absolute;
+    top:7px;
+    right:7px;
+    padding:2px;
+    font-size:14px;
+    min-width:1.5em;
+    min-height:1.5em;
+    transition:transform .25s;
+    transform-origin:center;
+    border-radius:100%
+}
+.module-alert > .tf_close:before,
+.module-alert > .tf_close:after{
+    height:60%
+}
+.module-alert > .tf_close:hover{
+    transform:rotate(90deg);
+	background-color:rgba(200,200,200,.25)
+}
+.module-alert p{
+    margin:0 0 5px
+}
+.module .alert-heading{
+    color:inherit;
+    font-size:140%;
+    line-height:130%;
+    margin:0 0 5px;
+    padding:0
+}
+.module .alert-button{
+	--tb_app_r:0;
+	--tb_app_gr:none;
+	--tb_app_shadow:none;
+    margin-top:5px
+}
+.module.module-alert .ui:not(.transparent){
+    color:var(--tb_pr_color,#555)
+}
+/* button left */
+.button-left .alert-inner{
+    direction:rtl;
+    grid-template-columns:2.3fr 1fr;
+    text-align:left
+}
+/* button bottom */
+.button-bottom-center .alert-inner,
+.button-bottom .alert-inner{
+	grid-template-columns:none
+}
+.button-bottom-center .alert-inner{
+	text-align:center
+}
+.button-bottom-center .alert-button,
+.button-bottom .alert-button{
+    margin-top:15px
+}
+/* transparent color */
+.ui.module-alert.transparent{
+    padding:0
+}
+.module.transparent.button-right .alert-button{
+    margin-top:30px
+}
+.module-alert.transparent.button-right div.tf_close{
+    top:8px
+}

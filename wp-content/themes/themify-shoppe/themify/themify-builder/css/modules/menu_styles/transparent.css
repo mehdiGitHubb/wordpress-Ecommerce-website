@@ -1,0 +1,15 @@
+.module .nav.transparent li,
+.module .nav.transparent > li > a, 
+.module .nav.transparent > li.current_page_item > a,
+.module .nav.transparent > li.current-menu-item > a, 
+.module .nav.transparent > li > a:hover,
+.module .nav.transparent li:active > a{
+    background:0;
+    border:0;
+    box-shadow:none
+}
+.nav.transparent ul{
+	--tb_app_r:8px;
+	--tb_pr_hover_bg:#f1f1f1;
+	--tb_pr_bg:#fff
+}

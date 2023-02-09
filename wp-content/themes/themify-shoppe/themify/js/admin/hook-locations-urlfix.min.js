@@ -1,0 +1,1 @@
+(function(a){'use strict';window.addEventListener('load',function(){a("a").each(function(){a(this).attr("href",Themify.updateQueryString("tp","1",a(this).attr("href")))})}),a("body").on("click",".hook-location-hint",function(){ if(!window.top.tf_hook_target) return; window.top.tf_hook_target.value=this.getAttribute("data-id"),window.top.jQuery.magnificPopup.close()})})(jQuery);
