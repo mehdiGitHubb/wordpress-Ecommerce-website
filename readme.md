@@ -1,14 +1,43 @@
 ## Home Page :
 
+
 <p ><atarget="_blank"><img src="wp-content/home page 1.png" width="1000" alt="Laravel Logo"></a></p>
 <p ><atarget="_blank"><img src="wp-content/hom page 2.png" width="1000" alt="Laravel Logo"></a></p>
 <p ><atarget="_blank"><img src="wp-content/home page shop collection.png" width="1000" alt="Laravel Logo"></a></p>
 <p ><atarget="_blank"><img src="wp-content/home page Blogs.png" width="1000" alt="Laravel Logo"></a></p>
 <p ><atarget="_blank"><img src="wp-content/home page footer.png" width="1000" alt="Laravel Logo"></a></p>
 
-## Authentification :
+## SHOP Page :
 
-<p ><atarget="_blank"><img src="public/images/autentification.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/shop page.png" width="1000" alt="Laravel Logo"></a></p>
+
+## Contact Page :
+
+<p ><atarget="_blank"><img src="wp-content/contact page.png" width="1000" alt="Laravel Logo"></a></p>
+
+## WISHListe Page :
+
+<p ><atarget="_blank"><img src="wp-content/wish list Page.png" width="1000" alt="Laravel Logo"></a></p>
+
+## SEARCH Page :
+
+<p ><atarget="_blank"><img src="wp-content/sertch page.png" width="1000" alt="Laravel Logo"></a></p>
+
+## Checkout Page :
+
+<p ><atarget="_blank"><img src="wp-content/checkout page .png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/chikout 2.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/chekout 3.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/chekout 4.png" width="1000" alt="Laravel Logo"></a></p>
+
+## LOGIN Page :
+
+<p ><atarget="_blank"><img src="wp-content/login page.png" width="1000" alt="Laravel Logo"></a></p>
+
+## Profil Page :
+
+<p ><atarget="_blank"><img src="wp-content/accont dtiait.png" width="1000" alt="Laravel Logo"></a></p>
+
 
 <!DOCTYPE html>
 <html lang="en">
