@@ -1,4 +1,10 @@
-## mehdi
+## Home Page :
+
+<p ><atarget="_blank"><img src="public/images/home page.png" width="1000" alt="Laravel Logo"></a></p>
+
+## Authentification :
+
+<p ><atarget="_blank"><img src="public/images/autentification.png" width="1000" alt="Laravel Logo"></a></p>
 
 <!DOCTYPE html>
 <html lang="en">
