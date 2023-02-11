@@ -1,31 +1,31 @@
-## Home Page :
+## Home Page :<br><br>
 
 
 <p ><atarget="_blank"><img src="wp-content/home page 1.png" width="1000" alt="Laravel Logo"></a></p>
 <p ><atarget="_blank"><img src="wp-content/hom page 2.png" width="1000" alt="Laravel Logo"></a></p>
 <p ><atarget="_blank"><img src="wp-content/home page shop collection.png" width="1000" alt="Laravel Logo"></a></p>
 <p ><atarget="_blank"><img src="wp-content/home page Blogs.png" width="1000" alt="Laravel Logo"></a></p>
-<p ><atarget="_blank"><img src="wp-content/home page footer.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/home page footer.png" width="1000" alt="Laravel Logo"></a></p><br><br>
 
 
 
-## SHOP Page :
+## SHOP Page :<br><br>
 
 
 
-<p ><atarget="_blank"><img src="wp-content/shop page.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/shop page.png" width="1000" alt="Laravel Logo"></a></p><br><br>
 
 
 
-## Contact Page :
+## Contact Page :<br><br>
 
 
 
-<p ><atarget="_blank"><img src="wp-content/contact page.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/contact page.png" width="1000" alt="Laravel Logo"></a></p><br><br>
 
 
 
-## WISHListe Page :
+## WISHListe Page :<br><br>
 
 
 
