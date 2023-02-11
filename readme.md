@@ -29,42 +29,42 @@
 
 
 
-<p ><atarget="_blank"><img src="wp-content/wish list Page.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/wish list Page.png" width="1000" alt="Laravel Logo"></a></p><br><br>
 
 
 
-## SEARCH Page :
+## SEARCH Page :<br><br>
 
 
 
-<p ><atarget="_blank"><img src="wp-content/sertch page.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/sertch page.png" width="1000" alt="Laravel Logo"></a></p><br><br>
 
 
 
-## Checkout Page :
+## Checkout Page :<br><br>
 
 
 
 <p ><atarget="_blank"><img src="wp-content/checkout page .png" width="1000" alt="Laravel Logo"></a></p>
 <p ><atarget="_blank"><img src="wp-content/chikout 2.png" width="1000" alt="Laravel Logo"></a></p>
 <p ><atarget="_blank"><img src="wp-content/chekout 3.png" width="1000" alt="Laravel Logo"></a></p>
-<p ><atarget="_blank"><img src="wp-content/chekout 4.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/chekout 4.png" width="1000" alt="Laravel Logo"></a></p><br><br>
 
 
 
-## LOGIN Page :
+## LOGIN Page :<br><br>
 
 
 
-<p ><atarget="_blank"><img src="wp-content/login page.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/login page.png" width="1000" alt="Laravel Logo"></a></p><br><br>
 
 
 
-## Profil Page :
+## Profil Page :<br><br>
 
 
 
-<p ><atarget="_blank"><img src="wp-content/accont dtiait.png" width="1000" alt="Laravel Logo"></a></p>
+<p ><atarget="_blank"><img src="wp-content/accont dtiait.png" width="1000" alt="Laravel Logo"></a></p><br><br>
 
 
 <!DOCTYPE html>
